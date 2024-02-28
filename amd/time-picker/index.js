@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/_util/PurePanel", "antd4mx/_util/warning", "antd4mx/date-picker"], function (_exports, React, _PurePanel, _warning, _datePicker) {
+define(["exports", "react", "antd4mx/_util/PurePanel", "antd4mx/_util/warning", "antd4mx/date-picker/index"], function (_exports, React, _PurePanel, _warning, _index) {
   "use strict";
   "use client";
 
@@ -14,8 +14,8 @@ define(["exports", "react", "antd4mx/_util/PurePanel", "antd4mx/_util/warning", 
     }
     return t;
   };
-  var InternalTimePicker = _datePicker["default"].TimePicker,
-    InternalRangePicker = _datePicker["default"].RangePicker;
+  var InternalTimePicker = _index["default"].TimePicker,
+    InternalRangePicker = _index["default"].RangePicker;
   var RangePicker = /*#__PURE__*/React.forwardRef(function (props, ref) {
     return /*#__PURE__*/React.createElement(InternalRangePicker, Object.assign({}, props, {
       picker: "time",

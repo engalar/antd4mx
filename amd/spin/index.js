@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/omit", "throttle-debounce", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/spin/style/index"], function (_exports, React, _classnames, _omit, _throttleDebounce, _reactNode, _warning, _configProvider, _index) {
+define(["exports", "react", "classnames", "rc-util/es/omit", "throttle-debounce", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/spin/style/index"], function (_exports, React, _classnames, _omit, _throttleDebounce, _reactNode, _warning, _index, _index2) {
   "use strict";
   "use client";
 
@@ -80,10 +80,10 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "throttle-debounce"
       _props$fullscreen = props.fullscreen,
       fullscreen = _props$fullscreen === void 0 ? false : _props$fullscreen,
       restProps = __rest(props, ["prefixCls", "spinning", "delay", "className", "rootClassName", "size", "tip", "wrapperClassName", "style", "children", "fullscreen"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('spin', customizePrefixCls);
-    var _useStyle = (0, _index["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -114,7 +114,7 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "throttle-debounce"
       var warning = (0, _warning.devUseWarning)('Spin');
       process.env.NODE_ENV !== "production" ? warning(!tip || isNestedPattern || fullscreen, 'usage', '`tip` only work in nest or fullscreen pattern.') : void 0;
     }
-    var _React$useContext2 = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext2 = React.useContext(_index.ConfigContext),
       direction = _React$useContext2.direction,
       spin = _React$useContext2.spin;
     var spinClassName = (0, _classnames["default"])(prefixCls, spin === null || spin === void 0 ? void 0 : spin.className, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, "".concat(prefixCls, "-sm"), size === 'small'), "".concat(prefixCls, "-lg"), size === 'large'), "".concat(prefixCls, "-spinning"), spinning), "".concat(prefixCls, "-show-text"), !!tip), "".concat(prefixCls, "-fullscreen"), fullscreen), "".concat(prefixCls, "-fullscreen-show"), fullscreen && spinning), "".concat(prefixCls, "-rtl"), direction === 'rtl'), className, rootClassName, hashId, cssVarCls);

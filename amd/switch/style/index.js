@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _tinycolor, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _tinycolor, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -163,7 +163,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "a
     var componentCls = token.componentCls,
       trackHeight = token.trackHeight,
       trackMinWidth = token.trackMinWidth;
-    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty({
+    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty({
       position: 'relative',
       display: 'inline-block',
       boxSizing: 'border-box',
@@ -179,7 +179,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "a
       userSelect: 'none'
     }, "&:hover:not(".concat(componentCls, "-disabled)"), {
       background: token.colorTextTertiary
-    })), (0, _style.genFocusStyle)(token)), _defineProperty(_defineProperty(_defineProperty({}, "&".concat(componentCls, "-checked"), _defineProperty({
+    })), (0, _index.genFocusStyle)(token)), _defineProperty(_defineProperty(_defineProperty({}, "&".concat(componentCls, "-checked"), _defineProperty({
       background: token.switchColor
     }, "&:hover:not(".concat(componentCls, "-disabled)"), {
       background: token.colorPrimaryHover

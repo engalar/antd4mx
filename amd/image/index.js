@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/EyeOutlined", "classnames", "rc-image", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/locale/en_US", "antd4mx/image/PreviewGroup", "antd4mx/image/style"], function (_exports, React, _EyeOutlined, _classnames, _rcImage, _useZIndex3, _motion, _configProvider, _useCSSVarCls, _en_US, _PreviewGroup, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/EyeOutlined", "classnames", "rc-image", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/locale/en_US", "antd4mx/image/PreviewGroup", "antd4mx/image/style/index"], function (_exports, React, _EyeOutlined, _classnames, _rcImage, _useZIndex3, _motion, _index, _useCSSVarCls, _en_US, _PreviewGroup, _index2) {
   "use strict";
   "use client";
 
@@ -29,7 +29,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/EyeOutlined", "classname
       rootClassName = props.rootClassName,
       style = props.style,
       otherProps = __rest(props, ["prefixCls", "preview", "className", "rootClassName", "style"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       _React$useContext$loc = _React$useContext.locale,
       contextLocale = _React$useContext$loc === void 0 ? _en_US["default"] : _React$useContext$loc,
@@ -40,7 +40,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/EyeOutlined", "classname
     var imageLocale = contextLocale.Image || _en_US["default"].Image;
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _motion, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _index2, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -37,7 +37,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
       fontHeight = token.fontHeight,
       fontHeightLG = token.fontHeightLG;
     var borderBase = "".concat((0, _cssinjs.unit)(lineWidth), " ").concat(lineType, " ").concat(colorBorder);
-    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       backgroundColor: headerBg,
       border: borderBase,
       borderBottom: 0,
@@ -68,7 +68,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
       display: 'flex',
       alignItems: 'center',
       paddingInlineEnd: marginSM
-    }), "".concat(componentCls, "-arrow"), Object.assign(Object.assign({}, (0, _style.resetIcon)()), {
+    }), "".concat(componentCls, "-arrow"), Object.assign(Object.assign({}, (0, _index.resetIcon)()), {
       fontSize: fontSizeIcon,
       svg: {
         transition: "transform ".concat(motionDurationSlow)
@@ -176,6 +176,6 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
       collapseHeaderPaddingLG: "".concat((0, _cssinjs.unit)(token.padding), " ").concat((0, _cssinjs.unit)(token.paddingLG)),
       collapsePanelBorderRadius: token.borderRadiusLG
     });
-    return [genBaseStyle(collapseToken), genBorderlessStyle(collapseToken), genGhostStyle(collapseToken), genArrowStyle(collapseToken), (0, _motion.genCollapseMotion)(collapseToken)];
+    return [genBaseStyle(collapseToken), genBorderlessStyle(collapseToken), genGhostStyle(collapseToken), genArrowStyle(collapseToken), (0, _index2.genCollapseMotion)(collapseToken)];
   }, prepareComponentToken);
 });

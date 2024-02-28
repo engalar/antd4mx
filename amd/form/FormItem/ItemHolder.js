@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/Dom/isVisible", "rc-util/es/hooks/useLayoutEffect", "rc-util/es/omit", "antd4mx/grid", "antd4mx/form/context", "antd4mx/form/FormItemInput", "antd4mx/form/FormItemLabel", "antd4mx/form/hooks/useDebounce", "antd4mx/form/util", "antd4mx/form/FormItem/StatusProvider"], function (_exports, React, _classnames, _isVisible, _useLayoutEffect, _omit, _grid, _context, _FormItemInput, _FormItemLabel, _useDebounce, _util, _StatusProvider) {
+define(["exports", "react", "classnames", "rc-util/es/Dom/isVisible", "rc-util/es/hooks/useLayoutEffect", "rc-util/es/omit", "antd4mx/grid/index", "antd4mx/form/context", "antd4mx/form/FormItemInput", "antd4mx/form/FormItemLabel", "antd4mx/form/hooks/useDebounce", "antd4mx/form/util", "antd4mx/form/FormItem/StatusProvider"], function (_exports, React, _classnames, _isVisible, _useLayoutEffect, _omit, _index, _context, _FormItemInput, _FormItemLabel, _useDebounce, _util, _StatusProvider) {
   "use strict";
   "use client";
 
@@ -83,7 +83,7 @@ define(["exports", "react", "classnames", "rc-util/es/Dom/isVisible", "rc-util/e
       className: itemClassName,
       style: style,
       ref: itemRef
-    }, /*#__PURE__*/React.createElement(_grid.Row, Object.assign({
+    }, /*#__PURE__*/React.createElement(_index.Row, Object.assign({
       className: "".concat(itemPrefixCls, "-row")
     }, (0, _omit["default"])(restProps, ['_internalItemRender', 'colon', 'dependencies', 'extra', 'fieldKey', 'getValueFromEvent', 'getValueProps', 'htmlFor', 'id',
     // It is deprecated because `htmlFor` is its replacement.

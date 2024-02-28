@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, _cssinjs, _style) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index"], function (_exports, _cssinjs, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -36,7 +36,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, 
       }), "".concat(componentCls, "-item-title"), Object.assign(Object.assign({
         maxWidth: '100%',
         paddingInlineEnd: 0
-      }, _style.textEllipsis), {
+      }, _index.textEllipsis), {
         '&::after': {
           display: 'none'
         }

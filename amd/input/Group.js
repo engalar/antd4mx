@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/form/context", "antd4mx/input/style"], function (_exports, _react, _classnames, _warning, _configProvider, _context, _style) {
+define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/form/context", "antd4mx/input/style/index"], function (_exports, _react, _classnames, _warning, _index, _context, _index2) {
   "use strict";
   "use client";
 
@@ -18,14 +18,14 @@ define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/conf
   function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
   function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   var Group = function Group(props) {
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls,
       direction = _useContext.direction;
     var customizePrefixCls = props.prefixCls,
       className = props.className;
     var prefixCls = getPrefixCls('input-group', customizePrefixCls);
     var inputPrefixCls = getPrefixCls('input');
-    var _useStyle = (0, _style["default"])(inputPrefixCls),
+    var _useStyle = (0, _index2["default"])(inputPrefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 2),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1];

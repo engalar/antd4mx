@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/message/useMessage", "antd4mx/modal/useModal", "antd4mx/notification/useNotification", "antd4mx/app/context", "antd4mx/app/style"], function (_exports, _react, _classnames, _configProvider, _useMessage3, _useModal3, _useNotification3, _context, _style) {
+define(["exports", "react", "classnames", "antd4mx/config-provider/index", "antd4mx/message/useMessage", "antd4mx/modal/useModal/index", "antd4mx/notification/useNotification", "antd4mx/app/context", "antd4mx/app/style/index"], function (_exports, _react, _classnames, _index, _useMessage3, _index2, _useNotification3, _context, _index3) {
   "use strict";
   "use client";
 
@@ -25,10 +25,10 @@ define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/me
       style = props.style,
       _props$component = props.component,
       component = _props$component === void 0 ? 'div' : _props$component;
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls;
     var prefixCls = getPrefixCls('app', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -49,7 +49,7 @@ define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/me
       _useNotification2 = _slicedToArray(_useNotification, 2),
       notificationApi = _useNotification2[0],
       notificationContextHolder = _useNotification2[1];
-    var _useModal = (0, _useModal3["default"])(),
+    var _useModal = (0, _index2["default"])(),
       _useModal2 = _slicedToArray(_useModal, 2),
       ModalApi = _useModal2[0],
       ModalContextHolder = _useModal2[1];

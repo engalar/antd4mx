@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/input/style/variants"], function (_exports, _cssinjs, _style, _style2, _internal, _variants) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/input/style/index", "antd4mx/style/index", "antd4mx/theme/internal", "antd4mx/input/style/variants"], function (_exports, _cssinjs, _index, _index2, _internal, _variants) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -118,7 +118,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
     }), "&-quick-jumper", {
       height: token.itemSizeSM,
       lineHeight: (0, _cssinjs.unit)(token.itemSizeSM),
-      input: Object.assign(Object.assign({}, (0, _style.genInputSmallStyle)(token)), {
+      input: Object.assign(Object.assign({}, (0, _index.genInputSmallStyle)(token)), {
         width: token.paginationMiniQuickJumperInputWidth,
         height: token.controlHeightSM
       })
@@ -271,7 +271,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
         marginInlineStart: token.marginXS,
         lineHeight: (0, _cssinjs.unit)(token.controlHeight),
         verticalAlign: 'top',
-        input: Object.assign(Object.assign(Object.assign({}, (0, _style.genBasicInputStyle)(token)), (0, _variants.genBaseOutlinedStyle)(token, {
+        input: Object.assign(Object.assign(Object.assign({}, (0, _index.genBasicInputStyle)(token)), (0, _variants.genBaseOutlinedStyle)(token, {
           borderColor: token.colorBorder,
           hoverBorderColor: token.colorPrimaryHover,
           activeBorderColor: token.colorPrimary,
@@ -339,7 +339,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
   };
   var genPaginationStyle = function genPaginationStyle(token) {
     var componentCls = token.componentCls;
-    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), _defineProperty({
+    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), _defineProperty({
       'ul, ol': {
         margin: 0,
         padding: 0,
@@ -371,13 +371,13 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
   };
   var genPaginationFocusStyle = function genPaginationFocusStyle(token) {
     var componentCls = token.componentCls;
-    return _defineProperty({}, "".concat(componentCls, ":not(").concat(componentCls, "-disabled)"), _defineProperty(_defineProperty(_defineProperty({}, "".concat(componentCls, "-item"), Object.assign({}, (0, _style2.genFocusStyle)(token))), "".concat(componentCls, "-jump-prev, ").concat(componentCls, "-jump-next"), {
+    return _defineProperty({}, "".concat(componentCls, ":not(").concat(componentCls, "-disabled)"), _defineProperty(_defineProperty(_defineProperty({}, "".concat(componentCls, "-item"), Object.assign({}, (0, _index2.genFocusStyle)(token))), "".concat(componentCls, "-jump-prev, ").concat(componentCls, "-jump-next"), {
       '&:focus-visible': Object.assign(_defineProperty(_defineProperty({}, "".concat(componentCls, "-item-link-icon"), {
         opacity: 1
       }), "".concat(componentCls, "-item-ellipsis"), {
         opacity: 0
-      }), (0, _style2.genFocusOutline)(token))
-    }), "".concat(componentCls, "-prev, ").concat(componentCls, "-next"), _defineProperty({}, "&:focus-visible ".concat(componentCls, "-item-link"), Object.assign({}, (0, _style2.genFocusOutline)(token)))));
+      }), (0, _index2.genFocusOutline)(token))
+    }), "".concat(componentCls, "-prev, ").concat(componentCls, "-next"), _defineProperty({}, "&:focus-visible ".concat(componentCls, "-item-link"), Object.assign({}, (0, _index2.genFocusOutline)(token)))));
   };
   var prepareComponentToken = _exports.prepareComponentToken = function prepareComponentToken(token) {
     return Object.assign({
@@ -390,7 +390,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
       itemActiveBgDisabled: token.controlItemBgActiveDisabled,
       itemInputBg: token.colorBgContainer,
       miniOptionsSizeChangerTop: 0
-    }, (0, _style.initComponentToken)(token));
+    }, (0, _index.initComponentToken)(token));
   };
   var prepareToken = _exports.prepareToken = function prepareToken(token) {
     return (0, _internal.mergeToken)(token, {
@@ -402,7 +402,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
       paginationSlashMarginInlineStart: token.marginXXS,
       paginationSlashMarginInlineEnd: token.marginSM,
       paginationEllipsisTextIndent: '0.13em' // magic for ui experience
-    }, (0, _style.initInputToken)(token));
+    }, (0, _index.initInputToken)(token));
   };
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('Pagination', function (token) {

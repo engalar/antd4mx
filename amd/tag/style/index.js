@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _tinycolor, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _tinycolor, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -18,7 +18,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "a
       calc = token.calc;
     var paddingInline = calc(tagPaddingHorizontal).sub(lineWidth).equal();
     var iconMarginInline = calc(paddingXXS).sub(lineWidth).equal();
-    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       display: 'inline-block',
       height: 'auto',
       marginInlineEnd: token.marginXS,

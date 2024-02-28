@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, _cssinjs, _style) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index"], function (_exports, _cssinjs, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -127,7 +127,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, 
       display: 'none'
     }), 'a, a:hover', {
       color: colorTextLightSolid
-    })), "".concat(componentCls, "-item-group-title"), Object.assign(Object.assign({}, _style.textEllipsis), {
+    })), "".concat(componentCls, "-item-group-title"), Object.assign(Object.assign({}, _index.textEllipsis), {
       paddingInline: paddingXS
     })))];
   };

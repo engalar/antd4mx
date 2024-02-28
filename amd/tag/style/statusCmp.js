@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/tag/style", "antd4mx/_util/capitalize", "antd4mx/theme/internal"], function (_exports, _style, _capitalize, _internal) {
+define(["exports", "antd4mx/tag/style/index", "antd4mx/_util/capitalize", "antd4mx/theme/internal"], function (_exports, _index, _capitalize, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -21,7 +21,7 @@ define(["exports", "antd4mx/tag/style", "antd4mx/_util/capitalize", "antd4mx/the
   };
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genSubStyleComponent)(['Tag', 'status'], function (token) {
-    var tagToken = (0, _style.prepareToken)(token);
+    var tagToken = (0, _index.prepareToken)(token);
     return [genTagStatusStyle(tagToken, 'success', 'Success'), genTagStatusStyle(tagToken, 'processing', 'Info'), genTagStatusStyle(tagToken, 'error', 'Error'), genTagStatusStyle(tagToken, 'warning', 'Warning')];
-  }, _style.prepareComponentToken);
+  }, _index.prepareComponentToken);
 });

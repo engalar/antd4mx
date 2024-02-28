@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -30,7 +30,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       background: token.headerBg,
       borderBottom: "".concat((0, _cssinjs.unit)(token.lineWidth), " ").concat(token.lineType, " ").concat(token.colorBorderSecondary),
       borderRadius: "".concat((0, _cssinjs.unit)(token.borderRadiusLG), " ").concat((0, _cssinjs.unit)(token.borderRadiusLG), " 0 0")
-    }, (0, _style.clearFix)()), _defineProperty({
+    }, (0, _index.clearFix)()), _defineProperty({
       '&-wrapper': {
         width: '100%',
         display: 'flex',
@@ -39,7 +39,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       '&-title': Object.assign(Object.assign({
         display: 'inline-block',
         flex: 1
-      }, _style.textEllipsis), _defineProperty({}, "\n          > ".concat(componentCls, "-typography,\n          > ").concat(componentCls, "-typography-edit-content\n        "), {
+      }, _index.textEllipsis), _defineProperty({}, "\n          > ".concat(componentCls, "-typography,\n          > ").concat(componentCls, "-typography-edit-content\n        "), {
         insetInlineStart: 0,
         marginTop: 0,
         marginBottom: 0
@@ -91,7 +91,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       borderTop: "".concat((0, _cssinjs.unit)(token.lineWidth), " ").concat(token.lineType, " ").concat(colorBorderSecondary),
       display: 'flex',
       borderRadius: "0 0 ".concat((0, _cssinjs.unit)(token.borderRadiusLG), " ").concat((0, _cssinjs.unit)(token.borderRadiusLG))
-    }, (0, _style.clearFix)()), {
+    }, (0, _index.clearFix)()), {
       '& > li': {
         margin: actionsLiMargin,
         color: token.colorTextDescription,
@@ -131,7 +131,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     return Object.assign(Object.assign({
       margin: "".concat((0, _cssinjs.unit)(token.calc(token.marginXXS).mul(-1).equal()), " 0"),
       display: 'flex'
-    }, (0, _style.clearFix)()), {
+    }, (0, _index.clearFix)()), {
       '&-avatar': {
         paddingInlineEnd: token.padding
       },
@@ -146,7 +146,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
         color: token.colorTextHeading,
         fontWeight: token.fontWeightStrong,
         fontSize: token.fontSizeLG
-      }, _style.textEllipsis),
+      }, _index.textEllipsis),
       '&-description': {
         color: token.colorTextDescription
       }
@@ -186,7 +186,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       boxShadowTertiary = token.boxShadowTertiary,
       cardPaddingBase = token.cardPaddingBase,
       extraColor = token.extraColor;
-    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'relative',
       background: token.colorBgContainer,
       borderRadius: token.borderRadiusLG
@@ -201,7 +201,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     }), "".concat(componentCls, "-body"), Object.assign({
       padding: cardPaddingBase,
       borderRadius: " 0 0 ".concat((0, _cssinjs.unit)(token.borderRadiusLG), " ").concat((0, _cssinjs.unit)(token.borderRadiusLG))
-    }, (0, _style.clearFix)())), "".concat(componentCls, "-grid"), genCardGridStyle(token)), "".concat(componentCls, "-cover"), _defineProperty({
+    }, (0, _index.clearFix)())), "".concat(componentCls, "-grid"), genCardGridStyle(token)), "".concat(componentCls, "-cover"), _defineProperty({
       '> *': {
         display: 'block',
         width: '100%'

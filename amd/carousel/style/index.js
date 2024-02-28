@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -17,7 +17,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       marginXXS = token.marginXXS;
     var arrowOffset = token.calc(carouselArrowSize).mul(-1.25).equal();
     var carouselDotMargin = marginXXS;
-    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), {
       '.slick-slider': {
         position: 'relative',
         display: 'block',

@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-dropdown", "rc-util", "rc-util/es/hooks/useMergedState", "rc-util/es/omit", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/placements", "antd4mx/_util/PurePanel", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/_util/zindexContext", "antd4mx/config-provider", "antd4mx/menu", "antd4mx/menu/OverrideContext", "antd4mx/theme/internal", "antd4mx/dropdown/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _RightOutlined, _classnames, _rcDropdown, _rcUtil, _useMergedState3, _omit, _useZIndex3, _placements, _PurePanel, _reactNode, _warning, _zindexContext, _configProvider, _menu, _OverrideContext, _internal, _style, _useCSSVarCls) {
+define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-dropdown", "rc-util", "rc-util/es/hooks/useMergedState", "rc-util/es/omit", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/placements", "antd4mx/_util/PurePanel", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/_util/zindexContext", "antd4mx/config-provider/index", "antd4mx/menu/index", "antd4mx/menu/OverrideContext", "antd4mx/theme/internal", "antd4mx/dropdown/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _RightOutlined, _classnames, _rcDropdown, _rcUtil, _useMergedState3, _omit, _useZIndex3, _placements, _PurePanel, _reactNode, _warning, _zindexContext, _index, _index2, _OverrideContext, _internal, _index3, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -43,7 +43,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classna
       placement = _props$placement === void 0 ? '' : _props$placement,
       overlay = props.overlay,
       transitionName = props.transitionName;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getContextPopupContainer = _React$useContext.getPopupContainer,
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
@@ -92,7 +92,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classna
     }
     var prefixCls = getPrefixCls('dropdown', customizePrefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index3["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -147,7 +147,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classna
       // So we need render the element to check and pass back to rc-dropdown.
       var overlayNode;
       if (menu === null || menu === void 0 ? void 0 : menu.items) {
-        overlayNode = /*#__PURE__*/React.createElement(_menu["default"], Object.assign({}, menu));
+        overlayNode = /*#__PURE__*/React.createElement(_index2["default"], Object.assign({}, menu));
       } else if (typeof overlay === 'function') {
         overlayNode = overlay();
       } else {

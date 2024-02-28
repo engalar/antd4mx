@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/internal", "antd4mx/form/style/explain"], function (_exports, _cssinjs, _style, _motion, _internal, _explain) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/theme/internal", "antd4mx/form/style/explain"], function (_exports, _cssinjs, _index, _index2, _internal, _explain) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -62,7 +62,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
   };
   var genFormStyle = function genFormStyle(token) {
     var componentCls = token.componentCls;
-    return _defineProperty({}, token.componentCls, Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), resetForm(token)), _defineProperty(_defineProperty(_defineProperty({}, "".concat(componentCls, "-text"), {
+    return _defineProperty({}, token.componentCls, Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), resetForm(token)), _defineProperty(_defineProperty(_defineProperty({}, "".concat(componentCls, "-text"), {
       display: 'inline-block',
       paddingInlineEnd: token.paddingSM
     }), '&-small', Object.assign({}, genFormSize(token, token.controlHeightSM))), '&-large', Object.assign({}, genFormSize(token, token.controlHeightLG)))));
@@ -79,7 +79,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
       labelColonMarginInlineStart = token.labelColonMarginInlineStart,
       labelColonMarginInlineEnd = token.labelColonMarginInlineEnd,
       itemMarginBottom = token.itemMarginBottom;
-    return _defineProperty({}, formItemCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty({}, formItemCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       marginBottom: itemMarginBottom,
       verticalAlign: 'top',
       '&-with-help': {
@@ -187,7 +187,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
       fontSize: token.fontSize,
       textAlign: 'center',
       visibility: 'visible',
-      animationName: _motion.zoomIn,
+      animationName: _index2.zoomIn,
       animationDuration: token.motionDurationMid,
       animationTimingFunction: token.motionEaseOutBack,
       pointerEvents: 'none',
@@ -308,7 +308,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('Form', function (token, _ref) {
     var rootPrefixCls = _ref.rootPrefixCls;
     var formToken = prepareToken(token, rootPrefixCls);
-    return [genFormStyle(formToken), genFormItemStyle(formToken), (0, _explain["default"])(formToken), genHorizontalStyle(formToken), genInlineStyle(formToken), genVerticalStyle(formToken), (0, _motion.genCollapseMotion)(formToken), _motion.zoomIn];
+    return [genFormStyle(formToken), genFormItemStyle(formToken), (0, _explain["default"])(formToken), genHorizontalStyle(formToken), genInlineStyle(formToken), genVerticalStyle(formToken), (0, _index2.genCollapseMotion)(formToken), _index2.zoomIn];
   }, prepareComponentToken, {
     // Let From style before the Grid
     // ref https://github.com/ant-design/ant-design/issues/44386

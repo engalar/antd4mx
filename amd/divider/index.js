@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/divider/style"], function (_exports, React, _classnames, _warning, _configProvider, _style) {
+define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/divider/style/index"], function (_exports, React, _classnames, _warning, _index, _index2) {
   "use strict";
   "use client";
 
@@ -25,7 +25,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/conf
     return t;
   };
   var Divider = function Divider(props) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       divider = _React$useContext.divider;
@@ -43,7 +43,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/conf
       style = props.style,
       restProps = __rest(props, ["prefixCls", "type", "orientation", "orientationMargin", "className", "rootClassName", "children", "dashed", "plain", "style"]);
     var prefixCls = getPrefixCls('divider', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

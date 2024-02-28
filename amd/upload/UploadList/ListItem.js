@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "@ant-design/icons/es/icons/DownloadOutlined", "@ant-design/icons/es/icons/EyeOutlined", "classnames", "rc-motion", "react", "antd4mx/config-provider", "antd4mx/progress", "antd4mx/tooltip"], function (_exports, _DeleteOutlined, _DownloadOutlined, _EyeOutlined, _classnames, _rcMotion, React, _configProvider, _progress, _tooltip) {
+define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "@ant-design/icons/es/icons/DownloadOutlined", "@ant-design/icons/es/icons/EyeOutlined", "classnames", "rc-motion", "react", "antd4mx/config-provider/index", "antd4mx/progress/index", "antd4mx/tooltip/index"], function (_exports, _DeleteOutlined, _DownloadOutlined, _EyeOutlined, _classnames, _rcMotion, React, _index, _index2, _index3) {
   "use strict";
   "use client";
 
@@ -141,7 +141,7 @@ define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "@ant-design/ico
     var pictureCardActions = (listType === 'picture-card' || listType === 'picture-circle') && mergedStatus !== 'uploading' && ( /*#__PURE__*/React.createElement("span", {
       className: "".concat(prefixCls, "-list-item-actions")
     }, previewIcon, mergedStatus === 'done' && downloadIcon, removeIcon));
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var rootPrefixCls = getPrefixCls();
     var dom = /*#__PURE__*/React.createElement("div", {
@@ -153,7 +153,7 @@ define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "@ant-design/ico
     }, function (_ref2) {
       var motionClassName = _ref2.className;
       // show loading icon if upload progress listener is disabled
-      var loadingProgress = 'percent' in file ? ( /*#__PURE__*/React.createElement(_progress["default"], Object.assign({}, progressProps, {
+      var loadingProgress = 'percent' in file ? ( /*#__PURE__*/React.createElement(_index2["default"], Object.assign({}, progressProps, {
         type: "line",
         percent: file.percent,
         "aria-label": file['aria-label'],
@@ -164,7 +164,7 @@ define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "@ant-design/ico
       }, loadingProgress);
     })));
     var message = file.response && typeof file.response === 'string' ? file.response : ((_a = file.error) === null || _a === void 0 ? void 0 : _a.statusText) || ((_b = file.error) === null || _b === void 0 ? void 0 : _b.message) || locale.uploadError;
-    var item = mergedStatus === 'error' ? ( /*#__PURE__*/React.createElement(_tooltip["default"], {
+    var item = mergedStatus === 'error' ? ( /*#__PURE__*/React.createElement(_index3["default"], {
       title: message,
       getPopupContainer: function getPopupContainer(node) {
         return node.parentNode;

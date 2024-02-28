@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@rc-component/tour", "classnames", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/placements", "antd4mx/_util/zindexContext", "antd4mx/config-provider", "antd4mx/theme/internal", "antd4mx/tour/panelRender", "antd4mx/tour/PurePanel", "antd4mx/tour/style"], function (_exports, _react, _tour, _classnames, _useZIndex3, _placements, _zindexContext, _configProvider, _internal, _panelRender, _PurePanel, _style) {
+define(["exports", "react", "@rc-component/tour", "classnames", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/placements", "antd4mx/_util/zindexContext", "antd4mx/config-provider/index", "antd4mx/theme/internal", "antd4mx/tour/panelRender", "antd4mx/tour/PurePanel", "antd4mx/tour/style/index"], function (_exports, _react, _tour, _classnames, _useZIndex3, _placements, _zindexContext, _index, _internal, _panelRender, _PurePanel, _index2) {
   "use strict";
   "use client";
 
@@ -31,12 +31,12 @@ define(["exports", "react", "@rc-component/tour", "classnames", "antd4mx/_util/h
       indicatorsRender = props.indicatorsRender,
       steps = props.steps,
       restProps = __rest(props, ["prefixCls", "type", "rootClassName", "indicatorsRender", "steps"]);
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls,
       direction = _useContext.direction,
       tour = _useContext.tour;
     var prefixCls = getPrefixCls('tour', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4mx/config-provider", "antd4mx/popover", "antd4mx/_util/reactNode", "antd4mx/avatar/avatar", "antd4mx/avatar/AvatarContext", "antd4mx/avatar/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _classnames, _toArray, React, _configProvider, _popover, _reactNode, _avatar, _AvatarContext, _style, _useCSSVarCls) {
+define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4mx/config-provider/index", "antd4mx/popover/index", "antd4mx/_util/reactNode", "antd4mx/avatar/avatar", "antd4mx/avatar/AvatarContext", "antd4mx/avatar/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _classnames, _toArray, React, _index, _index2, _reactNode, _avatar, _AvatarContext, _index3, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -31,7 +31,7 @@ define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4m
     }, props.children);
   };
   var Group = function Group(props) {
-    var _React$useContext2 = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext2 = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext2.getPrefixCls,
       direction = _React$useContext2.direction;
     var customizePrefixCls = props.prefixCls,
@@ -50,7 +50,7 @@ define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4m
     var prefixCls = getPrefixCls('avatar', customizePrefixCls);
     var groupPrefixCls = "".concat(prefixCls, "-group");
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index3["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -65,7 +65,7 @@ define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4m
     if (maxCount && maxCount < numOfChildren) {
       var childrenShow = childrenWithProps.slice(0, maxCount);
       var childrenHidden = childrenWithProps.slice(maxCount, numOfChildren);
-      childrenShow.push( /*#__PURE__*/React.createElement(_popover["default"], {
+      childrenShow.push( /*#__PURE__*/React.createElement(_index2["default"], {
         key: "avatar-popover-key",
         content: childrenHidden,
         trigger: maxPopoverTrigger,

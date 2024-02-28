@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/config-provider", "antd4mx/radio/context", "antd4mx/radio/radio"], function (_exports, React, _configProvider, _context, _radio) {
+define(["exports", "react", "antd4mx/config-provider/index", "antd4mx/radio/context", "antd4mx/radio/radio"], function (_exports, React, _index, _context, _radio) {
   "use strict";
   "use client";
 
@@ -15,7 +15,7 @@ define(["exports", "react", "antd4mx/config-provider", "antd4mx/radio/context", 
     return t;
   };
   var RadioButton = function RadioButton(props, ref) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var customizePrefixCls = props.prefixCls,
       radioProps = __rest(props, ["prefixCls"]);

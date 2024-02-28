@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/QuestionCircleOutlined", "classnames", "react", "antd4mx/grid/col", "antd4mx/locale/en_US", "antd4mx/locale", "antd4mx/tooltip", "antd4mx/form/context"], function (_exports, _QuestionCircleOutlined, _classnames, React, _col, _en_US, _locale, _tooltip, _context) {
+define(["exports", "@ant-design/icons/es/icons/QuestionCircleOutlined", "classnames", "react", "antd4mx/grid/col", "antd4mx/locale/en_US", "antd4mx/locale/index", "antd4mx/tooltip/index", "antd4mx/form/context"], function (_exports, _QuestionCircleOutlined, _classnames, React, _col, _en_US, _index, _index2, _context) {
   "use strict";
   "use client";
 
@@ -46,7 +46,7 @@ define(["exports", "@ant-design/icons/es/icons/QuestionCircleOutlined", "classna
       requiredMark = _ref.requiredMark,
       tooltip = _ref.tooltip;
     var _a;
-    var _useLocale = (0, _locale.useLocale)('Form'),
+    var _useLocale = (0, _index.useLocale)('Form'),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       formLocale = _useLocale2[0];
     var _React$useContext = React.useContext(_context.FormContext),
@@ -76,7 +76,7 @@ define(["exports", "@ant-design/icons/es/icons/QuestionCircleOutlined", "classna
       var _tooltipProps$icon = tooltipProps.icon,
         icon = _tooltipProps$icon === void 0 ? /*#__PURE__*/React.createElement(_QuestionCircleOutlined["default"], null) : _tooltipProps$icon,
         restTooltipProps = __rest(tooltipProps, ["icon"]);
-      var tooltipNode = /*#__PURE__*/React.createElement(_tooltip["default"], Object.assign({}, restTooltipProps), /*#__PURE__*/React.cloneElement(icon, {
+      var tooltipNode = /*#__PURE__*/React.createElement(_index2["default"], Object.assign({}, restTooltipProps), /*#__PURE__*/React.cloneElement(icon, {
         className: "".concat(prefixCls, "-item-tooltip"),
         title: '',
         onClick: function onClick(e) {

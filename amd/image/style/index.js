@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/modal/style", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/internal"], function (_exports, _cssinjs, _tinycolor, _style, _style2, _motion, _internal) {
+define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/modal/style/index", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _tinycolor, _index, _index2, _index3, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -33,7 +33,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/modal/styl
       cursor: 'pointer',
       opacity: 0,
       transition: "opacity ".concat(motionDurationSlow)
-    }, ".".concat(prefixCls, "-mask-info"), Object.assign(Object.assign({}, _style2.textEllipsis), _defineProperty({
+    }, ".".concat(prefixCls, "-mask-info"), Object.assign(Object.assign({}, _index2.textEllipsis), _defineProperty({
       padding: "0 ".concat((0, _cssinjs.unit)(paddingXXS))
     }, iconCls, {
       marginInlineEnd: marginXXS,
@@ -237,7 +237,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/modal/styl
   };
   var genPreviewMotion = function genPreviewMotion(token) {
     var previewCls = token.previewCls;
-    return _defineProperty(_defineProperty({}, "".concat(previewCls, "-root"), (0, _motion.initZoomMotion)(token, 'zoom')), "&", (0, _motion.initFadeMotion)(token, true));
+    return _defineProperty(_defineProperty({}, "".concat(previewCls, "-root"), (0, _index3.initZoomMotion)(token, 'zoom')), "&", (0, _index3.initFadeMotion)(token, true));
   };
   // ============================== Export ==============================
   var prepareComponentToken = _exports.prepareComponentToken = function prepareComponentToken(token) {
@@ -257,7 +257,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/modal/styl
       // FIXME: Shared Token
       imagePreviewSwitchSize: token.controlHeightLG
     });
-    return [genImageStyle(imageToken), genImagePreviewStyle(imageToken), (0, _style.genModalMaskStyle)((0, _internal.mergeToken)(imageToken, {
+    return [genImageStyle(imageToken), genImagePreviewStyle(imageToken), (0, _index.genModalMaskStyle)((0, _internal.mergeToken)(imageToken, {
       componentCls: previewCls
     })), genPreviewMotion(imageToken)];
   }, prepareComponentToken);

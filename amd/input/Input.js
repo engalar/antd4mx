@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-input", "rc-util/es/ref", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/space/Compact", "antd4mx/input/hooks/useRemovePasswordTimeout", "antd4mx/input/style", "antd4mx/input/utils", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/hooks/useVariants", "antd4mx/_util/getAllowClear"], function (_exports, _react, _classnames, _rcInput, _ref2, _statusUtils, _warning, _configProvider, _DisabledContext, _useSize, _context, _Compact, _useRemovePasswordTimeout, _style, _utils, _useCSSVarCls, _useVariants, _getAllowClear) {
+define(["exports", "react", "classnames", "rc-input", "rc-util/es/ref", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/space/Compact", "antd4mx/input/hooks/useRemovePasswordTimeout", "antd4mx/input/style/index", "antd4mx/input/utils", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/hooks/useVariants", "antd4mx/_util/getAllowClear"], function (_exports, _react, _classnames, _rcInput, _ref2, _statusUtils, _warning, _index, _DisabledContext, _useSize, _context, _Compact, _useRemovePasswordTimeout, _index2, _utils, _useCSSVarCls, _useVariants, _getAllowClear) {
   "use strict";
   "use client";
 
@@ -75,7 +75,7 @@ define(["exports", "react", "classnames", "rc-input", "rc-util/es/ref", "antd4mx
         deprecated = _devUseWarning.deprecated;
       deprecated(!('bordered' in props), 'bordered', 'variant');
     }
-    var _React$useContext = _react["default"].useContext(_configProvider.ConfigContext),
+    var _React$useContext = _react["default"].useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       input = _React$useContext.input;
@@ -83,7 +83,7 @@ define(["exports", "react", "classnames", "rc-input", "rc-util/es/ref", "antd4mx
     var inputRef = (0, _react.useRef)(null);
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

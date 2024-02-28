@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/omit", "antd4mx/_util/throttleByAnimationFrame", "antd4mx/config-provider", "antd4mx/affix/style", "antd4mx/affix/utils"], function (_exports, _react, _classnames, _rcResizeObserver, _omit, _throttleByAnimationFrame, _configProvider, _style, _utils) {
+define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/omit", "antd4mx/_util/throttleByAnimationFrame", "antd4mx/config-provider/index", "antd4mx/affix/style/index", "antd4mx/affix/utils"], function (_exports, _react, _classnames, _rcResizeObserver, _omit, _throttleByAnimationFrame, _index, _index2, _utils) {
   "use strict";
   "use client";
 
@@ -36,7 +36,7 @@ define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/omit
       children = props.children,
       target = props.target,
       onChange = props.onChange;
-    var _React$useContext = _react["default"].useContext(_configProvider.ConfigContext),
+    var _React$useContext = _react["default"].useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       getTargetContainer = _React$useContext.getTargetContainer;
     var affixPrefixCls = getPrefixCls('affix', prefixCls);
@@ -189,7 +189,7 @@ define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/omit
     _react["default"].useEffect(function () {
       updatePosition();
     }, [target, offsetTop, offsetBottom]);
-    var _useStyle = (0, _style["default"])(affixPrefixCls),
+    var _useStyle = (0, _index2["default"])(affixPrefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

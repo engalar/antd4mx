@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/DownOutlined", "react", "antd4mx/config-provider", "antd4mx/dropdown/dropdown", "antd4mx/breadcrumb/BreadcrumbSeparator", "antd4mx/breadcrumb/useItemRender", "antd4mx/_util/warning"], function (_exports, _DownOutlined, React, _configProvider, _dropdown, _BreadcrumbSeparator, _useItemRender, _warning) {
+define(["exports", "@ant-design/icons/es/icons/DownOutlined", "react", "antd4mx/config-provider/index", "antd4mx/dropdown/dropdown", "antd4mx/breadcrumb/BreadcrumbSeparator", "antd4mx/breadcrumb/useItemRender", "antd4mx/_util/warning"], function (_exports, _DownOutlined, React, _index, _dropdown, _BreadcrumbSeparator, _useItemRender, _warning) {
   "use strict";
   "use client";
 
@@ -78,7 +78,7 @@ define(["exports", "@ant-design/icons/es/icons/DownOutlined", "react", "antd4mx/
       children = props.children,
       href = props.href,
       restProps = __rest(props, ["prefixCls", "children", "href"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('breadcrumb', customizePrefixCls);
     return /*#__PURE__*/React.createElement(InternalBreadcrumbItem, Object.assign({}, restProps, {

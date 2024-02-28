@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "antd4mx/_util/getRenderPropValue", "antd4mx/_util/motion", "antd4mx/config-provider", "antd4mx/tooltip", "antd4mx/popover/PurePanel", "antd4mx/popover/style"], function (_exports, React, _classnames, _getRenderPropValue, _motion, _configProvider, _tooltip, _PurePanel, _style) {
+define(["exports", "react", "classnames", "antd4mx/_util/getRenderPropValue", "antd4mx/_util/motion", "antd4mx/config-provider/index", "antd4mx/tooltip/index", "antd4mx/popover/PurePanel", "antd4mx/popover/style/index"], function (_exports, React, _classnames, _getRenderPropValue, _motion, _index, _index2, _PurePanel, _index3) {
   "use strict";
   "use client";
 
@@ -49,17 +49,17 @@ define(["exports", "react", "classnames", "antd4mx/_util/getRenderPropValue", "a
       _props$overlayStyle = props.overlayStyle,
       overlayStyle = _props$overlayStyle === void 0 ? {} : _props$overlayStyle,
       otherProps = __rest(props, ["prefixCls", "title", "content", "overlayClassName", "placement", "trigger", "mouseEnterDelay", "mouseLeaveDelay", "overlayStyle"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('popover', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
       cssVarCls = _useStyle2[2];
     var rootPrefixCls = getPrefixCls();
     var overlayCls = (0, _classnames["default"])(overlayClassName, hashId, cssVarCls);
-    return wrapCSSVar( /*#__PURE__*/React.createElement(_tooltip["default"], Object.assign({
+    return wrapCSSVar( /*#__PURE__*/React.createElement(_index2["default"], Object.assign({
       placement: placement,
       trigger: trigger,
       mouseEnterDelay: mouseEnterDelay,

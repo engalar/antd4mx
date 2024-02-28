@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/CloseOutlined", "antd4mx/config-provider/DisabledContext", "antd4mx/locale", "antd4mx/modal/components/NormalCancelBtn", "antd4mx/modal/components/NormalOkBtn", "antd4mx/modal/context", "antd4mx/modal/locale"], function (_exports, _toConsumableArray2, _react, _CloseOutlined, _DisabledContext, _locale, _NormalCancelBtn, _NormalOkBtn, _context, _locale2) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/CloseOutlined", "antd4mx/config-provider/DisabledContext", "antd4mx/locale/index", "antd4mx/modal/components/NormalCancelBtn", "antd4mx/modal/components/NormalOkBtn", "antd4mx/modal/context", "antd4mx/modal/locale"], function (_exports, _toConsumableArray2, _react, _CloseOutlined, _DisabledContext, _index, _NormalCancelBtn, _NormalOkBtn, _context, _locale) {
   "use strict";
   "use client";
 
@@ -31,7 +31,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
       okButtonProps = props.okButtonProps,
       cancelButtonProps = props.cancelButtonProps,
       footer = props.footer;
-    var _useLocale = (0, _locale.useLocale)('Modal', (0, _locale2.getConfirmLocale)()),
+    var _useLocale = (0, _index.useLocale)('Modal', (0, _locale.getConfirmLocale)()),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       locale = _useLocale2[0];
     // ================== Locale Text ==================

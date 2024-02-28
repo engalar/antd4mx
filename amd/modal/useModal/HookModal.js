@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "antd4mx/config-provider", "antd4mx/locale/en_US", "antd4mx/locale/useLocale", "antd4mx/modal/ConfirmDialog"], function (_exports, _toConsumableArray2, React, _configProvider, _en_US, _useLocale3, _ConfirmDialog) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "antd4mx/config-provider/index", "antd4mx/locale/en_US", "antd4mx/locale/useLocale", "antd4mx/modal/ConfirmDialog"], function (_exports, _toConsumableArray2, React, _index, _en_US, _useLocale3, _ConfirmDialog) {
   "use strict";
   "use client";
 
@@ -33,7 +33,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "ant
       _React$useState4 = _slicedToArray(_React$useState3, 2),
       innerConfig = _React$useState4[0],
       setInnerConfig = _React$useState4[1];
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       direction = _React$useContext.direction,
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('modal');

@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-dialog", "antd4mx/_util/PurePanel", "antd4mx/config-provider", "antd4mx/modal/ConfirmDialog", "antd4mx/modal/shared", "antd4mx/modal/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _classnames, _rcDialog, _PurePanel, _configProvider, _ConfirmDialog, _shared, _style, _useCSSVarCls) {
+define(["exports", "react", "classnames", "rc-dialog", "antd4mx/_util/PurePanel", "antd4mx/config-provider/index", "antd4mx/modal/ConfirmDialog", "antd4mx/modal/shared", "antd4mx/modal/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _classnames, _rcDialog, _PurePanel, _index, _ConfirmDialog, _shared, _index2, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -32,12 +32,12 @@ define(["exports", "react", "classnames", "rc-dialog", "antd4mx/_util/PurePanel"
       children = props.children,
       footer = props.footer,
       restProps = __rest(props, ["prefixCls", "className", "closeIcon", "closable", "type", "title", "children", "footer"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var rootPrefixCls = getPrefixCls();
     var prefixCls = customizePrefixCls || getPrefixCls('modal');
     var rootCls = (0, _useCSSVarCls["default"])(rootPrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

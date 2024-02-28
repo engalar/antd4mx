@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/config-provider"], function (_exports, React, _configProvider) {
+define(["exports", "react", "antd4mx/config-provider/index"], function (_exports, React, _index) {
   "use strict";
   "use client";
 
@@ -8,7 +8,7 @@ define(["exports", "react", "antd4mx/config-provider"], function (_exports, Reac
   _exports["default"] = void 0;
   var BreadcrumbSeparator = function BreadcrumbSeparator(_ref) {
     var children = _ref.children;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('breadcrumb');
     return /*#__PURE__*/React.createElement("li", {

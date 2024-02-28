@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/colors", "antd4mx/style", "@ant-design/cssinjs"], function (_exports, _colors, _style, _cssinjs) {
+define(["exports", "@ant-design/colors", "antd4mx/style/index", "@ant-design/cssinjs"], function (_exports, _colors, _index, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -26,7 +26,7 @@ define(["exports", "@ant-design/colors", "antd4mx/style", "@ant-design/cssinjs"]
       '&:hover': {
         background: 'transparent'
       }
-    }, "".concat(itemCls, "-thumbnail"), Object.assign(Object.assign({}, _style.textEllipsis), _defineProperty(_defineProperty({
+    }, "".concat(itemCls, "-thumbnail"), Object.assign(Object.assign({}, _index.textEllipsis), _defineProperty(_defineProperty({
       width: uploadThumbnailSize,
       height: uploadThumbnailSize,
       lineHeight: (0, _cssinjs.unit)(calc(uploadThumbnailSize).add(token.paddingSM).equal()),
@@ -68,7 +68,7 @@ define(["exports", "@ant-design/colors", "antd4mx/style", "@ant-design/cssinjs"]
     var listCls = "".concat(componentCls, "-list");
     var itemCls = "".concat(listCls, "-item");
     var uploadPictureCardSize = token.uploadPicCardSize;
-    return _defineProperty(_defineProperty({}, "\n      ".concat(componentCls, "-wrapper").concat(componentCls, "-picture-card-wrapper,\n      ").concat(componentCls, "-wrapper").concat(componentCls, "-picture-circle-wrapper\n    "), Object.assign(Object.assign({}, (0, _style.clearFix)()), _defineProperty(_defineProperty({
+    return _defineProperty(_defineProperty({}, "\n      ".concat(componentCls, "-wrapper").concat(componentCls, "-picture-card-wrapper,\n      ").concat(componentCls, "-wrapper").concat(componentCls, "-picture-circle-wrapper\n    "), Object.assign(Object.assign({}, (0, _index.clearFix)()), _defineProperty(_defineProperty({
       display: 'inline-block',
       width: '100%'
     }, "".concat(componentCls).concat(componentCls, "-select"), _defineProperty(_defineProperty({

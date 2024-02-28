@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/form/context", "antd4mx/radio", "antd4mx/select"], function (_exports, _react, _context, _radio, _select) {
+define(["exports", "react", "antd4mx/form/context", "antd4mx/radio/index", "antd4mx/select/index"], function (_exports, _react, _context, _index, _index2) {
   "use strict";
   "use client";
 
@@ -39,7 +39,7 @@ define(["exports", "react", "antd4mx/form/context", "antd4mx/radio", "antd4mx/se
         value: index
       });
     }
-    return /*#__PURE__*/React.createElement(_select["default"], {
+    return /*#__PURE__*/React.createElement(_index2["default"], {
       size: fullscreen ? undefined : 'small',
       options: options,
       value: year,
@@ -98,7 +98,7 @@ define(["exports", "react", "antd4mx/form/context", "antd4mx/radio", "antd4mx/se
         value: index
       });
     }
-    return /*#__PURE__*/React.createElement(_select["default"], {
+    return /*#__PURE__*/React.createElement(_index2["default"], {
       size: fullscreen ? undefined : 'small',
       className: "".concat(prefixCls, "-month-select"),
       value: month,
@@ -117,7 +117,7 @@ define(["exports", "react", "antd4mx/form/context", "antd4mx/radio", "antd4mx/se
       mode = props.mode,
       fullscreen = props.fullscreen,
       onModeChange = props.onModeChange;
-    return /*#__PURE__*/React.createElement(_radio.Group, {
+    return /*#__PURE__*/React.createElement(_index.Group, {
       onChange: function onChange(_ref) {
         var value = _ref.target.value;
         onModeChange(value);
@@ -125,9 +125,9 @@ define(["exports", "react", "antd4mx/form/context", "antd4mx/radio", "antd4mx/se
       value: mode,
       size: fullscreen ? undefined : 'small',
       className: "".concat(prefixCls, "-mode-switch")
-    }, /*#__PURE__*/React.createElement(_radio.Button, {
+    }, /*#__PURE__*/React.createElement(_index.Button, {
       value: "month"
-    }, locale.month), /*#__PURE__*/React.createElement(_radio.Button, {
+    }, locale.month), /*#__PURE__*/React.createElement(_index.Button, {
       value: "year"
     }, locale.year));
   }

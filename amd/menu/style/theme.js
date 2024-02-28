@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, _cssinjs, _style) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index"], function (_exports, _cssinjs, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -10,7 +10,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, 
   function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : String(i); }
   function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
   var accessibilityFocus = function accessibilityFocus(token) {
-    return Object.assign({}, (0, _style.genFocusOutline)(token));
+    return Object.assign({}, (0, _index.genFocusOutline)(token));
   };
   var getThemeStyle = function getThemeStyle(token, themeSuffix) {
     var _$concat$concat$conca2;

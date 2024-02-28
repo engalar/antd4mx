@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/InfoCircleFilled", "classnames", "rc-motion", "rc-util/es/pickAttrs", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/alert/style"], function (_exports, React, _CheckCircleFilled, _CloseCircleFilled, _CloseOutlined, _ExclamationCircleFilled, _InfoCircleFilled, _classnames, _rcMotion, _pickAttrs, _reactNode, _warning, _configProvider, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/InfoCircleFilled", "classnames", "rc-motion", "rc-util/es/pickAttrs", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/alert/style/index"], function (_exports, React, _CheckCircleFilled, _CloseCircleFilled, _CloseOutlined, _ExclamationCircleFilled, _InfoCircleFilled, _classnames, _rcMotion, _pickAttrs, _reactNode, _warning, _index, _index2) {
   "use strict";
   "use client";
 
@@ -88,12 +88,12 @@ define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@an
       warning.deprecated(!closeText, 'closeText', 'closeIcon');
     }
     var ref = React.useRef(null);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       alert = _React$useContext.alert;
     var prefixCls = getPrefixCls('alert', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

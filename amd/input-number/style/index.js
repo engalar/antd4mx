@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/style/variants", "antd4mx/style", "antd4mx/style/compact-item", "antd4mx/theme/internal", "antd4mx/input-number/style/token"], function (_exports, _cssinjs, _style, _variants, _style2, _compactItem, _internal, _token) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/input/style/index", "antd4mx/input/style/variants", "antd4mx/style/index", "antd4mx/style/compact-item", "antd4mx/theme/internal", "antd4mx/input-number/style/token"], function (_exports, _cssinjs, _index, _variants, _index2, _compactItem, _internal, _token) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -52,7 +52,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/
       filledHandleBg = token.filledHandleBg,
       lineHeightLG = token.lineHeightLG,
       calc = token.calc;
-    return [_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), (0, _style.genBasicInputStyle)(token)), {
+    return [_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), (0, _index.genBasicInputStyle)(token)), {
       display: 'inline-block',
       width: controlWidth,
       margin: 0,
@@ -97,7 +97,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/
         }
       }),
       // Style for input-group: input with label, with button or dropdown...
-      '&-group': Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), (0, _style.genInputGroupStyle)(token)), {
+      '&-group': Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), (0, _index.genInputGroupStyle)(token)), {
         '&-wrapper': Object.assign(Object.assign(Object.assign(_defineProperty(_defineProperty(_defineProperty({
           display: 'inline-block',
           textAlign: 'start',
@@ -122,7 +122,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/
     }, "&-disabled ".concat(componentCls, "-input"), {
       cursor: 'not-allowed'
     }), componentCls, {
-      '&-input': Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), {
+      '&-input': Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), {
         width: '100%',
         padding: "".concat((0, _cssinjs.unit)(paddingBlock), " ").concat((0, _cssinjs.unit)(paddingInline)),
         textAlign: 'start',
@@ -133,7 +133,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/
         transition: "all ".concat(motionDurationMid, " linear"),
         appearance: 'textfield',
         fontSize: 'inherit'
-      }), (0, _style.genPlaceholderStyle)(token.colorTextPlaceholder)), {
+      }), (0, _index.genPlaceholderStyle)(token.colorTextPlaceholder)), {
         '&[type="number"]::-webkit-inner-spin-button, &[type="number"]::-webkit-outer-spin-button': {
           margin: 0,
           /* stylelint-disable-next-line property-no-vendor-prefix */
@@ -187,7 +187,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/
       }, "\n              ".concat(componentCls, "-handler-up-inner,\n              ").concat(componentCls, "-handler-down-inner\n            "), {
         color: handleHoverColor
       }),
-      '&-up-inner, &-down-inner': Object.assign(Object.assign({}, (0, _style2.resetIcon)()), {
+      '&-up-inner, &-down-inner': Object.assign(Object.assign({}, (0, _index2.resetIcon)()), {
         color: colorTextDescription,
         transition: "all ".concat(motionDurationMid, " linear"),
         userSelect: 'none'
@@ -223,7 +223,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/
       paddingBlockSM = token.paddingBlockSM;
     return _defineProperty({}, "".concat(componentCls, "-affix-wrapper"), Object.assign(Object.assign(_defineProperty({}, "input".concat(componentCls, "-input"), {
       padding: "".concat((0, _cssinjs.unit)(paddingBlock), " 0")
-    }), (0, _style.genBasicInputStyle)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    }), (0, _index.genBasicInputStyle)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       // or number handler will cover form status
       position: 'relative',
       display: 'inline-flex',
@@ -284,7 +284,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/input/
     })));
   };
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('InputNumber', function (token) {
-    var inputNumberToken = (0, _internal.mergeToken)(token, (0, _style.initInputToken)(token));
+    var inputNumberToken = (0, _internal.mergeToken)(token, (0, _index.initInputToken)(token));
     return [genInputNumberStyles(inputNumberToken), genAffixWrapperStyles(inputNumberToken),
     // =====================================================
     // ==             Space Compact                       ==

@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/ExclamationCircleFilled", "classnames", "rc-util/es/hooks/useMergedState", "rc-util/es/KeyCode", "rc-util/es/omit", "antd4mx/_util/reactNode", "antd4mx/config-provider", "antd4mx/popover", "antd4mx/popconfirm/PurePanel", "antd4mx/popconfirm/style"], function (_exports, React, _ExclamationCircleFilled, _classnames, _useMergedState3, _KeyCode, _omit, _reactNode, _configProvider, _popover, _PurePanel, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/ExclamationCircleFilled", "classnames", "rc-util/es/hooks/useMergedState", "rc-util/es/KeyCode", "rc-util/es/omit", "antd4mx/_util/reactNode", "antd4mx/config-provider/index", "antd4mx/popover/index", "antd4mx/popconfirm/PurePanel", "antd4mx/popconfirm/style/index"], function (_exports, React, _ExclamationCircleFilled, _classnames, _useMergedState3, _KeyCode, _omit, _reactNode, _index, _index2, _PurePanel, _index3) {
   "use strict";
   "use client";
 
@@ -37,7 +37,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/ExclamationCircleFilled"
       onOpenChange = props.onOpenChange,
       onVisibleChange = props.onVisibleChange,
       restProps = __rest(props, ["prefixCls", "placement", "trigger", "okType", "icon", "children", "overlayClassName", "onOpenChange", "onVisibleChange"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var _useMergedState = (0, _useMergedState3["default"])(false, {
         value: (_a = props.open) !== null && _a !== void 0 ? _a : props.visible,
@@ -78,10 +78,10 @@ define(["exports", "react", "@ant-design/icons/es/icons/ExclamationCircleFilled"
     };
     var prefixCls = getPrefixCls('popconfirm', customizePrefixCls);
     var overlayClassNames = (0, _classnames["default"])(prefixCls, overlayClassName);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 1),
       wrapCSSVar = _useStyle2[0];
-    return wrapCSSVar( /*#__PURE__*/React.createElement(_popover["default"], Object.assign({}, (0, _omit["default"])(restProps, ['title']), {
+    return wrapCSSVar( /*#__PURE__*/React.createElement(_index2["default"], Object.assign({}, (0, _omit["default"])(restProps, ['title']), {
       trigger: trigger,
       placement: placement,
       onOpenChange: onInternalOpenChange,

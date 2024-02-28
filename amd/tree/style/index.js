@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _style2, _motion, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style/index", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _index2, _index3, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -61,7 +61,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/sty
       nodeSelectedBg = token.nodeSelectedBg,
       nodeHoverBg = token.nodeHoverBg;
     var treeCheckBoxMarginHorizontal = token.paddingXS;
-    return _defineProperty({}, treeCls, Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), (_Object$assign2 = {
+    return _defineProperty({}, treeCls, Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), (_Object$assign2 = {
       background: token.colorBgContainer,
       borderRadius: token.borderRadius,
       transition: "background-color ".concat(token.motionDurationSlow)
@@ -71,7 +71,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/sty
           transform: 'rotate(90deg)'
         }
       })
-    })), "&-focused:not(:hover):not(".concat(treeCls, "-active-focused)"), Object.assign({}, (0, _style2.genFocusOutline)(token))), "".concat(treeCls, "-list-holder-inner"), {
+    })), "&-focused:not(:hover):not(".concat(treeCls, "-active-focused)"), Object.assign({}, (0, _index2.genFocusOutline)(token))), "".concat(treeCls, "-list-holder-inner"), {
       alignItems: 'flex-start'
     }), "&".concat(treeCls, "-block-node"), _defineProperty({}, "".concat(treeCls, "-list-holder-inner"), _defineProperty(_defineProperty({
       alignItems: 'stretch'
@@ -344,6 +344,6 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/sty
   };
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('Tree', function (token, _ref) {
     var prefixCls = _ref.prefixCls;
-    return [_defineProperty({}, token.componentCls, (0, _style.getStyle)("".concat(prefixCls, "-checkbox"), token)), genTreeStyle(prefixCls, token), (0, _motion.genCollapseMotion)(token)];
+    return [_defineProperty({}, token.componentCls, (0, _index.getStyle)("".concat(prefixCls, "-checkbox"), token)), genTreeStyle(prefixCls, token), (0, _index3.genCollapseMotion)(token)];
   }, prepareComponentToken);
 });

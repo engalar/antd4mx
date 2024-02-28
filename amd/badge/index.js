@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-motion", "antd4mx/_util/colors", "antd4mx/_util/reactNode", "antd4mx/config-provider", "antd4mx/badge/Ribbon", "antd4mx/badge/ScrollNumber", "antd4mx/badge/style"], function (_exports, _react, _classnames4, _rcMotion, _colors, _reactNode, _configProvider, _Ribbon, _ScrollNumber, _style) {
+define(["exports", "react", "classnames", "rc-motion", "antd4mx/_util/colors", "antd4mx/_util/reactNode", "antd4mx/config-provider/index", "antd4mx/badge/Ribbon", "antd4mx/badge/ScrollNumber", "antd4mx/badge/style/index"], function (_exports, _react, _classnames4, _rcMotion, _colors, _reactNode, _index, _Ribbon, _ScrollNumber, _index2) {
   "use strict";
   "use client";
 
@@ -51,12 +51,12 @@ define(["exports", "react", "classnames", "rc-motion", "antd4mx/_util/colors", "
       _props$showZero = props.showZero,
       showZero = _props$showZero === void 0 ? false : _props$showZero,
       restProps = __rest(props, ["prefixCls", "scrollNumberPrefixCls", "children", "status", "text", "color", "count", "overflowCount", "dot", "size", "title", "offset", "style", "className", "rootClassName", "classNames", "styles", "showZero"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       badge = _React$useContext.badge;
     var prefixCls = getPrefixCls('badge', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

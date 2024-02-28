@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/EllipsisOutlined", "classnames", "rc-menu", "rc-util", "rc-util/es/omit", "antd4mx/_util/motion", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/menu/hooks/useItems", "antd4mx/menu/MenuContext", "antd4mx/menu/OverrideContext", "antd4mx/menu/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _react, _EllipsisOutlined, _classnames, _rcMenu, _rcUtil, _omit, _motion, _reactNode, _warning, _configProvider, _useItems, _MenuContext, _OverrideContext, _style, _useCSSVarCls) {
+define(["exports", "react", "@ant-design/icons/es/icons/EllipsisOutlined", "classnames", "rc-menu", "rc-util", "rc-util/es/omit", "antd4mx/_util/motion", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/menu/hooks/useItems", "antd4mx/menu/MenuContext", "antd4mx/menu/OverrideContext", "antd4mx/menu/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _react, _EllipsisOutlined, _classnames, _rcMenu, _rcUtil, _omit, _motion, _reactNode, _warning, _index, _useItems, _MenuContext, _OverrideContext, _index2, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -25,7 +25,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/EllipsisOutlined", "clas
     var _a, _b;
     var override = React.useContext(_OverrideContext["default"]);
     var overrideObj = override || {};
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       getPopupContainer = _React$useContext.getPopupContainer,
       direction = _React$useContext.direction,
@@ -91,7 +91,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/EllipsisOutlined", "clas
     };
     var prefixCls = getPrefixCls('menu', customizePrefixCls || overrideObj.prefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls, !override),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls, !override),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

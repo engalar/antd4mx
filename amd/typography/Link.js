@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/_util/warning", "antd4mx/typography/Base"], function (_exports, React, _warning, _Base) {
+define(["exports", "react", "antd4mx/_util/warning", "antd4mx/typography/Base/index"], function (_exports, React, _warning, _index) {
   "use strict";
   "use client";
 
@@ -28,7 +28,7 @@ define(["exports", "react", "antd4mx/_util/warning", "antd4mx/typography/Base"],
     });
     // @ts-expect-error: https://github.com/ant-design/ant-design/issues/26622
     delete mergedProps.navigate;
-    return /*#__PURE__*/React.createElement(_Base["default"], Object.assign({}, mergedProps, {
+    return /*#__PURE__*/React.createElement(_index["default"], Object.assign({}, mergedProps, {
       ref: ref,
       ellipsis: !!ellipsis,
       component: "a"

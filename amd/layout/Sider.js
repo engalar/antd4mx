@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/BarsOutlined", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-util/es/omit", "antd4mx/_util/isNumeric", "antd4mx/config-provider", "antd4mx/layout/context"], function (_exports, _react, _BarsOutlined, _LeftOutlined, _RightOutlined, _classnames, _omit, _isNumeric, _configProvider, _context) {
+define(["exports", "react", "@ant-design/icons/es/icons/BarsOutlined", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-util/es/omit", "antd4mx/_util/isNumeric", "antd4mx/config-provider/index", "antd4mx/layout/context"], function (_exports, _react, _BarsOutlined, _LeftOutlined, _RightOutlined, _classnames, _omit, _isNumeric, _index, _context) {
   "use strict";
   "use client";
 
@@ -132,7 +132,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/BarsOutlined", "@ant-des
     var toggle = function toggle() {
       handleSetCollapsed(!collapsed, 'clickTrigger');
     };
-    var _useContext2 = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext2 = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext2.getPrefixCls;
     var renderSider = function renderSider() {
       var prefixCls = getPrefixCls('layout-sider', customizePrefixCls);

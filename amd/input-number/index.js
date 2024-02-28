@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "@ant-design/icons/es/icons/UpOutlined", "classnames", "rc-input-number", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/form/hooks/useVariants", "antd4mx/space/Compact", "antd4mx/input-number/style"], function (_exports, React, _DownOutlined, _UpOutlined, _classnames, _rcInputNumber, _statusUtils, _warning, _configProvider, _DisabledContext, _useCSSVarCls, _useSize, _context, _useVariants, _Compact, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "@ant-design/icons/es/icons/UpOutlined", "classnames", "rc-input-number", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/form/hooks/useVariants", "antd4mx/space/Compact", "antd4mx/input-number/style/index"], function (_exports, React, _DownOutlined, _UpOutlined, _classnames, _rcInputNumber, _statusUtils, _warning, _index, _DisabledContext, _useCSSVarCls, _useSize, _context, _useVariants, _Compact, _index2) {
   "use strict";
   "use client";
 
@@ -30,7 +30,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "@ant-des
         deprecated = _devUseWarning.deprecated;
       deprecated(!('bordered' in props), 'bordered', 'variant');
     }
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var inputRef = React.useRef(null);
@@ -54,7 +54,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "@ant-des
     var prefixCls = getPrefixCls('input-number', customizePrefixCls);
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -130,7 +130,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "@ant-des
   var TypedInputNumber = InputNumber;
   /** @private Internal Component. Do not use in your production. */
   var PureInputNumber = function PureInputNumber(props) {
-    return /*#__PURE__*/React.createElement(_configProvider["default"], {
+    return /*#__PURE__*/React.createElement(_index["default"], {
       theme: {
         components: {
           InputNumber: {

@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/cssinjs", "antd4mx/version", "antd4mx/theme/context", "antd4mx/theme/themes/seed", "antd4mx/theme/util/alias"], function (_exports, _react, _cssinjs, _version, _context, _seed, _alias) {
+define(["exports", "react", "@ant-design/cssinjs", "antd4mx/version/index", "antd4mx/theme/context", "antd4mx/theme/themes/seed", "antd4mx/theme/util/alias"], function (_exports, _react, _cssinjs, _index, _context, _seed, _alias) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -105,7 +105,7 @@ define(["exports", "react", "@ant-design/cssinjs", "antd4mx/version", "antd4mx/t
       theme = _React$useContext.theme,
       override = _React$useContext.override,
       cssVar = _React$useContext.cssVar;
-    var salt = "".concat(_version["default"], "-").concat(hashed || '');
+    var salt = "".concat(_index["default"], "-").concat(hashed || '');
     var mergedTheme = theme || _context.defaultTheme;
     var _useCacheToken = (0, _cssinjs.useCacheToken)(mergedTheme, [_seed["default"], rootDesignToken], {
         salt: salt,

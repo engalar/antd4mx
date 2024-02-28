@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@rc-component/color-picker", "classnames", "rc-util/es/hooks/useMergedState", "antd4mx/collapse", "antd4mx/locale", "antd4mx/theme/internal", "antd4mx/color-picker/util"], function (_exports, _react, _colorPicker, _classnames, _useMergedState3, _collapse, _locale, _internal, _util) {
+define(["exports", "react", "@rc-component/color-picker", "classnames", "rc-util/es/hooks/useMergedState", "antd4mx/collapse/index", "antd4mx/locale/index", "antd4mx/theme/internal", "antd4mx/color-picker/util"], function (_exports, _react, _colorPicker, _classnames, _useMergedState3, _index, _index2, _internal, _util) {
   "use strict";
   "use client";
 
@@ -44,7 +44,7 @@ define(["exports", "react", "@rc-component/color-picker", "classnames", "rc-util
       presets = _ref2.presets,
       color = _ref2.value,
       onChange = _ref2.onChange;
-    var _useLocale = (0, _locale.useLocale)('ColorPicker'),
+    var _useLocale = (0, _index2.useLocale)('ColorPicker'),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       locale = _useLocale2[0];
     var _useToken = (0, _internal.useToken)(),
@@ -97,7 +97,7 @@ define(["exports", "react", "@rc-component/color-picker", "classnames", "rc-util
     });
     return /*#__PURE__*/_react["default"].createElement("div", {
       className: colorPresetsPrefixCls
-    }, /*#__PURE__*/_react["default"].createElement(_collapse["default"], {
+    }, /*#__PURE__*/_react["default"].createElement(_index["default"], {
       defaultActiveKey: activeKeys,
       ghost: true,
       items: items

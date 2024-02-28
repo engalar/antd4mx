@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-cascader", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/cascader/hooks/useBase", "antd4mx/cascader/hooks/useCheckable", "antd4mx/cascader/hooks/useColumnIcons", "antd4mx/cascader/style", "antd4mx/cascader/style/panel"], function (_exports, React, _classnames, _rcCascader, _defaultRenderEmpty, _useCSSVarCls, _useBase3, _useCheckable, _useColumnIcons3, _style, _panel) {
+define(["exports", "react", "classnames", "rc-cascader", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/cascader/hooks/useBase", "antd4mx/cascader/hooks/useCheckable", "antd4mx/cascader/hooks/useColumnIcons", "antd4mx/cascader/style/index", "antd4mx/cascader/style/panel"], function (_exports, React, _classnames, _rcCascader, _defaultRenderEmpty, _useCSSVarCls, _useBase3, _useCheckable, _useColumnIcons3, _index, _panel) {
   "use strict";
   "use client";
 
@@ -27,7 +27,7 @@ define(["exports", "react", "classnames", "rc-cascader", "antd4mx/config-provide
       mergedDirection = _useBase2[2],
       renderEmpty = _useBase2[3];
     var rootCls = (0, _useCSSVarCls["default"])(cascaderPrefixCls);
-    var _useStyle = (0, _style["default"])(cascaderPrefixCls, rootCls),
+    var _useStyle = (0, _index["default"])(cascaderPrefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

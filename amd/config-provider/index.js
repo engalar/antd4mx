@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/cssinjs", "@ant-design/icons/es/components/Context", "rc-util/es/hooks/useMemo", "rc-util/es/utils/set", "antd4mx/_util/warning", "antd4mx/form/validateMessagesContext", "antd4mx/locale", "antd4mx/locale/context", "antd4mx/locale/en_US", "antd4mx/theme/context", "antd4mx/theme/themes/seed", "antd4mx/config-provider/context", "antd4mx/config-provider/cssVariables", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useConfig", "antd4mx/config-provider/hooks/useTheme", "antd4mx/config-provider/MotionWrapper", "antd4mx/config-provider/PropWarning", "antd4mx/config-provider/SizeContext", "antd4mx/config-provider/style"], function (_exports, React, _cssinjs, _Context, _useMemo, _set, _warning, _validateMessagesContext, _locale, _context, _en_US, _context2, _seed, _context3, _cssVariables, _DisabledContext, _useConfig, _useTheme, _MotionWrapper, _PropWarning, _SizeContext, _style) {
+define(["exports", "react", "@ant-design/cssinjs", "@ant-design/icons/es/components/Context", "rc-util/es/hooks/useMemo", "rc-util/es/utils/set", "antd4mx/_util/warning", "antd4mx/form/validateMessagesContext", "antd4mx/locale/index", "antd4mx/locale/context", "antd4mx/locale/en_US", "antd4mx/theme/context", "antd4mx/theme/themes/seed", "antd4mx/config-provider/context", "antd4mx/config-provider/cssVariables", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useConfig", "antd4mx/config-provider/hooks/useTheme", "antd4mx/config-provider/MotionWrapper", "antd4mx/config-provider/PropWarning", "antd4mx/config-provider/SizeContext", "antd4mx/config-provider/style/index"], function (_exports, React, _cssinjs, _Context, _useMemo, _set, _warning, _validateMessagesContext, _index, _context, _en_US, _context2, _seed, _context3, _cssVariables, _DisabledContext, _useConfig, _useTheme, _MotionWrapper, _PropWarning, _SizeContext, _index2) {
   "use strict";
   "use client";
 
@@ -195,7 +195,7 @@ define(["exports", "react", "@ant-design/cssinjs", "@ant-design/icons/es/compone
     }, [parentContext.getPrefixCls, props.prefixCls]);
     var iconPrefixCls = customIconPrefixCls || parentContext.iconPrefixCls || _context3.defaultIconPrefixCls;
     var csp = customCsp || parentContext.csp;
-    (0, _style["default"])(iconPrefixCls, csp);
+    (0, _index2["default"])(iconPrefixCls, csp);
     var mergedTheme = (0, _useTheme["default"])(theme, parentContext.theme);
     if (process.env.NODE_ENV !== 'production') {
       existThemeConfig = existThemeConfig || !!mergedTheme;
@@ -309,9 +309,9 @@ define(["exports", "react", "@ant-design/cssinjs", "@ant-design/icons/es/compone
       }, childNode);
     }
     if (locale) {
-      childNode = /*#__PURE__*/React.createElement(_locale["default"], {
+      childNode = /*#__PURE__*/React.createElement(_index["default"], {
         locale: locale,
-        _ANT_MARK__: _locale.ANT_MARK
+        _ANT_MARK__: _index.ANT_MARK
       }, childNode);
     }
     if (iconPrefixCls || csp) {

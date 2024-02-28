@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "antd4mx/_util/hooks/useClosable", "antd4mx/config-provider"], function (_exports, React, _classnames, _useClosable3, _configProvider) {
+define(["exports", "react", "classnames", "antd4mx/_util/hooks/useClosable", "antd4mx/config-provider/index"], function (_exports, React, _classnames, _useClosable3, _index) {
   "use strict";
   "use client";
 
@@ -31,7 +31,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/hooks/useClosable", "an
       children = props.children,
       drawerClassNames = props.classNames,
       drawerStyles = props.styles;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       drawerContext = _React$useContext.drawer;
     var customCloseIconRender = React.useCallback(function (icon) {
       return /*#__PURE__*/React.createElement("button", {

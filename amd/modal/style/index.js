@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _style, _motion, _internal, _cssinjs) {
+define(["exports", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _index, _index2, _internal, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -39,7 +39,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/inter
       overflow: 'auto',
       outline: 0,
       WebkitOverflowScrolling: 'touch'
-    }))), _defineProperty({}, "".concat(componentCls, "-root"), (0, _motion.initFadeMotion)(token))];
+    }))), _defineProperty({}, "".concat(componentCls, "-root"), (0, _index2.initFadeMotion)(token))];
   };
   var genModalStyle = function genModalStyle(token) {
     var componentCls = token.componentCls;
@@ -67,7 +67,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/inter
     }), "".concat(componentCls, "-centered"), _defineProperty({}, componentCls, {
       flex: 1
     })))), // ======================== Modal ========================
-    _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       pointerEvents: 'none',
       position: 'relative',
       top: 100,
@@ -126,7 +126,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/inter
       '&:active': {
         backgroundColor: token.closeBtnActiveBg
       }
-    }, (0, _style.genFocusStyle)(token))), "".concat(componentCls, "-header"), {
+    }, (0, _index.genFocusStyle)(token))), "".concat(componentCls, "-header"), {
       color: token.colorText,
       background: token.headerBg,
       borderRadius: "".concat((0, _cssinjs.unit)(token.borderRadiusLG), " ").concat((0, _cssinjs.unit)(token.borderRadiusLG), " 0 0"),
@@ -216,7 +216,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/inter
   };
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('Modal', function (token) {
     var modalToken = prepareToken(token);
-    return [genModalStyle(modalToken), genRTLStyle(modalToken), genModalMaskStyle(modalToken), (0, _motion.initZoomMotion)(modalToken, 'zoom')];
+    return [genModalStyle(modalToken), genRTLStyle(modalToken), genModalMaskStyle(modalToken), (0, _index2.initZoomMotion)(modalToken, 'zoom')];
   }, prepareComponentToken, {
     unitless: {
       titleLineHeight: true

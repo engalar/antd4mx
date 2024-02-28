@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-notification", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/theme/internal", "antd4mx/notification/PurePanel", "antd4mx/notification/style", "antd4mx/notification/util"], function (_exports, _react, _classnames, _rcNotification, _warning, _configProvider, _useCSSVarCls, _internal, _PurePanel, _style, _util) {
+define(["exports", "react", "classnames", "rc-notification", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/theme/internal", "antd4mx/notification/PurePanel", "antd4mx/notification/style/index", "antd4mx/notification/util"], function (_exports, _react, _classnames, _rcNotification, _warning, _index, _useCSSVarCls, _internal, _PurePanel, _index2, _util) {
   "use strict";
   "use client";
 
@@ -32,7 +32,7 @@ define(["exports", "react", "classnames", "rc-notification", "antd4mx/_util/warn
     var children = _ref.children,
       prefixCls = _ref.prefixCls;
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -61,7 +61,7 @@ define(["exports", "react", "classnames", "rc-notification", "antd4mx/_util/warn
       onAllRemoved = props.onAllRemoved,
       stack = props.stack,
       duration = props.duration;
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls,
       getPopupContainer = _useContext.getPopupContainer,
       notification = _useContext.notification,

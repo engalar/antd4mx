@@ -1,4 +1,4 @@
-define(["exports", "react", "rc-util", "rc-util/es/raf", "antd4mx/_util/wave/WaveEffect", "antd4mx/config-provider", "antd4mx/theme/useToken", "antd4mx/_util/wave/interface"], function (_exports, React, _rcUtil, _raf, _WaveEffect, _configProvider, _useToken3, _interface) {
+define(["exports", "react", "rc-util", "rc-util/es/raf", "antd4mx/_util/wave/WaveEffect", "antd4mx/config-provider/index", "antd4mx/theme/useToken", "antd4mx/_util/wave/interface"], function (_exports, React, _rcUtil, _raf, _WaveEffect, _index, _useToken3, _interface) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -12,7 +12,7 @@ define(["exports", "react", "rc-util", "rc-util/es/raf", "antd4mx/_util/wave/Wav
   function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
   function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   function useWave(nodeRef, className, component) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       wave = _React$useContext.wave;
     var _useToken = (0, _useToken3["default"])(),
       _useToken2 = _slicedToArray(_useToken, 3),

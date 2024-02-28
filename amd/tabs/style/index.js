@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/tabs/style/motion"], function (_exports, _cssinjs, _style, _internal, _motion) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal", "antd4mx/tabs/style/motion"], function (_exports, _cssinjs, _index, _internal, _motion) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -68,7 +68,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     var componentCls = token.componentCls,
       itemHoverColor = token.itemHoverColor,
       dropdownEdgeChildVerticalPadding = token.dropdownEdgeChildVerticalPadding;
-    return _defineProperty({}, "".concat(componentCls, "-dropdown"), Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty({
+    return _defineProperty({}, "".concat(componentCls, "-dropdown"), Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty({
       position: 'absolute',
       top: -9999,
       left: {
@@ -96,7 +96,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       borderRadius: token.borderRadiusLG,
       outline: 'none',
       boxShadow: token.boxShadowSecondary,
-      '&-item': Object.assign(Object.assign({}, _style.textEllipsis), {
+      '&-item': Object.assign(Object.assign({}, _index.textEllipsis), {
         display: 'flex',
         alignItems: 'center',
         minWidth: token.tabsDropdownWidth,
@@ -358,7 +358,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
         '&:focus:not(:focus-visible), &:active': {
           color: itemActiveColor
         }
-      }, (0, _style.genFocusStyle)(token)),
+      }, (0, _index.genFocusStyle)(token)),
       '&-btn': _defineProperty({
         outline: 'none',
         transition: 'all 0.3s'
@@ -486,7 +486,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       itemHoverColor = token.itemHoverColor,
       itemActiveColor = token.itemActiveColor,
       colorBorderSecondary = token.colorBorderSecondary;
-    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
       display: 'flex'
     }, "> ".concat(componentCls, "-nav, > div > ").concat(componentCls, "-nav"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'relative',
@@ -564,7 +564,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       '&:active, &:focus:not(:focus-visible)': {
         color: itemActiveColor
       }
-    }, (0, _style.genFocusStyle)(token)))), "".concat(componentCls, "-extra-content"), {
+    }, (0, _index.genFocusStyle)(token)))), "".concat(componentCls, "-extra-content"), {
       flex: 'none'
     }), "".concat(componentCls, "-ink-bar"), {
       position: 'absolute',

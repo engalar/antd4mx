@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/EyeInvisibleOutlined", "@ant-design/icons/es/icons/EyeOutlined", "classnames", "rc-util/es/omit", "rc-util/es/ref", "antd4mx/config-provider", "antd4mx/input/hooks/useRemovePasswordTimeout", "antd4mx/input/Input"], function (_exports, _react, _EyeInvisibleOutlined, _EyeOutlined, _classnames, _omit, _ref, _configProvider, _useRemovePasswordTimeout, _Input) {
+define(["exports", "react", "@ant-design/icons/es/icons/EyeInvisibleOutlined", "@ant-design/icons/es/icons/EyeOutlined", "classnames", "rc-util/es/omit", "rc-util/es/ref", "antd4mx/config-provider/index", "antd4mx/input/hooks/useRemovePasswordTimeout", "antd4mx/input/Input"], function (_exports, _react, _EyeInvisibleOutlined, _EyeOutlined, _classnames, _omit, _ref, _index, _useRemovePasswordTimeout, _Input) {
   "use strict";
   "use client";
 
@@ -90,7 +90,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/EyeInvisibleOutlined", "
       customizeInputPrefixCls = props.inputPrefixCls,
       size = props.size,
       restProps = __rest(props, ["className", "prefixCls", "inputPrefixCls", "size"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var inputPrefixCls = getPrefixCls('input', customizeInputPrefixCls);
     var prefixCls = getPrefixCls('input-password', customizePrefixCls);

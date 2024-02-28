@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/button", "antd4mx/button/buttonHelpers", "antd4mx/modal/context"], function (_exports, _react, _button, _buttonHelpers, _context) {
+define(["exports", "react", "antd4mx/button/index", "antd4mx/button/buttonHelpers", "antd4mx/modal/context"], function (_exports, _react, _index, _buttonHelpers, _context) {
   "use strict";
   "use client";
 
@@ -13,7 +13,7 @@ define(["exports", "react", "antd4mx/button", "antd4mx/button/buttonHelpers", "a
       okType = _useContext.okType,
       okTextLocale = _useContext.okTextLocale,
       onOk = _useContext.onOk;
-    return /*#__PURE__*/_react["default"].createElement(_button["default"], Object.assign({}, (0, _buttonHelpers.convertLegacyProps)(okType), {
+    return /*#__PURE__*/_react["default"].createElement(_index["default"], Object.assign({}, (0, _buttonHelpers.convertLegacyProps)(okType), {
       loading: confirmLoading,
       onClick: onOk
     }, okButtonProps), okTextLocale);

@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/input", "antd4mx/color-picker/color", "antd4mx/color-picker/util"], function (_exports, _react, _input, _color, _util) {
+define(["exports", "react", "antd4mx/input/index", "antd4mx/color-picker/color", "antd4mx/color-picker/util"], function (_exports, _react, _index, _color, _util) {
   "use strict";
   "use client";
 
@@ -39,7 +39,7 @@ define(["exports", "react", "antd4mx/input", "antd4mx/color-picker/color", "antd
         onChange === null || onChange === void 0 ? void 0 : onChange((0, _util.generateColor)(originValue));
       }
     };
-    return /*#__PURE__*/_react["default"].createElement(_input["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_index["default"], {
       className: colorHexInputPrefixCls,
       value: hexValue,
       prefix: "#",

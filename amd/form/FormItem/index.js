@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-field-form", "rc-util/es/hooks/useState", "rc-util/es/ref", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/context", "antd4mx/form/hooks/useChildren", "antd4mx/form/hooks/useFormItemStatus", "antd4mx/form/hooks/useFrameState", "antd4mx/form/hooks/useItemRef", "antd4mx/form/style", "antd4mx/form/util", "antd4mx/form/FormItem/ItemHolder", "antd4mx/form/FormItem/StatusProvider"], function (_exports, _toConsumableArray2, React, _classnames, _rcFieldForm, _useState3, _ref2, _reactNode, _warning, _configProvider, _useCSSVarCls, _context, _useChildren, _useFormItemStatus, _useFrameState3, _useItemRef, _style, _util, _ItemHolder, _StatusProvider) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-field-form", "rc-util/es/hooks/useState", "rc-util/es/ref", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/context", "antd4mx/form/hooks/useChildren", "antd4mx/form/hooks/useFormItemStatus", "antd4mx/form/hooks/useFrameState", "antd4mx/form/hooks/useItemRef", "antd4mx/form/style/index", "antd4mx/form/util", "antd4mx/form/FormItem/ItemHolder", "antd4mx/form/FormItem/StatusProvider"], function (_exports, _toConsumableArray2, React, _classnames, _rcFieldForm, _useState3, _ref2, _reactNode, _warning, _index, _useCSSVarCls, _context, _useChildren, _useFormItemStatus, _useFrameState3, _useItemRef, _index2, _util, _ItemHolder, _StatusProvider) {
   "use strict";
   "use client";
 
@@ -62,7 +62,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
       validateTrigger = props.validateTrigger,
       hidden = props.hidden,
       help = props.help;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var _React$useContext2 = React.useContext(_context.FormContext),
       formName = _React$useContext2.name;
@@ -76,7 +76,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
     var prefixCls = getPrefixCls('form', customizePrefixCls);
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

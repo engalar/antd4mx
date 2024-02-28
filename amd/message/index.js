@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-util/es/React/render", "antd4mx/app/context", "antd4mx/config-provider", "antd4mx/message/PurePanel", "antd4mx/message/useMessage", "antd4mx/message/util"], function (_exports, _toConsumableArray2, _react, _render, _context, _configProvider, _PurePanel, _useMessage, _util) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-util/es/React/render", "antd4mx/app/context", "antd4mx/config-provider/index", "antd4mx/message/PurePanel", "antd4mx/message/useMessage", "antd4mx/message/util"], function (_exports, _toConsumableArray2, _react, _render, _context, _index, _PurePanel, _useMessage, _util) {
   "use strict";
   "use client";
 
@@ -39,7 +39,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-
   var GlobalHolder = /*#__PURE__*/_react["default"].forwardRef(function (props, ref) {
     var messageConfig = props.messageConfig,
       sync = props.sync;
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls;
     var prefixCls = defaultGlobalConfig.prefixCls || getPrefixCls('message');
     var appConfig = (0, _react.useContext)(_context.AppConfigContext);
@@ -73,7 +73,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-
       setMessageConfig(getGlobalContext);
     };
     _react["default"].useEffect(sync, []);
-    var global = (0, _configProvider.globalConfig)();
+    var global = (0, _index.globalConfig)();
     var rootPrefixCls = global.getRootPrefixCls();
     var rootIconPrefixCls = global.getIconPrefixCls();
     var theme = global.getTheme();
@@ -82,7 +82,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-
       sync: sync,
       messageConfig: messageConfig
     });
-    return /*#__PURE__*/_react["default"].createElement(_configProvider["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_index["default"], {
       prefixCls: rootPrefixCls,
       iconPrefixCls: rootIconPrefixCls,
       theme: theme
@@ -194,9 +194,9 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-
     return result;
   }
   function typeOpen(type, args) {
-    var global = (0, _configProvider.globalConfig)();
+    var global = (0, _index.globalConfig)();
     if (process.env.NODE_ENV !== 'production' && !global.holderRender) {
-      (0, _configProvider.warnContext)('message');
+      (0, _index.warnContext)('message');
     }
     var result = (0, _util.wrapPromiseFn)(function (resolve) {
       var closeFn;

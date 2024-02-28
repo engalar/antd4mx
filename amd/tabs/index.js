@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/EllipsisOutlined", "@ant-design/icons/es/icons/PlusOutlined", "classnames", "rc-tabs", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/tabs/hooks/useAnimateConfig", "antd4mx/tabs/hooks/useLegacyItems", "antd4mx/tabs/style", "antd4mx/tabs/TabPane"], function (_exports, React, _CloseOutlined, _EllipsisOutlined, _PlusOutlined, _classnames, _rcTabs, _warning, _configProvider, _useCSSVarCls, _useSize, _useAnimateConfig, _useLegacyItems, _style, _TabPane) {
+define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/EllipsisOutlined", "@ant-design/icons/es/icons/PlusOutlined", "classnames", "rc-tabs", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/tabs/hooks/useAnimateConfig", "antd4mx/tabs/hooks/useLegacyItems", "antd4mx/tabs/style/index", "antd4mx/tabs/TabPane"], function (_exports, React, _CloseOutlined, _EllipsisOutlined, _PlusOutlined, _classnames, _rcTabs, _warning, _index, _useCSSVarCls, _useSize, _useAnimateConfig, _useLegacyItems, _index2, _TabPane) {
   "use strict";
   "use client";
 
@@ -44,14 +44,14 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-de
       indicator = props.indicator,
       otherProps = __rest(props, ["type", "className", "rootClassName", "size", "onEdit", "hideAdd", "centered", "addIcon", "moreIcon", "popupClassName", "children", "items", "animated", "style", "indicatorSize", "indicator"]);
     var customizePrefixCls = otherProps.prefixCls;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       direction = _React$useContext.direction,
       tabs = _React$useContext.tabs,
       getPrefixCls = _React$useContext.getPrefixCls,
       getPopupContainer = _React$useContext.getPopupContainer;
     var prefixCls = getPrefixCls('tabs', customizePrefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "antd4mx/_util/hooks/useClosable", "antd4mx/button", "antd4mx/locale", "antd4mx/locale/en_US"], function (_exports, _toConsumableArray2, _react, _CloseOutlined, _classnames, _useClosable3, _button, _locale, _en_US) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "antd4mx/_util/hooks/useClosable", "antd4mx/button/index", "antd4mx/locale/index", "antd4mx/locale/en_US"], function (_exports, _toConsumableArray2, _react, _CloseOutlined, _classnames, _useClosable3, _index, _index2, _en_US) {
   "use strict";
   "use client";
 
@@ -97,7 +97,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
       type: 'default',
       ghost: mergedType === 'primary'
     };
-    var _useLocale = (0, _locale.useLocale)('Tour', _en_US["default"].Tour),
+    var _useLocale = (0, _index2.useLocale)('Tour', _en_US["default"].Tour),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       contextLocale = _useLocale2[0];
     return /*#__PURE__*/_react["default"].createElement("div", {
@@ -110,11 +110,11 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
       className: "".concat(prefixCls, "-indicators")
     }, mergeIndicatorNode), /*#__PURE__*/_react["default"].createElement("div", {
       className: "".concat(prefixCls, "-buttons")
-    }, current !== 0 ? ( /*#__PURE__*/_react["default"].createElement(_button["default"], Object.assign({}, secondaryBtnProps, prevButtonProps, {
+    }, current !== 0 ? ( /*#__PURE__*/_react["default"].createElement(_index["default"], Object.assign({}, secondaryBtnProps, prevButtonProps, {
       onClick: prevBtnClick,
       size: "small",
       className: (0, _classnames["default"])("".concat(prefixCls, "-prev-btn"), prevButtonProps === null || prevButtonProps === void 0 ? void 0 : prevButtonProps.className)
-    }), (_a = prevButtonProps === null || prevButtonProps === void 0 ? void 0 : prevButtonProps.children) !== null && _a !== void 0 ? _a : contextLocale === null || contextLocale === void 0 ? void 0 : contextLocale.Previous)) : null, /*#__PURE__*/_react["default"].createElement(_button["default"], Object.assign({
+    }), (_a = prevButtonProps === null || prevButtonProps === void 0 ? void 0 : prevButtonProps.children) !== null && _a !== void 0 ? _a : contextLocale === null || contextLocale === void 0 ? void 0 : contextLocale.Previous)) : null, /*#__PURE__*/_react["default"].createElement(_index["default"], Object.assign({
       type: mainBtnType
     }, nextButtonProps, {
       onClick: nextBtnClick,

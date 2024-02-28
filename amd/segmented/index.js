@@ -1,4 +1,4 @@
-define(["exports", "classnames", "rc-segmented", "react", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/segmented/style"], function (_exports, _classnames, _rcSegmented, React, _configProvider, _useSize, _style) {
+define(["exports", "classnames", "rc-segmented", "react", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/segmented/style/index"], function (_exports, _classnames, _rcSegmented, React, _index, _useSize, _index2) {
   "use strict";
   "use client";
 
@@ -38,13 +38,13 @@ define(["exports", "classnames", "rc-segmented", "react", "antd4mx/config-provid
       customSize = _props$size === void 0 ? 'middle' : _props$size,
       style = props.style,
       restProps = __rest(props, ["prefixCls", "className", "rootClassName", "block", "options", "size", "style"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       segmented = _React$useContext.segmented;
     var prefixCls = getPrefixCls('segmented', customizePrefixCls);
     // Style
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/FileOutlined", "@ant-design/icons/es/icons/FolderOpenOutlined", "@ant-design/icons/es/icons/FolderOutlined", "classnames", "rc-tree/es/util", "rc-tree/es/utils/treeUtil", "antd4mx/config-provider", "antd4mx/tree/Tree", "antd4mx/tree/utils/dictUtil"], function (_exports, _toConsumableArray2, React, _FileOutlined, _FolderOpenOutlined, _FolderOutlined, _classnames, _util, _treeUtil, _configProvider, _Tree, _dictUtil) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/FileOutlined", "@ant-design/icons/es/icons/FolderOpenOutlined", "@ant-design/icons/es/icons/FolderOutlined", "classnames", "rc-tree/es/util", "rc-tree/es/utils/treeUtil", "antd4mx/config-provider/index", "antd4mx/tree/Tree", "antd4mx/tree/utils/dictUtil"], function (_exports, _toConsumableArray2, React, _FileOutlined, _FolderOpenOutlined, _FolderOutlined, _classnames, _util, _treeUtil, _index, _Tree, _dictUtil) {
   "use strict";
   "use client";
 
@@ -134,7 +134,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
         setSelectedKeys(newSelectedKeys);
       }
     };
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var customizePrefixCls = props.prefixCls,

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "antd4mx/_util/PurePanel", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider/context", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/popover", "antd4mx/color-picker/ColorPickerPanel", "antd4mx/color-picker/components/ColorTrigger", "antd4mx/color-picker/hooks/useColorState", "antd4mx/color-picker/style", "antd4mx/color-picker/util"], function (_exports, _react, _classnames, _useMergedState5, _PurePanel, _statusUtils, _warning, _context, _DisabledContext, _useCSSVarCls, _useSize, _context2, _popover, _ColorPickerPanel, _ColorTrigger, _useColorState3, _style, _util) {
+define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "antd4mx/_util/PurePanel", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider/context", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/popover/index", "antd4mx/color-picker/ColorPickerPanel", "antd4mx/color-picker/components/ColorTrigger", "antd4mx/color-picker/hooks/useColorState", "antd4mx/color-picker/style/index", "antd4mx/color-picker/util"], function (_exports, _react, _classnames, _useMergedState5, _PurePanel, _statusUtils, _warning, _context, _DisabledContext, _useCSSVarCls, _useSize, _context2, _index, _ColorPickerPanel, _ColorTrigger, _useColorState3, _index2, _util) {
   "use strict";
   "use client";
 
@@ -106,7 +106,7 @@ define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "an
     // ===================== Style =====================
     var mergedSize = (0, _useSize["default"])(customizeSize);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -182,7 +182,7 @@ define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "an
     };
     var mergedStyle = Object.assign(Object.assign({}, colorPicker === null || colorPicker === void 0 ? void 0 : colorPicker.style), style);
     // ============================ zIndex ============================
-    return wrapCSSVar( /*#__PURE__*/_react["default"].createElement(_popover["default"], Object.assign({
+    return wrapCSSVar( /*#__PURE__*/_react["default"].createElement(_index["default"], Object.assign({
       style: styles === null || styles === void 0 ? void 0 : styles.popup,
       overlayInnerStyle: styles === null || styles === void 0 ? void 0 : styles.popupOverlayInner,
       onOpenChange: function onOpenChange(visible) {

@@ -1,4 +1,4 @@
-define(["exports", "rc-util/es/hooks/useState", "react", "antd4mx/button", "antd4mx/button/buttonHelpers"], function (_exports, _useState3, React, _button, _buttonHelpers) {
+define(["exports", "rc-util/es/hooks/useState", "react", "antd4mx/button/index", "antd4mx/button/buttonHelpers"], function (_exports, _useState3, React, _index, _buttonHelpers) {
   "use strict";
   "use client";
 
@@ -99,7 +99,7 @@ define(["exports", "rc-util/es/hooks/useState", "react", "antd4mx/button", "antd
       }
       handlePromiseOnOk(returnValueOfOnOk);
     };
-    return /*#__PURE__*/React.createElement(_button["default"], Object.assign({}, (0, _buttonHelpers.convertLegacyProps)(type), {
+    return /*#__PURE__*/React.createElement(_index["default"], Object.assign({}, (0, _buttonHelpers.convertLegacyProps)(type), {
       onClick: onClick,
       loading: loading,
       prefixCls: prefixCls

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "classnames", "react", "rc-util/es/pickAttrs", "antd4mx/config-provider", "antd4mx/skeleton", "antd4mx/statistic/Number", "antd4mx/statistic/style"], function (_exports, _classnames, React, _pickAttrs, _configProvider, _skeleton, _Number, _style) {
+define(["exports", "classnames", "react", "rc-util/es/pickAttrs", "antd4mx/config-provider/index", "antd4mx/skeleton/index", "antd4mx/statistic/Number", "antd4mx/statistic/style/index"], function (_exports, _classnames, React, _pickAttrs, _index, _index2, _Number, _index3) {
   "use strict";
   "use client";
 
@@ -47,12 +47,12 @@ define(["exports", "classnames", "react", "rc-util/es/pickAttrs", "antd4mx/confi
       onMouseEnter = props.onMouseEnter,
       onMouseLeave = props.onMouseLeave,
       rest = __rest(props, ["prefixCls", "className", "rootClassName", "style", "valueStyle", "value", "title", "valueRender", "prefix", "suffix", "loading", "formatter", "precision", "decimalSeparator", "groupSeparator", "onMouseEnter", "onMouseLeave"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       statistic = _React$useContext.statistic;
     var prefixCls = getPrefixCls('statistic', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -77,7 +77,7 @@ define(["exports", "classnames", "react", "rc-util/es/pickAttrs", "antd4mx/confi
       onMouseLeave: onMouseLeave
     }), title && /*#__PURE__*/React.createElement("div", {
       className: "".concat(prefixCls, "-title")
-    }, title), /*#__PURE__*/React.createElement(_skeleton["default"], {
+    }, title), /*#__PURE__*/React.createElement(_index2["default"], {
       paragraph: false,
       loading: loading,
       className: "".concat(prefixCls, "-skeleton")

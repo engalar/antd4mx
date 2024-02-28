@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style"], function (_exports, _style) {
+define(["exports", "antd4mx/style/index"], function (_exports, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -11,7 +11,7 @@ define(["exports", "antd4mx/style"], function (_exports, _style) {
   function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
   var genEllipsisStyle = function genEllipsisStyle(token) {
     var componentCls = token.componentCls;
-    return _defineProperty({}, "".concat(componentCls, "-wrapper"), _defineProperty({}, "".concat(componentCls, "-cell-ellipsis"), Object.assign(Object.assign({}, _style.textEllipsis), _defineProperty(_defineProperty({
+    return _defineProperty({}, "".concat(componentCls, "-wrapper"), _defineProperty({}, "".concat(componentCls, "-cell-ellipsis"), Object.assign(Object.assign({}, _index.textEllipsis), _defineProperty(_defineProperty({
       wordBreak: 'keep-all'
     }, "\n          &".concat(componentCls, "-cell-fix-left-last,\n          &").concat(componentCls, "-cell-fix-right-first\n        "), _defineProperty({
       overflow: 'visible'

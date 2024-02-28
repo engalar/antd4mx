@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/SearchOutlined", "classnames", "rc-util/es/ref", "antd4mx/_util/reactNode", "antd4mx/button", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/space/Compact", "antd4mx/input/Input"], function (_exports, React, _SearchOutlined, _classnames, _ref, _reactNode, _button, _configProvider, _useSize, _Compact, _Input) {
+define(["exports", "react", "@ant-design/icons/es/icons/SearchOutlined", "classnames", "rc-util/es/ref", "antd4mx/_util/reactNode", "antd4mx/button/index", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/space/Compact", "antd4mx/input/Input"], function (_exports, React, _SearchOutlined, _classnames, _ref, _reactNode, _index, _index2, _useSize, _Compact, _Input) {
   "use strict";
   "use client";
 
@@ -34,7 +34,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/SearchOutlined", "classn
       onCompositionStart = props.onCompositionStart,
       onCompositionEnd = props.onCompositionEnd,
       restProps = __rest(props, ["prefixCls", "inputPrefixCls", "className", "size", "suffix", "enterButton", "addonAfter", "loading", "disabled", "onSearch", "onChange", "onCompositionStart", "onCompositionEnd"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var composedRef = React.useRef(false);
@@ -96,7 +96,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/SearchOutlined", "classn
         size: size
       } : {}));
     } else {
-      button = /*#__PURE__*/React.createElement(_button["default"], {
+      button = /*#__PURE__*/React.createElement(_index["default"], {
         className: btnClassName,
         type: enterButton ? 'primary' : undefined,
         size: size,

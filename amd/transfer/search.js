@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/SearchOutlined", "react", "antd4mx/input"], function (_exports, _SearchOutlined, React, _input) {
+define(["exports", "@ant-design/icons/es/icons/SearchOutlined", "react", "antd4mx/input/index"], function (_exports, _SearchOutlined, React, _index) {
   "use strict";
   "use client";
 
@@ -20,7 +20,7 @@ define(["exports", "@ant-design/icons/es/icons/SearchOutlined", "react", "antd4m
         handleClear === null || handleClear === void 0 ? void 0 : handleClear();
       }
     }, [onChange]);
-    return /*#__PURE__*/React.createElement(_input["default"], {
+    return /*#__PURE__*/React.createElement(_index["default"], {
       placeholder: placeholder,
       className: prefixCls,
       value: value,

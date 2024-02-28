@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/VerticalAlignTopOutlined", "classnames", "rc-motion", "rc-util/es/omit", "antd4mx/_util/getScroll", "antd4mx/_util/reactNode", "antd4mx/_util/scrollTo", "antd4mx/_util/throttleByAnimationFrame", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/back-top/style"], function (_exports, React, _VerticalAlignTopOutlined, _classnames, _rcMotion, _omit, _getScroll, _reactNode, _scrollTo, _throttleByAnimationFrame, _warning, _configProvider, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/VerticalAlignTopOutlined", "classnames", "rc-motion", "rc-util/es/omit", "antd4mx/_util/getScroll", "antd4mx/_util/reactNode", "antd4mx/_util/scrollTo", "antd4mx/_util/throttleByAnimationFrame", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/back-top/style/index"], function (_exports, React, _VerticalAlignTopOutlined, _classnames, _rcMotion, _omit, _getScroll, _reactNode, _scrollTo, _throttleByAnimationFrame, _warning, _index, _index2) {
   "use strict";
   "use client";
 
@@ -61,12 +61,12 @@ define(["exports", "react", "@ant-design/icons/es/icons/VerticalAlignTopOutlined
       });
       onClick === null || onClick === void 0 ? void 0 : onClick(e);
     };
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var prefixCls = getPrefixCls('back-top', customizePrefixCls);
     var rootPrefixCls = getPrefixCls();
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

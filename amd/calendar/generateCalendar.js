@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-picker", "rc-util/es/hooks/useMergedState", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/locale", "antd4mx/calendar/Header", "antd4mx/calendar/locale/en_US", "antd4mx/calendar/style"], function (_exports, React, _classnames, _rcPicker, _useMergedState5, _warning, _configProvider, _locale, _Header, _en_US, _style) {
+define(["exports", "react", "classnames", "rc-picker", "rc-util/es/hooks/useMergedState", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/locale/index", "antd4mx/calendar/Header", "antd4mx/calendar/locale/en_US", "antd4mx/calendar/style/index"], function (_exports, React, _classnames, _rcPicker, _useMergedState5, _warning, _index, _index2, _Header, _en_US, _index3) {
   "use strict";
   "use client";
 
@@ -48,13 +48,13 @@ define(["exports", "react", "classnames", "rc-picker", "rc-util/es/hooks/useMerg
         onChange = props.onChange,
         onPanelChange = props.onPanelChange,
         onSelect = props.onSelect;
-      var _React$useContext = React.useContext(_configProvider.ConfigContext),
+      var _React$useContext = React.useContext(_index.ConfigContext),
         getPrefixCls = _React$useContext.getPrefixCls,
         direction = _React$useContext.direction,
         calendar = _React$useContext.calendar;
       var prefixCls = getPrefixCls('picker', customizePrefixCls);
       var calendarPrefixCls = "".concat(prefixCls, "-calendar");
-      var _useStyle = (0, _style["default"])(prefixCls, calendarPrefixCls),
+      var _useStyle = (0, _index3["default"])(prefixCls, calendarPrefixCls),
         _useStyle2 = _slicedToArray(_useStyle, 3),
         wrapCSSVar = _useStyle2[0],
         hashId = _useStyle2[1],
@@ -157,7 +157,7 @@ define(["exports", "react", "classnames", "rc-picker", "rc-util/es/hooks/useMerg
           className: "".concat(calendarPrefixCls, "-date-content")
         }, cellRender ? cellRender(date, info) : monthCellRender && monthCellRender(date)));
       }, [monthFullCellRender, monthCellRender, cellRender, fullCellRender]);
-      var _useLocale = (0, _locale.useLocale)('Calendar', getDefaultLocale),
+      var _useLocale = (0, _index2.useLocale)('Calendar', getDefaultLocale),
         _useLocale2 = _slicedToArray(_useLocale, 1),
         contextLocale = _useLocale2[0];
       var mergedCellRender = function mergedCellRender(current, info) {

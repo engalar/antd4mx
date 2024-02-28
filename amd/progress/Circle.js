@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "classnames", "rc-progress", "react", "antd4mx/tooltip", "antd4mx/progress/utils"], function (_exports, _classnames, _rcProgress, React, _tooltip, _utils) {
+define(["exports", "classnames", "rc-progress", "react", "antd4mx/tooltip/index", "antd4mx/progress/utils"], function (_exports, _classnames, _rcProgress, React, _index, _utils) {
   "use strict";
   "use client";
 
@@ -80,7 +80,7 @@ define(["exports", "classnames", "rc-progress", "react", "antd4mx/tooltip", "ant
     return /*#__PURE__*/React.createElement("div", {
       className: wrapperClassName,
       style: circleStyle
-    }, width <= 20 ? ( /*#__PURE__*/React.createElement(_tooltip["default"], {
+    }, width <= 20 ? ( /*#__PURE__*/React.createElement(_index["default"], {
       title: children
     }, /*#__PURE__*/React.createElement("span", null, circleContent))) : ( /*#__PURE__*/React.createElement(React.Fragment, null, circleContent, children)));
   };

@@ -1,4 +1,4 @@
-define(["exports", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "antd4mx/style/roundedArrow", "@ant-design/cssinjs"], function (_exports, _tinycolor, _style, _placementArrow, _internal, _roundedArrow, _cssinjs) {
+define(["exports", "@ctrl/tinycolor", "antd4mx/style/index", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "antd4mx/style/roundedArrow", "@ant-design/cssinjs"], function (_exports, _tinycolor, _index, _placementArrow, _internal, _roundedArrow, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -36,7 +36,7 @@ define(["exports", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/style/placementA
       motionDurationSlow = token.motionDurationSlow,
       antCls = token.antCls,
       primaryPrevBtnBg = token.primaryPrevBtnBg;
-    return [_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return [_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
       color: colorText,
       position: 'absolute',
       zIndex: tourZIndexPopup,

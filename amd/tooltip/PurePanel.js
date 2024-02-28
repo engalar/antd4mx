@@ -1,4 +1,4 @@
-define(["exports", "classnames", "rc-tooltip", "react", "antd4mx/config-provider", "antd4mx/tooltip/style", "antd4mx/tooltip/util"], function (_exports, _classnames, _rcTooltip, React, _configProvider, _style, _util) {
+define(["exports", "classnames", "rc-tooltip", "react", "antd4mx/config-provider/index", "antd4mx/tooltip/style/index", "antd4mx/tooltip/util"], function (_exports, _classnames, _rcTooltip, React, _index, _index2, _util) {
   "use strict";
   "use client";
 
@@ -21,10 +21,10 @@ define(["exports", "classnames", "rc-tooltip", "react", "antd4mx/config-provider
       title = props.title,
       color = props.color,
       overlayInnerStyle = props.overlayInnerStyle;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('tooltip', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

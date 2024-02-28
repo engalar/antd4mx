@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/theme/interface", "antd4mx/theme/useToken", "antd4mx/theme/util/genComponentStyleHook", "antd4mx/theme/util/genPresetColor", "antd4mx/theme/util/statistic", "antd4mx/theme/util/useResetIconStyle", "antd4mx/theme/util/calc", "antd4mx/theme/themes/shared/genFontSizes", "antd4mx/theme/context"], function (_exports, _cssinjs, _interface, _useToken, _genComponentStyleHook, _genPresetColor, _statistic, _useResetIconStyle, _calc, _genFontSizes, _context) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/theme/interface/index", "antd4mx/theme/useToken", "antd4mx/theme/util/genComponentStyleHook", "antd4mx/theme/util/genPresetColor", "antd4mx/theme/util/statistic", "antd4mx/theme/util/useResetIconStyle", "antd4mx/theme/util/calc/index", "antd4mx/theme/themes/shared/genFontSizes", "antd4mx/theme/context"], function (_exports, _cssinjs, _index, _useToken, _genComponentStyleHook, _genPresetColor, _statistic, _useResetIconStyle, _index2, _genFontSizes, _context) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -13,13 +13,13 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/theme/interface", "antd4mx/th
   Object.defineProperty(_exports, "PresetColors", {
     enumerable: true,
     get: function get() {
-      return _interface.PresetColors;
+      return _index.PresetColors;
     }
   });
   Object.defineProperty(_exports, "calc", {
     enumerable: true,
     get: function get() {
-      return _calc["default"];
+      return _index2["default"];
     }
   });
   Object.defineProperty(_exports, "defaultConfig", {

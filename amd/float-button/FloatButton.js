@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/badge", "antd4mx/config-provider", "antd4mx/tooltip", "antd4mx/float-button/context", "antd4mx/float-button/FloatButtonContent", "antd4mx/float-button/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _react, _classnames, _omit, _warning, _badge, _configProvider, _tooltip, _context, _FloatButtonContent, _style, _useCSSVarCls) {
+define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/badge/index", "antd4mx/config-provider/index", "antd4mx/tooltip/index", "antd4mx/float-button/context", "antd4mx/float-button/FloatButtonContent", "antd4mx/float-button/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _react, _classnames, _omit, _warning, _index, _index2, _index3, _context, _FloatButtonContent, _index4, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -39,13 +39,13 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warn
       _props$badge = props.badge,
       badge = _props$badge === void 0 ? {} : _props$badge,
       restProps = __rest(props, ["prefixCls", "className", "rootClassName", "type", "shape", "icon", "description", "tooltip", "badge"]);
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index2.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls,
       direction = _useContext.direction;
     var groupShape = (0, _react.useContext)(_context["default"]);
     var prefixCls = getPrefixCls(floatButtonPrefixCls, customizePrefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index4["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -68,10 +68,10 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warn
       className: "".concat(prefixCls, "-body")
     }, /*#__PURE__*/_react["default"].createElement(_FloatButtonContent["default"], Object.assign({}, contentProps)));
     if ('badge' in props) {
-      buttonNode = /*#__PURE__*/_react["default"].createElement(_badge["default"], Object.assign({}, badgeProps), buttonNode);
+      buttonNode = /*#__PURE__*/_react["default"].createElement(_index["default"], Object.assign({}, badgeProps), buttonNode);
     }
     if ('tooltip' in props) {
-      buttonNode = /*#__PURE__*/_react["default"].createElement(_tooltip["default"], {
+      buttonNode = /*#__PURE__*/_react["default"].createElement(_index3["default"], {
         title: tooltip,
         placement: direction === 'rtl' ? 'right' : 'left'
       }, buttonNode);

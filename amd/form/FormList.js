@@ -1,4 +1,4 @@
-define(["exports", "react", "rc-field-form", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/form/context"], function (_exports, React, _rcFieldForm, _warning, _configProvider, _context) {
+define(["exports", "react", "rc-field-form", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/form/context"], function (_exports, React, _rcFieldForm, _warning, _index, _context) {
   "use strict";
   "use client";
 
@@ -22,7 +22,7 @@ define(["exports", "react", "rc-field-form", "antd4mx/_util/warning", "antd4mx/c
       var warning = (0, _warning.devUseWarning)('Form.List');
       process.env.NODE_ENV !== "production" ? warning(typeof props.name === 'number' || (Array.isArray(props.name) ? !!props.name.length : !!props.name), 'usage', 'Miss `name` prop.') : void 0;
     }
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('form', customizePrefixCls);
     var contextValue = React.useMemo(function () {

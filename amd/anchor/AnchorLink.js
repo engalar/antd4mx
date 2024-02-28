@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/anchor/context"], function (_exports, React, _classnames, _warning, _configProvider, _context) {
+define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/anchor/context"], function (_exports, React, _classnames, _warning, _index, _context) {
   "use strict";
   "use client";
 
@@ -48,7 +48,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/conf
       var warning = (0, _warning.devUseWarning)('Anchor.Link');
       process.env.NODE_ENV !== "production" ? warning(!children || direction !== 'horizontal', 'usage', '`Anchor.Link children` is not supported when `Anchor` direction is horizontal') : void 0;
     }
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('anchor', customizePrefixCls);
     var active = activeLink === href;

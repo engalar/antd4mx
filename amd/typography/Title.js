@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/_util/warning", "antd4mx/typography/Base"], function (_exports, React, _warning, _Base) {
+define(["exports", "react", "antd4mx/_util/warning", "antd4mx/typography/Base/index"], function (_exports, React, _warning, _index) {
   "use strict";
   "use client";
 
@@ -29,7 +29,7 @@ define(["exports", "react", "antd4mx/_util/warning", "antd4mx/typography/Base"],
     } else {
       component = 'h1';
     }
-    return /*#__PURE__*/React.createElement(_Base["default"], Object.assign({
+    return /*#__PURE__*/React.createElement(_index["default"], Object.assign({
       ref: ref
     }, restProps, {
       component: component

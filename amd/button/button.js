@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-util/es/omit", "rc-util/es/ref", "antd4mx/_util/warning", "antd4mx/_util/wave", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/space/Compact", "antd4mx/button/button-group", "antd4mx/button/buttonHelpers", "antd4mx/button/IconWrapper", "antd4mx/button/LoadingIcon", "antd4mx/button/style", "antd4mx/button/style/compactCmp"], function (_exports, _react, _classnames, _omit, _ref, _warning, _wave, _configProvider, _DisabledContext, _useSize, _Compact, _buttonGroup, _buttonHelpers, _IconWrapper, _LoadingIcon, _style, _compactCmp) {
+define(["exports", "react", "classnames", "rc-util/es/omit", "rc-util/es/ref", "antd4mx/_util/warning", "antd4mx/_util/wave/index", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/space/Compact", "antd4mx/button/button-group", "antd4mx/button/buttonHelpers", "antd4mx/button/IconWrapper", "antd4mx/button/LoadingIcon", "antd4mx/button/style/index", "antd4mx/button/style/compactCmp"], function (_exports, _react, _classnames, _omit, _ref, _warning, _index, _index2, _DisabledContext, _useSize, _Compact, _buttonGroup, _buttonHelpers, _IconWrapper, _LoadingIcon, _index3, _compactCmp) {
   "use strict";
   "use client";
 
@@ -67,13 +67,13 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "rc-util/es/ref", "
       _props$style = props.style,
       customStyle = _props$style === void 0 ? {} : _props$style,
       rest = __rest(props, ["loading", "prefixCls", "type", "danger", "shape", "size", "styles", "disabled", "className", "rootClassName", "children", "icon", "ghost", "block", "htmlType", "classNames", "style"]);
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index2.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls,
       autoInsertSpaceInButton = _useContext.autoInsertSpaceInButton,
       direction = _useContext.direction,
       button = _useContext.button;
     var prefixCls = getPrefixCls('btn', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -193,7 +193,7 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "rc-util/es/ref", "
       prefixCls: prefixCls
     }));
     if (!(0, _buttonHelpers.isUnBorderedButtonType)(type)) {
-      buttonNode = /*#__PURE__*/_react["default"].createElement(_wave["default"], {
+      buttonNode = /*#__PURE__*/_react["default"].createElement(_index["default"], {
         component: "Button",
         disabled: !!innerLoading
       }, buttonNode);

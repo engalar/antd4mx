@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/StarFilled", "classnames", "rc-rate", "react", "antd4mx/config-provider", "antd4mx/tooltip", "antd4mx/rate/style"], function (_exports, _StarFilled, _classnames, _rcRate, React, _configProvider, _tooltip, _style) {
+define(["exports", "@ant-design/icons/es/icons/StarFilled", "classnames", "rc-rate", "react", "antd4mx/config-provider/index", "antd4mx/tooltip/index", "antd4mx/rate/style/index"], function (_exports, _StarFilled, _classnames, _rcRate, React, _index, _index2, _index3) {
   "use strict";
   "use client";
 
@@ -34,17 +34,17 @@ define(["exports", "@ant-design/icons/es/icons/StarFilled", "classnames", "rc-ra
       if (!tooltips) {
         return node;
       }
-      return /*#__PURE__*/React.createElement(_tooltip["default"], {
+      return /*#__PURE__*/React.createElement(_index2["default"], {
         title: tooltips[index]
       }, node);
     };
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       rate = _React$useContext.rate;
     var ratePrefixCls = getPrefixCls('rate', prefixCls);
     // Style
-    var _useStyle = (0, _style["default"])(ratePrefixCls),
+    var _useStyle = (0, _index3["default"])(ratePrefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

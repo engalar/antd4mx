@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/InfoCircleFilled", "@ant-design/icons/es/icons/LoadingOutlined", "classnames", "rc-notification", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/notification/style", "antd4mx/notification/style/pure-panel"], function (_exports, React, _CheckCircleFilled, _CloseCircleFilled, _CloseOutlined, _ExclamationCircleFilled, _InfoCircleFilled, _LoadingOutlined, _classnames, _rcNotification, _configProvider, _useCSSVarCls, _style, _purePanel) {
+define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/InfoCircleFilled", "@ant-design/icons/es/icons/LoadingOutlined", "classnames", "rc-notification", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/notification/style/index", "antd4mx/notification/style/pure-panel"], function (_exports, React, _CheckCircleFilled, _CloseCircleFilled, _CloseOutlined, _ExclamationCircleFilled, _InfoCircleFilled, _LoadingOutlined, _classnames, _rcNotification, _index, _useCSSVarCls, _index2, _purePanel) {
   "use strict";
   "use client";
 
@@ -92,12 +92,12 @@ define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@an
       closeIcon = props.closeIcon,
       notificationClassName = props.className,
       restProps = __rest(props, ["prefixCls", "className", "icon", "type", "message", "description", "btn", "closable", "closeIcon", "className"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = staticPrefixCls || getPrefixCls('notification');
     var noticePrefixCls = "".concat(prefixCls, "-notice");
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

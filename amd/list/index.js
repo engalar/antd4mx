@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames", "react", "antd4mx/_util/extendsObject", "antd4mx/_util/responsiveObserver", "antd4mx/config-provider", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/grid", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/pagination", "antd4mx/spin", "antd4mx/list/Item", "antd4mx/list/context", "antd4mx/list/style", "antd4mx/config-provider/hooks/useSize"], function (_exports, _toConsumableArray2, _classnames, React, _extendsObject, _responsiveObserver, _configProvider, _defaultRenderEmpty, _grid, _useBreakpoint, _pagination, _spin, _Item, _context, _style, _useSize) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames", "react", "antd4mx/_util/extendsObject", "antd4mx/_util/responsiveObserver", "antd4mx/config-provider/index", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/grid/index", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/pagination/index", "antd4mx/spin/index", "antd4mx/list/Item", "antd4mx/list/context", "antd4mx/list/style/index", "antd4mx/config-provider/hooks/useSize"], function (_exports, _toConsumableArray2, _classnames, React, _extendsObject, _responsiveObserver, _index, _defaultRenderEmpty, _index2, _useBreakpoint, _index3, _index4, _Item, _context, _index5, _useSize) {
   "use strict";
   "use client";
 
@@ -60,7 +60,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames",
       _React$useState4 = _slicedToArray(_React$useState3, 2),
       paginationSize = _React$useState4[0],
       setPaginationSize = _React$useState4[1];
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       renderEmpty = _React$useContext.renderEmpty,
       direction = _React$useContext.direction,
@@ -103,7 +103,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames",
     };
     var prefixCls = getPrefixCls('list', customizePrefixCls);
     // Style
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index5["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -141,7 +141,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames",
     }
     var paginationContent = pagination ? ( /*#__PURE__*/React.createElement("div", {
       className: (0, _classnames["default"])("".concat(prefixCls, "-pagination"), "".concat(prefixCls, "-pagination-align-").concat((_b = paginationProps === null || paginationProps === void 0 ? void 0 : paginationProps.align) !== null && _b !== void 0 ? _b : 'end'))
-    }, /*#__PURE__*/React.createElement(_pagination["default"], Object.assign({}, paginationProps, {
+    }, /*#__PURE__*/React.createElement(_index3["default"], Object.assign({}, paginationProps, {
       onChange: onPaginationChange,
       onShowSizeChange: onPaginationShowSizeChange
     })))) : null;
@@ -185,7 +185,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames",
       var items = splitDataSource.map(function (item, index) {
         return renderInnerItem(item, index);
       });
-      childrenContent = grid ? ( /*#__PURE__*/React.createElement(_grid.Row, {
+      childrenContent = grid ? ( /*#__PURE__*/React.createElement(_index2.Row, {
         gutter: grid.gutter
       }, React.Children.map(items, function (child) {
         return /*#__PURE__*/React.createElement("div", {
@@ -216,7 +216,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames",
       className: classString
     }, rest), (paginationPosition === 'top' || paginationPosition === 'both') && paginationContent, header && /*#__PURE__*/React.createElement("div", {
       className: "".concat(prefixCls, "-header")
-    }, header), /*#__PURE__*/React.createElement(_spin["default"], Object.assign({}, loadingProp), childrenContent, children), footer && /*#__PURE__*/React.createElement("div", {
+    }, header), /*#__PURE__*/React.createElement(_index4["default"], Object.assign({}, loadingProp), childrenContent, children), footer && /*#__PURE__*/React.createElement("div", {
       className: "".concat(prefixCls, "-footer")
     }, footer), loadMore || (paginationPosition === 'bottom' || paginationPosition === 'both') && paginationContent)));
   }

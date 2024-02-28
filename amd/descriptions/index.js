@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/descriptions/constant", "antd4mx/descriptions/DescriptionsContext", "antd4mx/descriptions/hooks/useItems", "antd4mx/descriptions/hooks/useRow", "antd4mx/descriptions/Item", "antd4mx/descriptions/Row", "antd4mx/descriptions/style"], function (_exports, React, _classnames, _responsiveObserver, _configProvider, _useSize, _useBreakpoint, _constant, _DescriptionsContext, _useItems, _useRow, _Item, _Row, _style) {
+define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/descriptions/constant", "antd4mx/descriptions/DescriptionsContext", "antd4mx/descriptions/hooks/useItems", "antd4mx/descriptions/hooks/useRow", "antd4mx/descriptions/Item", "antd4mx/descriptions/Row", "antd4mx/descriptions/style/index"], function (_exports, React, _classnames, _responsiveObserver, _index, _useSize, _useBreakpoint, _constant, _DescriptionsContext, _useItems, _useRow, _Item, _Row, _index2) {
   "use strict";
   "use client";
 
@@ -50,7 +50,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "a
       contentStyle = props.contentStyle,
       items = props.items,
       restProps = __rest(props, ["prefixCls", "title", "extra", "column", "colon", "bordered", "layout", "children", "className", "rootClassName", "style", "size", "labelStyle", "contentStyle", "items"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       descriptions = _React$useContext.descriptions;
@@ -68,7 +68,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "a
     var mergedItems = (0, _useItems["default"])(screens, items, children);
     var mergedSize = (0, _useSize["default"])(customizeSize);
     var rows = (0, _useRow["default"])(mergedColumn, mergedItems);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

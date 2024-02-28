@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/button"], function (_exports, React, _button) {
+define(["exports", "react", "antd4mx/button/index"], function (_exports, React, _index) {
   "use strict";
   "use client";
 
@@ -7,7 +7,7 @@ define(["exports", "react", "antd4mx/button"], function (_exports, React, _butto
   });
   _exports["default"] = PickerButton;
   function PickerButton(props) {
-    return /*#__PURE__*/React.createElement(_button["default"], Object.assign({
+    return /*#__PURE__*/React.createElement(_index["default"], Object.assign({
       size: "small",
       type: "primary"
     }, props));

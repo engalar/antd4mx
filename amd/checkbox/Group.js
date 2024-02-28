@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-util/es/omit", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/checkbox/Checkbox", "antd4mx/checkbox/GroupContext", "antd4mx/checkbox/style"], function (_exports, _toConsumableArray2, React, _classnames, _omit, _configProvider, _useCSSVarCls, _Checkbox, _GroupContext, _style) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-util/es/omit", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/checkbox/Checkbox", "antd4mx/checkbox/GroupContext", "antd4mx/checkbox/style/index"], function (_exports, _toConsumableArray2, React, _classnames, _omit, _index, _useCSSVarCls, _Checkbox, _GroupContext, _index2) {
   "use strict";
   "use client";
 
@@ -41,7 +41,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
       style = props.style,
       onChange = props.onChange,
       restProps = __rest(props, ["defaultValue", "children", "options", "prefixCls", "className", "rootClassName", "style", "onChange"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var _React$useState = React.useState(restProps.value || defaultValue || []),
@@ -106,7 +106,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
     var prefixCls = getPrefixCls('checkbox', customizePrefixCls);
     var groupPrefixCls = "".concat(prefixCls, "-group");
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

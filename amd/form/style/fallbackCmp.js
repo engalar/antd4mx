@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/form/style", "antd4mx/theme/internal"], function (_exports, _style, _internal) {
+define(["exports", "antd4mx/form/style/index", "antd4mx/theme/internal"], function (_exports, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -24,7 +24,7 @@ define(["exports", "antd4mx/form/style", "antd4mx/theme/internal"], function (_e
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genSubStyleComponent)(['Form', 'item-item'], function (token, _ref) {
     var rootPrefixCls = _ref.rootPrefixCls;
-    var formToken = (0, _style.prepareToken)(token, rootPrefixCls);
+    var formToken = (0, _index.prepareToken)(token, rootPrefixCls);
     return [genFallbackStyle(formToken)];
   });
 });

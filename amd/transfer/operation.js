@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "react", "antd4mx/button"], function (_exports, _LeftOutlined, _RightOutlined, React, _button) {
+define(["exports", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "react", "antd4mx/button/index"], function (_exports, _LeftOutlined, _RightOutlined, React, _index) {
   "use strict";
   "use client";
 
@@ -23,13 +23,13 @@ define(["exports", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons
     return /*#__PURE__*/React.createElement("div", {
       className: className,
       style: style
-    }, /*#__PURE__*/React.createElement(_button["default"], {
+    }, /*#__PURE__*/React.createElement(_index["default"], {
       type: "primary",
       size: "small",
       disabled: disabled || !rightActive,
       onClick: moveToRight,
       icon: direction !== 'rtl' ? /*#__PURE__*/React.createElement(_RightOutlined["default"], null) : /*#__PURE__*/React.createElement(_LeftOutlined["default"], null)
-    }, rightArrowText), !oneWay && ( /*#__PURE__*/React.createElement(_button["default"], {
+    }, rightArrowText), !oneWay && ( /*#__PURE__*/React.createElement(_index["default"], {
       type: "primary",
       size: "small",
       disabled: disabled || !leftActive,

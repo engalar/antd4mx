@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/internal", "antd4mx/upload/style/dragger", "antd4mx/upload/style/list", "antd4mx/upload/style/motion", "antd4mx/upload/style/picture", "antd4mx/upload/style/rtl"], function (_exports, _style, _motion, _internal, _dragger, _list, _motion2, _picture, _rtl) {
+define(["exports", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/theme/internal", "antd4mx/upload/style/dragger", "antd4mx/upload/style/list", "antd4mx/upload/style/motion", "antd4mx/upload/style/picture", "antd4mx/upload/style/rtl"], function (_exports, _index, _index2, _internal, _dragger, _list, _motion, _picture, _rtl) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -12,7 +12,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/inter
   var genBaseStyle = function genBaseStyle(token) {
     var componentCls = token.componentCls,
       colorTextDisabled = token.colorTextDisabled;
-    return _defineProperty({}, "".concat(componentCls, "-wrapper"), Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({}, componentCls, {
+    return _defineProperty({}, "".concat(componentCls, "-wrapper"), Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({}, componentCls, {
       outline: 0,
       "input[type='file']": {
         cursor: 'pointer'
@@ -41,6 +41,6 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/inter
       uploadProgressOffset: calc(calc(fontHeight).div(2)).add(lineWidth).equal(),
       uploadPicCardSize: calc(controlHeightLG).mul(2.55).equal()
     });
-    return [genBaseStyle(uploadToken), (0, _dragger["default"])(uploadToken), (0, _picture.genPictureStyle)(uploadToken), (0, _picture.genPictureCardStyle)(uploadToken), (0, _list["default"])(uploadToken), (0, _motion2["default"])(uploadToken), (0, _rtl["default"])(uploadToken), (0, _motion.genCollapseMotion)(uploadToken)];
+    return [genBaseStyle(uploadToken), (0, _dragger["default"])(uploadToken), (0, _picture.genPictureStyle)(uploadToken), (0, _picture.genPictureCardStyle)(uploadToken), (0, _list["default"])(uploadToken), (0, _motion["default"])(uploadToken), (0, _rtl["default"])(uploadToken), (0, _index2.genCollapseMotion)(uploadToken)];
   }, prepareComponentToken);
 });

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/progress/Circle", "antd4mx/progress/Line", "antd4mx/progress/Steps", "antd4mx/progress/style", "antd4mx/progress/utils"], function (_exports, React, _CheckCircleFilled, _CheckOutlined, _CloseCircleFilled, _CloseOutlined, _classnames, _omit, _warning, _configProvider, _Circle, _Line, _Steps, _style, _utils) {
+define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/progress/Circle", "antd4mx/progress/Line", "antd4mx/progress/Steps", "antd4mx/progress/style/index", "antd4mx/progress/utils"], function (_exports, React, _CheckCircleFilled, _CheckOutlined, _CloseCircleFilled, _CloseOutlined, _classnames, _omit, _warning, _index, _Circle, _Line, _Steps, _index2, _utils) {
   "use strict";
   "use client";
 
@@ -55,12 +55,12 @@ define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@an
       }
       return status || 'normal';
     }, [status, percentNumber]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       progressStyle = _React$useContext.progress;
     var prefixCls = getPrefixCls('progress', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

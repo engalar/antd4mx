@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-tree-select", "rc-util/es/omit", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/PurePanel", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/form/hooks/useVariants", "antd4mx/select/mergedBuiltinPlacements", "antd4mx/select/style", "antd4mx/select/useIcons", "antd4mx/select/useShowArrow", "antd4mx/space/Compact", "antd4mx/tree/utils/iconUtil", "antd4mx/tree-select/style"], function (_exports, React, _classnames, _rcTreeSelect, _omit, _useZIndex3, _motion, _PurePanel, _statusUtils, _warning, _configProvider, _defaultRenderEmpty, _DisabledContext, _useCSSVarCls, _useSize, _context, _useVariants, _mergedBuiltinPlacements, _style, _useIcons2, _useShowArrow, _Compact, _iconUtil, _style2) {
+define(["exports", "react", "classnames", "rc-tree-select", "rc-util/es/omit", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/PurePanel", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/form/hooks/useVariants", "antd4mx/select/mergedBuiltinPlacements", "antd4mx/select/style/index", "antd4mx/select/useIcons", "antd4mx/select/useShowArrow", "antd4mx/space/Compact", "antd4mx/tree/utils/iconUtil", "antd4mx/tree-select/style/index"], function (_exports, React, _classnames, _rcTreeSelect, _omit, _useZIndex3, _motion, _PurePanel, _statusUtils, _warning, _index, _defaultRenderEmpty, _DisabledContext, _useCSSVarCls, _useSize, _context, _useVariants, _mergedBuiltinPlacements, _index2, _useIcons2, _useShowArrow, _Compact, _iconUtil, _index3) {
   "use strict";
   "use client";
 
@@ -67,7 +67,7 @@ define(["exports", "react", "classnames", "rc-tree-select", "rc-util/es/omit", "
       dropdownStyle = _a.dropdownStyle,
       tagRender = _a.tagRender,
       props = __rest(_a, ["prefixCls", "size", "disabled", "bordered", "className", "rootClassName", "treeCheckable", "multiple", "listHeight", "listItemHeight", "placement", "notFoundContent", "switcherIcon", "treeLine", "getPopupContainer", "popupClassName", "dropdownClassName", "treeIcon", "transitionName", "choiceTransitionName", "status", "treeExpandAction", "builtinPlacements", "dropdownMatchSelectWidth", "popupMatchSelectWidth", "allowClear", "variant", "dropdownStyle", "tagRender"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getContextPopupContainer = _React$useContext.getPopupContainer,
       getPrefixCls = _React$useContext.getPrefixCls,
       renderEmpty = _React$useContext.renderEmpty,
@@ -92,12 +92,12 @@ define(["exports", "react", "classnames", "rc-tree-select", "rc-util/es/omit", "
       compactItemClassnames = _useCompactItemContex.compactItemClassnames;
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
     var treeSelectRootCls = (0, _useCSSVarCls["default"])(treeSelectPrefixCls);
-    var _useSelectStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useSelectStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useSelectStyle2 = _slicedToArray(_useSelectStyle, 3),
       wrapCSSVar = _useSelectStyle2[0],
       hashId = _useSelectStyle2[1],
       cssVarCls = _useSelectStyle2[2];
-    var _useStyle = (0, _style2["default"])(treeSelectPrefixCls, treePrefixCls, treeSelectRootCls),
+    var _useStyle = (0, _index3["default"])(treeSelectPrefixCls, treePrefixCls, treeSelectRootCls),
       _useStyle2 = _slicedToArray(_useStyle, 1),
       treeSelectWrapCSSVar = _useStyle2[0];
     var _useVariant = (0, _useVariants["default"])(customVariant, bordered),

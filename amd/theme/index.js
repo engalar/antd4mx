@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/theme/getDesignToken", "antd4mx/theme/internal", "antd4mx/theme/themes/compact", "antd4mx/theme/themes/dark", "antd4mx/theme/themes/default"], function (_exports, _getDesignToken, _internal, _compact, _dark, _default2) {
+define(["exports", "antd4mx/theme/getDesignToken", "antd4mx/theme/internal", "antd4mx/theme/themes/compact/index", "antd4mx/theme/themes/dark/index", "antd4mx/theme/themes/default/index"], function (_exports, _getDesignToken, _internal, _index, _index2, _index3) {
   "use strict";
   "use client";
 
@@ -35,9 +35,9 @@ define(["exports", "antd4mx/theme/getDesignToken", "antd4mx/theme/internal", "an
     /** Default seedToken */
     defaultSeed: _internal.defaultConfig.token,
     useToken: useToken,
-    defaultAlgorithm: _default2["default"],
-    darkAlgorithm: _dark["default"],
-    compactAlgorithm: _compact["default"],
+    defaultAlgorithm: _index3["default"],
+    darkAlgorithm: _index2["default"],
+    compactAlgorithm: _index["default"],
     getDesignToken: _getDesignToken["default"]
   };
 });

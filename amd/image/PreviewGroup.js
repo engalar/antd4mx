@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "@ant-design/icons/es/icons/RotateLeftOutlined", "@ant-design/icons/es/icons/RotateRightOutlined", "@ant-design/icons/es/icons/SwapOutlined", "@ant-design/icons/es/icons/ZoomInOutlined", "@ant-design/icons/es/icons/ZoomOutOutlined", "classnames", "rc-image", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/image/style"], function (_exports, React, _CloseOutlined, _LeftOutlined, _RightOutlined, _RotateLeftOutlined, _RotateRightOutlined, _SwapOutlined, _ZoomInOutlined, _ZoomOutOutlined, _classnames, _rcImage, _useZIndex3, _motion, _configProvider, _useCSSVarCls, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "@ant-design/icons/es/icons/RotateLeftOutlined", "@ant-design/icons/es/icons/RotateRightOutlined", "@ant-design/icons/es/icons/SwapOutlined", "@ant-design/icons/es/icons/ZoomInOutlined", "@ant-design/icons/es/icons/ZoomOutOutlined", "classnames", "rc-image", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/image/style/index"], function (_exports, React, _CloseOutlined, _LeftOutlined, _RightOutlined, _RotateLeftOutlined, _RotateRightOutlined, _SwapOutlined, _ZoomInOutlined, _ZoomOutOutlined, _classnames, _rcImage, _useZIndex3, _motion, _index, _useCSSVarCls, _index2) {
   "use strict";
   "use client";
 
@@ -38,13 +38,13 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-de
     var customizePrefixCls = _a.previewPrefixCls,
       preview = _a.preview,
       otherProps = __rest(_a, ["previewPrefixCls", "preview"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('image', customizePrefixCls);
     var previewPrefixCls = "".concat(prefixCls, "-preview");
     var rootPrefixCls = getPrefixCls();
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

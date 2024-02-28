@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "rc-dialog", "antd4mx/_util/hooks/useClosable", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/styleChecker", "antd4mx/_util/warning", "antd4mx/_util/zindexContext", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/context", "antd4mx/space/Compact", "antd4mx/watermark/context", "antd4mx/modal/shared", "antd4mx/modal/style"], function (_exports, React, _CloseOutlined, _classnames, _rcDialog, _useClosable3, _useZIndex3, _motion, _styleChecker, _warning, _zindexContext, _configProvider, _useCSSVarCls, _context, _Compact, _context2, _shared, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "rc-dialog", "antd4mx/_util/hooks/useClosable", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/styleChecker", "antd4mx/_util/warning", "antd4mx/_util/zindexContext", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/context", "antd4mx/space/Compact", "antd4mx/watermark/context", "antd4mx/modal/shared", "antd4mx/modal/style/index"], function (_exports, React, _CloseOutlined, _classnames, _rcDialog, _useClosable3, _useZIndex3, _motion, _styleChecker, _warning, _zindexContext, _index, _useCSSVarCls, _context, _Compact, _context2, _shared, _index2) {
   "use strict";
   "use client";
 
@@ -44,7 +44,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classna
   }
   var Modal = function Modal(props) {
     var _a;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getContextPopupContainer = _React$useContext.getPopupContainer,
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
@@ -89,7 +89,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classna
     var rootPrefixCls = getPrefixCls();
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

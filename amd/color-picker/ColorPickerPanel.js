@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/divider", "antd4mx/color-picker/components/PanelPicker", "antd4mx/color-picker/components/PanelPresets", "antd4mx/color-picker/context"], function (_exports, _react, _divider, _PanelPicker, _PanelPresets, _context) {
+define(["exports", "react", "antd4mx/divider/index", "antd4mx/color-picker/components/PanelPicker", "antd4mx/color-picker/components/PanelPresets", "antd4mx/color-picker/context"], function (_exports, _react, _index, _PanelPicker, _PanelPresets, _context) {
   "use strict";
   "use client";
 
@@ -41,7 +41,7 @@ define(["exports", "react", "antd4mx/divider", "antd4mx/color-picker/components/
     // ====================== Render ======================
     var innerPanel = /*#__PURE__*/_react["default"].createElement("div", {
       className: "".concat(colorPickerPanelPrefixCls, "-content")
-    }, /*#__PURE__*/_react["default"].createElement(_PanelPicker["default"], null), Array.isArray(presets) && /*#__PURE__*/_react["default"].createElement(_divider["default"], null), /*#__PURE__*/_react["default"].createElement(_PanelPresets["default"], null));
+    }, /*#__PURE__*/_react["default"].createElement(_PanelPicker["default"], null), Array.isArray(presets) && /*#__PURE__*/_react["default"].createElement(_index["default"], null), /*#__PURE__*/_react["default"].createElement(_PanelPresets["default"], null));
     return /*#__PURE__*/_react["default"].createElement(_context.PanelPickerProvider, {
       value: panelPickerProps
     }, /*#__PURE__*/_react["default"].createElement(_context.PanelPresetsProvider, {

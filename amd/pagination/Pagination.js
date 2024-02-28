@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@ant-design/icons/es/icons/DoubleLeftOutlined", "@ant-design/icons/es/icons/DoubleRightOutlined", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-pagination", "rc-pagination/es/locale/en_US", "react", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/locale", "antd4mx/pagination/Select", "antd4mx/pagination/style", "antd4mx/theme/internal", "antd4mx/pagination/style/bordered"], function (_exports, _DoubleLeftOutlined, _DoubleRightOutlined, _LeftOutlined, _RightOutlined, _classnames, _rcPagination, _en_US, React, _configProvider, _useSize, _useBreakpoint2, _locale, _Select, _style, _internal, _bordered) {
+define(["exports", "@ant-design/icons/es/icons/DoubleLeftOutlined", "@ant-design/icons/es/icons/DoubleRightOutlined", "@ant-design/icons/es/icons/LeftOutlined", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-pagination", "rc-pagination/es/locale/en_US", "react", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/locale/index", "antd4mx/pagination/Select", "antd4mx/pagination/style/index", "antd4mx/theme/internal", "antd4mx/pagination/style/bordered"], function (_exports, _DoubleLeftOutlined, _DoubleRightOutlined, _LeftOutlined, _RightOutlined, _classnames, _rcPagination, _en_US, React, _index, _useSize, _useBreakpoint2, _index2, _Select, _index3, _internal, _bordered) {
   "use strict";
   "use client";
 
@@ -41,14 +41,14 @@ define(["exports", "@ant-design/icons/es/icons/DoubleLeftOutlined", "@ant-design
     var _useToken = (0, _internal.useToken)(),
       _useToken2 = _slicedToArray(_useToken, 2),
       token = _useToken2[1];
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       _React$useContext$pag = _React$useContext.pagination,
       pagination = _React$useContext$pag === void 0 ? {} : _React$useContext$pag;
     var prefixCls = getPrefixCls('pagination', customizePrefixCls);
     // Style
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -93,7 +93,7 @@ define(["exports", "@ant-design/icons/es/icons/DoubleLeftOutlined", "@ant-design
         jumpNextIcon: jumpNextIcon
       };
     }, [direction, prefixCls]);
-    var _useLocale = (0, _locale.useLocale)('Pagination', _en_US["default"]),
+    var _useLocale = (0, _index2.useLocale)('Pagination', _en_US["default"]),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       contextLocale = _useLocale2[0];
     var locale = Object.assign(Object.assign({}, contextLocale), customLocale);

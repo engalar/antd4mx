@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -49,13 +49,13 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       colonMarginRight = token.colonMarginRight,
       colonMarginLeft = token.colonMarginLeft,
       titleMarginBottom = token.titleMarginBottom;
-    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), genBorderedStyle(token)), (_Object$assign = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_Object$assign, "&-rtl", {
+    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), genBorderedStyle(token)), (_Object$assign = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_Object$assign, "&-rtl", {
       direction: 'rtl'
     }), "".concat(componentCls, "-header"), {
       display: 'flex',
       alignItems: 'center',
       marginBottom: titleMarginBottom
-    }), "".concat(componentCls, "-title"), Object.assign(Object.assign({}, _style.textEllipsis), {
+    }), "".concat(componentCls, "-title"), Object.assign(Object.assign({}, _index.textEllipsis), {
       flex: 'auto',
       color: token.titleColor,
       fontWeight: token.fontWeightStrong,

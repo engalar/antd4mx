@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "antd4mx/_util/hooks/useMultipleSelect", "antd4mx/_util/statusUtils", "antd4mx/_util/transKeys", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/form/context", "antd4mx/locale", "antd4mx/locale/en_US", "antd4mx/transfer/hooks/useData", "antd4mx/transfer/hooks/useSelection", "antd4mx/transfer/list", "antd4mx/transfer/operation", "antd4mx/transfer/search", "antd4mx/transfer/style"], function (_exports, _toConsumableArray2, _react, _classnames, _useMultipleSelect5, _statusUtils, _transKeys, _warning, _configProvider, _defaultRenderEmpty, _context, _locale, _en_US, _useData3, _useSelection3, _list, _operation, _search, _style) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "antd4mx/_util/hooks/useMultipleSelect", "antd4mx/_util/statusUtils", "antd4mx/_util/transKeys", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/form/context", "antd4mx/locale/index", "antd4mx/locale/en_US", "antd4mx/transfer/hooks/useData", "antd4mx/transfer/hooks/useSelection", "antd4mx/transfer/list", "antd4mx/transfer/operation", "antd4mx/transfer/search", "antd4mx/transfer/style/index"], function (_exports, _toConsumableArray2, _react, _classnames, _useMultipleSelect5, _statusUtils, _transKeys, _warning, _index, _defaultRenderEmpty, _context, _index2, _en_US, _useData3, _useSelection3, _list, _operation, _search, _index3) {
   "use strict";
   "use client";
 
@@ -53,13 +53,13 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
       onChange = props.onChange,
       onSearch = props.onSearch,
       onSelectChange = props.onSelectChange;
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls,
       renderEmpty = _useContext.renderEmpty,
       dir = _useContext.direction,
       transfer = _useContext.transfer;
     var prefixCls = getPrefixCls('transfer', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -263,7 +263,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
     var leftActive = targetSelectedKeys.length > 0;
     var rightActive = sourceSelectedKeys.length > 0;
     var cls = (0, _classnames["default"])(prefixCls, _defineProperty(_defineProperty(_defineProperty({}, "".concat(prefixCls, "-disabled"), disabled), "".concat(prefixCls, "-customize-list"), !!children), "".concat(prefixCls, "-rtl"), dir === 'rtl'), (0, _statusUtils.getStatusClassNames)(prefixCls, mergedStatus, hasFeedback), transfer === null || transfer === void 0 ? void 0 : transfer.className, className, rootClassName, hashId, cssVarCls);
-    var _useLocale = (0, _locale.useLocale)('Transfer', _en_US["default"].Transfer),
+    var _useLocale = (0, _index2.useLocale)('Transfer', _en_US["default"].Transfer),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       contextLocale = _useLocale2[0];
     var listLocale = getLocale(contextLocale);

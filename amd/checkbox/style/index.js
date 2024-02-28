@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -15,13 +15,13 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     var checkboxCls = token.checkboxCls;
     var wrapperCls = "".concat(checkboxCls, "-wrapper");
     return [// ===================== Basic =====================
-    _defineProperty(_defineProperty(_defineProperty({}, "".concat(checkboxCls, "-group"), Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty({
+    _defineProperty(_defineProperty(_defineProperty({}, "".concat(checkboxCls, "-group"), Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty({
       display: 'inline-flex',
       flexWrap: 'wrap',
       columnGap: token.marginXS
     }, "> ".concat(token.antCls, "-row"), {
       flex: 1
-    }))), wrapperCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty({
+    }))), wrapperCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty({
       display: 'inline-flex',
       alignItems: 'baseline',
       cursor: 'pointer',
@@ -40,7 +40,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
         // FIXME: magic
         height: 14 // FIXME: magic
       }
-    }))), checkboxCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
+    }))), checkboxCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
       position: 'relative',
       whiteSpace: 'nowrap',
       lineHeight: 1,
@@ -59,7 +59,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       cursor: 'pointer',
       opacity: 0,
       margin: 0
-    }, "&:focus-visible + ".concat(checkboxCls, "-inner"), Object.assign({}, (0, _style.genFocusOutline)(token)))), "".concat(checkboxCls, "-inner"), {
+    }, "&:focus-visible + ".concat(checkboxCls, "-inner"), Object.assign({}, (0, _index.genFocusOutline)(token)))), "".concat(checkboxCls, "-inner"), {
       boxSizing: 'border-box',
       display: 'block',
       width: token.checkboxSize,

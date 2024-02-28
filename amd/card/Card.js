@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/skeleton", "antd4mx/tabs", "antd4mx/card/Grid", "antd4mx/card/style"], function (_exports, React, _classnames, _omit, _warning, _configProvider, _useSize, _skeleton, _tabs, _Grid, _style) {
+define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/skeleton/index", "antd4mx/tabs/index", "antd4mx/card/Grid", "antd4mx/card/style/index"], function (_exports, React, _classnames, _omit, _warning, _index, _useSize, _index2, _index3, _Grid, _index4) {
   "use strict";
   "use client";
 
@@ -74,7 +74,7 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warn
       customClassNames = props.classNames,
       customStyles = props.styles,
       others = __rest(props, ["prefixCls", "className", "rootClassName", "style", "extra", "headStyle", "bodyStyle", "title", "loading", "bordered", "size", "type", "cover", "actions", "tabList", "children", "activeTabKey", "defaultActiveTabKey", "tabBarExtraContent", "hoverable", "tabProps", "classNames", "styles"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       card = _React$useContext.card;
@@ -110,12 +110,12 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warn
       return containGrid;
     }, [children]);
     var prefixCls = getPrefixCls('card', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index4["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
       cssVarCls = _useStyle2[2];
-    var loadingBlock = /*#__PURE__*/React.createElement(_skeleton["default"], {
+    var loadingBlock = /*#__PURE__*/React.createElement(_index2["default"], {
       loading: true,
       active: true,
       paragraph: {
@@ -128,7 +128,7 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/warn
     var head;
     var mergedSize = (0, _useSize["default"])(customizeSize);
     var tabSize = !mergedSize || mergedSize === 'default' ? 'large' : mergedSize;
-    var tabs = tabList ? ( /*#__PURE__*/React.createElement(_tabs["default"], Object.assign({
+    var tabs = tabList ? ( /*#__PURE__*/React.createElement(_index3["default"], Object.assign({
       size: tabSize
     }, extraProps, {
       className: "".concat(prefixCls, "-head-tabs"),

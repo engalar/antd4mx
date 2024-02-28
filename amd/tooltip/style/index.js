@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "@ant-design/cssinjs", "antd4mx/style/roundedArrow"], function (_exports, _style, _motion, _placementArrow, _internal, _cssinjs, _roundedArrow) {
+define(["exports", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "@ant-design/cssinjs", "antd4mx/style/roundedArrow"], function (_exports, _index, _index2, _placementArrow, _internal, _cssinjs, _roundedArrow) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -20,7 +20,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
       boxShadowSecondary = token.boxShadowSecondary,
       paddingSM = token.paddingSM,
       paddingXS = token.paddingXS;
-    return [_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
+    return [_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
       position: 'absolute',
       zIndex: zIndexPopup,
       display: 'block',
@@ -93,7 +93,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
         tooltipBorderRadius: borderRadius,
         tooltipBg: colorBgSpotlight
       });
-      return [genTooltipStyle(TooltipToken), (0, _motion.initZoomMotion)(token, 'zoom-big-fast')];
+      return [genTooltipStyle(TooltipToken), (0, _index2.initZoomMotion)(token, 'zoom-big-fast')];
     }, prepareComponentToken, {
       resetStyle: false,
       // Popover use Tooltip as internal component. We do not need to handle this.

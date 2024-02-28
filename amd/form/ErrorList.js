@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames", "rc-motion", "react", "antd4mx/_util/motion", "antd4mx/form/context", "antd4mx/form/hooks/useDebounce", "antd4mx/form/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _toConsumableArray2, _classnames, _rcMotion, _react, _motion, _context, _useDebounce, _style, _useCSSVarCls) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames", "rc-motion", "react", "antd4mx/_util/motion", "antd4mx/form/context", "antd4mx/form/hooks/useDebounce", "antd4mx/form/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _toConsumableArray2, _classnames, _rcMotion, _react, _motion, _context, _useDebounce, _index, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -40,7 +40,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "classnames",
       prefixCls = _React$useContext.prefixCls;
     var baseClassName = "".concat(prefixCls, "-item-explain");
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

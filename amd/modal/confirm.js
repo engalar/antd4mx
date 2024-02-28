@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-util/es/React/render", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/modal/ConfirmDialog", "antd4mx/modal/destroyFns", "antd4mx/modal/locale"], function (_exports, _toConsumableArray2, _react, _render, _warning, _configProvider, _ConfirmDialog, _destroyFns, _locale) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-util/es/React/render", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/modal/ConfirmDialog", "antd4mx/modal/destroyFns", "antd4mx/modal/locale"], function (_exports, _toConsumableArray2, _react, _render, _warning, _index, _ConfirmDialog, _destroyFns, _locale) {
   "use strict";
   "use client";
 
@@ -22,7 +22,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-
       getContainer = props.getContainer,
       direction = props.direction;
     var runtimeLocale = (0, _locale.getConfirmLocale)();
-    var config = (0, _react.useContext)(_configProvider.ConfigContext);
+    var config = (0, _react.useContext)(_index.ConfigContext);
     var rootPrefixCls = getRootPrefixCls() || config.getPrefixCls();
     // because Modal.config set rootPrefixCls, which is different from other components
     var prefixCls = customizePrefixCls || "".concat(rootPrefixCls, "-modal");
@@ -44,9 +44,9 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-
     }));
   };
   function confirm(config) {
-    var global = (0, _configProvider.globalConfig)();
+    var global = (0, _index.globalConfig)();
     if (process.env.NODE_ENV !== 'production' && !global.holderRender) {
-      (0, _configProvider.warnContext)('Modal');
+      (0, _index.warnContext)('Modal');
     }
     var container = document.createDocumentFragment();
     // eslint-disable-next-line @typescript-eslint/no-use-before-define
@@ -87,7 +87,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rc-
         var iconPrefixCls = global.getIconPrefixCls();
         var theme = global.getTheme();
         var dom = /*#__PURE__*/_react["default"].createElement(ConfirmDialogWrapper, Object.assign({}, props));
-        (0, _render.render)( /*#__PURE__*/_react["default"].createElement(_configProvider["default"], {
+        (0, _render.render)( /*#__PURE__*/_react["default"].createElement(_index["default"], {
           prefixCls: rootPrefixCls,
           iconPrefixCls: iconPrefixCls,
           theme: theme

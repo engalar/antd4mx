@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-mentions", "rc-util/es/ref", "antd4mx/_util/PurePanel", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/form/context", "antd4mx/spin", "antd4mx/mentions/style", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/hooks/useVariants", "antd4mx/_util/getAllowClear"], function (_exports, React, _classnames, _rcMentions, _ref, _PurePanel, _statusUtils, _warning, _configProvider, _defaultRenderEmpty, _context, _spin, _style, _useCSSVarCls, _useVariants, _getAllowClear) {
+define(["exports", "react", "classnames", "rc-mentions", "rc-util/es/ref", "antd4mx/_util/PurePanel", "antd4mx/_util/statusUtils", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/defaultRenderEmpty", "antd4mx/form/context", "antd4mx/spin/index", "antd4mx/mentions/style/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/hooks/useVariants", "antd4mx/_util/getAllowClear"], function (_exports, React, _classnames, _rcMentions, _ref, _PurePanel, _statusUtils, _warning, _index, _defaultRenderEmpty, _context, _index2, _index3, _useCSSVarCls, _useVariants, _getAllowClear) {
   "use strict";
   "use client";
 
@@ -58,7 +58,7 @@ define(["exports", "react", "classnames", "rc-mentions", "rc-util/es/ref", "antd
       var warning = (0, _warning.devUseWarning)('Mentions');
       warning.deprecated(!children, 'Mentions.Option', 'options');
     }
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       renderEmpty = _React$useContext.renderEmpty,
       direction = _React$useContext.direction,
@@ -93,7 +93,7 @@ define(["exports", "react", "classnames", "rc-mentions", "rc-util/es/ref", "antd
         return /*#__PURE__*/React.createElement(Option, {
           value: "ANTD_SEARCHING",
           disabled: true
-        }, /*#__PURE__*/React.createElement(_spin["default"], {
+        }, /*#__PURE__*/React.createElement(_index2["default"], {
           size: "small"
         }));
       }
@@ -102,7 +102,7 @@ define(["exports", "react", "classnames", "rc-mentions", "rc-util/es/ref", "antd
     var mergedOptions = loading ? [{
       value: 'ANTD_SEARCHING',
       disabled: true,
-      label: /*#__PURE__*/React.createElement(_spin["default"], {
+      label: /*#__PURE__*/React.createElement(_index2["default"], {
         size: "small"
       })
     }] : options;
@@ -111,7 +111,7 @@ define(["exports", "react", "classnames", "rc-mentions", "rc-util/es/ref", "antd
     var mergedAllowClear = (0, _getAllowClear["default"])(allowClear);
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index3["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

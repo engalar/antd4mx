@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/cssinjs", "rc-util", "antd4mx/config-provider/context", "antd4mx/style", "antd4mx/theme/useToken", "antd4mx/theme/util/calc", "antd4mx/theme/util/maxmin", "antd4mx/theme/util/statistic", "antd4mx/theme/util/useResetIconStyle"], function (_exports, _react, _cssinjs, _rcUtil, _context, _style, _useToken7, _calc, _maxmin, _statistic, _useResetIconStyle) {
+define(["exports", "react", "@ant-design/cssinjs", "rc-util", "antd4mx/config-provider/context", "antd4mx/style/index", "antd4mx/theme/useToken", "antd4mx/theme/util/calc/index", "antd4mx/theme/util/maxmin", "antd4mx/theme/util/statistic", "antd4mx/theme/util/useResetIconStyle"], function (_exports, _react, _cssinjs, _rcUtil, _context, _index, _useToken7, _index2, _maxmin, _statistic, _useResetIconStyle) {
   "use strict";
   "use client";
 
@@ -75,7 +75,7 @@ define(["exports", "react", "@ant-design/cssinjs", "rc-util", "antd4mx/config-pr
         csp = _useContext.csp;
       var rootPrefixCls = getPrefixCls();
       var type = cssVar ? 'css' : 'js';
-      var calc = (0, _calc["default"])(type);
+      var calc = (0, _index2["default"])(type);
       var _genMaxMin = (0, _maxmin["default"])(type),
         max = _genMaxMin.max,
         min = _genMaxMin.min;
@@ -98,7 +98,7 @@ define(["exports", "react", "@ant-design/cssinjs", "rc-util", "antd4mx/config-pr
       }), function () {
         return [{
           // Link
-          '&': (0, _style.genLinkStyle)(token)
+          '&': (0, _index.genLinkStyle)(token)
         }];
       });
       // Generate style for icons
@@ -138,7 +138,7 @@ define(["exports", "react", "@ant-design/cssinjs", "rc-util", "antd4mx/config-pr
           iconPrefixCls: iconPrefixCls
         });
         flush(component, componentToken);
-        return [options.resetStyle === false ? null : (0, _style.genCommonStyle)(mergedToken, prefixCls, rootCls), styleInterpolation];
+        return [options.resetStyle === false ? null : (0, _index.genCommonStyle)(mergedToken, prefixCls, rootCls), styleInterpolation];
       });
       return [wrapSSR, hashId];
     };

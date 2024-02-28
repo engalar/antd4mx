@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/config-provider"], function (_exports, _classnames, React, _configProvider) {
+define(["exports", "classnames", "react", "antd4mx/config-provider/index"], function (_exports, _classnames, React, _index) {
   "use strict";
   "use client";
 
@@ -24,7 +24,7 @@ define(["exports", "classnames", "react", "antd4mx/config-provider"], function (
       _a$hoverable = _a.hoverable,
       hoverable = _a$hoverable === void 0 ? true : _a$hoverable,
       props = __rest(_a, ["prefixCls", "className", "hoverable"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefix = getPrefixCls('card', prefixCls);
     var classString = (0, _classnames["default"])("".concat(prefix, "-grid"), className, _defineProperty({}, "".concat(prefix, "-grid-hoverable"), hoverable));

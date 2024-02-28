@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -82,7 +82,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       whiteSpace: 'pre',
       // fix whitespace wrapping. custom tags display all whitespace within.
       textOverflow: 'ellipsis'
-    }), '&-remove', Object.assign(Object.assign({}, (0, _style.resetIcon)()), _defineProperty(_defineProperty({
+    }), '&-remove', Object.assign(Object.assign({}, (0, _index.resetIcon)()), _defineProperty(_defineProperty({
       display: 'inline-flex',
       alignItems: 'center',
       color: token.colorIcon,

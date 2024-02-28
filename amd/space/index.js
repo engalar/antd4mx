@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "antd4mx/_util/gapSize", "antd4mx/config-provider", "antd4mx/space/Compact", "antd4mx/space/context", "antd4mx/space/Item", "antd4mx/space/style"], function (_exports, React, _classnames, _toArray, _gapSize, _configProvider, _Compact, _context, _Item, _style) {
+define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "antd4mx/_util/gapSize", "antd4mx/config-provider/index", "antd4mx/space/Compact", "antd4mx/space/context", "antd4mx/space/Item", "antd4mx/space/style/index"], function (_exports, React, _classnames, _toArray, _gapSize, _index, _Compact, _context, _Item, _index2) {
   "use strict";
   "use client";
 
@@ -32,7 +32,7 @@ define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "antd4m
   };
   var Space = /*#__PURE__*/React.forwardRef(function (props, ref) {
     var _a, _b;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       space = _React$useContext.space,
       directionConfig = _React$useContext.direction;
@@ -65,7 +65,7 @@ define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "antd4m
     });
     var mergedAlign = align === undefined && direction === 'horizontal' ? 'center' : align;
     var prefixCls = getPrefixCls('space', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

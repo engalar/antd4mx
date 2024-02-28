@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/HolderOutlined", "classnames", "rc-tree", "antd4mx/_util/motion", "antd4mx/config-provider", "antd4mx/tree/style", "antd4mx/tree/utils/dropIndicator", "antd4mx/tree/utils/iconUtil", "antd4mx/theme/internal"], function (_exports, _react, _HolderOutlined, _classnames, _rcTree, _motion, _configProvider, _style, _dropIndicator, _iconUtil, _internal) {
+define(["exports", "react", "@ant-design/icons/es/icons/HolderOutlined", "classnames", "rc-tree", "antd4mx/_util/motion", "antd4mx/config-provider/index", "antd4mx/tree/style/index", "antd4mx/tree/utils/dropIndicator", "antd4mx/tree/utils/iconUtil", "antd4mx/theme/internal"], function (_exports, _react, _HolderOutlined, _classnames, _rcTree, _motion, _index, _index2, _dropIndicator, _iconUtil, _internal) {
   "use strict";
   "use client";
 
@@ -18,7 +18,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/HolderOutlined", "classn
   function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   var Tree = /*#__PURE__*/_react["default"].forwardRef(function (props, ref) {
     var _a;
-    var _React$useContext = _react["default"].useContext(_configProvider.ConfigContext),
+    var _React$useContext = _react["default"].useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       virtual = _React$useContext.virtual,
@@ -53,7 +53,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/HolderOutlined", "classn
       showLine: Boolean(showLine),
       dropIndicatorRender: _dropIndicator["default"]
     });
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

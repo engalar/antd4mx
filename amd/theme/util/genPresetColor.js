@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/theme/interface"], function (_exports, _interface) {
+define(["exports", "antd4mx/theme/interface/index"], function (_exports, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -6,7 +6,7 @@ define(["exports", "antd4mx/theme/interface"], function (_exports, _interface) {
   });
   _exports["default"] = genPresetColor;
   function genPresetColor(token, genCss) {
-    return _interface.PresetColors.reduce(function (prev, colorKey) {
+    return _index.PresetColors.reduce(function (prev, colorKey) {
       var lightColor = token["".concat(colorKey, "1")];
       var lightBorderColor = token["".concat(colorKey, "3")];
       var darkColor = token["".concat(colorKey, "6")];

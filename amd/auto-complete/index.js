@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-util/es/omit", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/PurePanel", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/select"], function (_exports, React, _classnames, _toArray, _omit, _useZIndex3, _PurePanel, _reactNode, _warning, _configProvider, _select) {
+define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-util/es/omit", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/PurePanel", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/select/index"], function (_exports, React, _classnames, _toArray, _omit, _useZIndex3, _PurePanel, _reactNode, _warning, _index, _index2) {
   "use strict";
   "use client";
 
@@ -13,7 +13,7 @@ define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-uti
   function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
   function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
   function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-  var Option = _select["default"].Option;
+  var Option = _index2["default"].Option;
   function isSelectOptionOrSelectOptGroup(child) {
     return child && child.type && (child.type.isSelectOption || child.type.isSelectOptGroup);
   }
@@ -70,14 +70,14 @@ define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-uti
       process.env.NODE_ENV !== "production" ? warning(!customizeInput || !('size' in props), 'usage', 'You need to control style self instead of setting `size` when using customize input.') : void 0;
       warning.deprecated(!dropdownClassName, 'dropdownClassName', 'popupClassName');
     }
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('select', customizePrefixCls);
     // ============================ zIndex ============================
     var _useZIndex = (0, _useZIndex3.useZIndex)('SelectLike', (_a = props.dropdownStyle) === null || _a === void 0 ? void 0 : _a.zIndex),
       _useZIndex2 = _slicedToArray(_useZIndex, 1),
       zIndex = _useZIndex2[0];
-    return /*#__PURE__*/React.createElement(_select["default"], Object.assign({
+    return /*#__PURE__*/React.createElement(_index2["default"], Object.assign({
       ref: ref,
       suffixIcon: null
     }, (0, _omit["default"])(props, ['dataSource', 'dropdownClassName']), {
@@ -87,7 +87,7 @@ define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-uti
         zIndex: zIndex
       }),
       className: (0, _classnames["default"])("".concat(prefixCls, "-auto-complete"), className),
-      mode: _select["default"].SECRET_COMBOBOX_MODE_DO_NOT_USE,
+      mode: _index2["default"].SECRET_COMBOBOX_MODE_DO_NOT_USE,
       // Internal api
       getInputElement: getInputElement
     }), optionChildren);

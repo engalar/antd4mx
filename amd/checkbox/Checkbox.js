@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-checkbox", "antd4mx/_util/warning", "antd4mx/_util/wave", "antd4mx/_util/wave/interface", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/context", "antd4mx/checkbox/GroupContext", "antd4mx/checkbox/style"], function (_exports, React, _classnames, _rcCheckbox, _warning, _wave, _interface, _configProvider, _DisabledContext, _useCSSVarCls, _context, _GroupContext, _style) {
+define(["exports", "react", "classnames", "rc-checkbox", "antd4mx/_util/warning", "antd4mx/_util/wave/index", "antd4mx/_util/wave/interface", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/context", "antd4mx/checkbox/GroupContext", "antd4mx/checkbox/style/index"], function (_exports, React, _classnames, _rcCheckbox, _warning, _index, _interface, _index2, _DisabledContext, _useCSSVarCls, _context, _GroupContext, _index3) {
   "use strict";
   "use client";
 
@@ -39,7 +39,7 @@ define(["exports", "react", "classnames", "rc-checkbox", "antd4mx/_util/warning"
       skipGroup = _props$skipGroup === void 0 ? false : _props$skipGroup,
       disabled = props.disabled,
       restProps = __rest(props, ["prefixCls", "className", "rootClassName", "children", "indeterminate", "style", "onMouseEnter", "onMouseLeave", "skipGroup", "disabled"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       checkbox = _React$useContext.checkbox;
@@ -71,7 +71,7 @@ define(["exports", "react", "classnames", "rc-checkbox", "antd4mx/_util/warning"
     }, [restProps.value]);
     var prefixCls = getPrefixCls('checkbox', customizePrefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index3["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -95,7 +95,7 @@ define(["exports", "react", "classnames", "rc-checkbox", "antd4mx/_util/warning"
     var classString = (0, _classnames["default"])("".concat(prefixCls, "-wrapper"), _defineProperty(_defineProperty(_defineProperty(_defineProperty({}, "".concat(prefixCls, "-rtl"), direction === 'rtl'), "".concat(prefixCls, "-wrapper-checked"), checkboxProps.checked), "".concat(prefixCls, "-wrapper-disabled"), mergedDisabled), "".concat(prefixCls, "-wrapper-in-form-item"), isFormItemInput), checkbox === null || checkbox === void 0 ? void 0 : checkbox.className, className, rootClassName, cssVarCls, rootCls, hashId);
     var checkboxClass = (0, _classnames["default"])(_defineProperty({}, "".concat(prefixCls, "-indeterminate"), indeterminate), _interface.TARGET_CLS, hashId);
     var ariaChecked = indeterminate ? 'mixed' : undefined;
-    return wrapCSSVar( /*#__PURE__*/React.createElement(_wave["default"], {
+    return wrapCSSVar( /*#__PURE__*/React.createElement(_index["default"], {
       component: "Checkbox",
       disabled: mergedDisabled
     }, /*#__PURE__*/React.createElement("label", {

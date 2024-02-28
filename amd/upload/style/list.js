@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, _cssinjs, _style) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index"], function (_exports, _cssinjs, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -20,7 +20,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, 
     var actionsCls = "".concat(itemCls, "-actions");
     var actionCls = "".concat(itemCls, "-action");
     var listItemHeightSM = token.fontHeightSM;
-    return _defineProperty({}, "".concat(componentCls, "-wrapper"), _defineProperty({}, "".concat(componentCls, "-list"), Object.assign(Object.assign({}, (0, _style.clearFix)()), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty({}, "".concat(componentCls, "-wrapper"), _defineProperty({}, "".concat(componentCls, "-list"), Object.assign(Object.assign({}, (0, _index.clearFix)()), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
       lineHeight: token.lineHeight
     }, itemCls, _defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'relative',
@@ -33,7 +33,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, 
       '&:hover': {
         backgroundColor: token.controlItemBgHover
       }
-    }, "".concat(itemCls, "-name"), Object.assign(Object.assign({}, _style.textEllipsis), {
+    }, "".concat(itemCls, "-name"), Object.assign(Object.assign({}, _index.textEllipsis), {
       padding: "0 ".concat((0, _cssinjs.unit)(token.paddingXS)),
       lineHeight: lineHeight,
       flex: 'auto',

@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-slider", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/slider/SliderTooltip", "antd4mx/slider/style"], function (_exports, _react, _classnames, _rcSlider, _warning, _configProvider, _DisabledContext, _SliderTooltip, _style) {
+define(["exports", "react", "classnames", "rc-slider", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/slider/SliderTooltip", "antd4mx/slider/style/index"], function (_exports, _react, _classnames, _rcSlider, _warning, _index, _DisabledContext, _SliderTooltip, _index2) {
   "use strict";
   "use client";
 
@@ -48,7 +48,7 @@ define(["exports", "react", "classnames", "rc-slider", "antd4mx/_util/warning", 
       legacyGetTooltipPopupContainer = props.getTooltipPopupContainer,
       legacyTooltipPlacement = props.tooltipPlacement,
       restProps = __rest(props, ["prefixCls", "range", "className", "rootClassName", "style", "disabled", "tooltipPrefixCls", "tipFormatter", "tooltipVisible", "getTooltipPopupContainer", "tooltipPlacement"]);
-    var _React$useContext = _react["default"].useContext(_configProvider.ConfigContext),
+    var _React$useContext = _react["default"].useContext(_index.ConfigContext),
       direction = _React$useContext.direction,
       slider = _React$useContext.slider,
       getPrefixCls = _React$useContext.getPrefixCls,
@@ -74,7 +74,7 @@ define(["exports", "react", "classnames", "rc-slider", "antd4mx/_util/warning", 
       return direction === 'rtl' ? 'left' : 'right';
     };
     var prefixCls = getPrefixCls('slider', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

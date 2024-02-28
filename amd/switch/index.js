@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/LoadingOutlined", "classnames", "rc-switch", "antd4mx/_util/wave", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/switch/style", "rc-util/es/hooks/useMergedState"], function (_exports, React, _LoadingOutlined, _classnames, _rcSwitch, _wave, _configProvider, _DisabledContext, _useSize, _style, _useMergedState3) {
+define(["exports", "react", "@ant-design/icons/es/icons/LoadingOutlined", "classnames", "rc-switch", "antd4mx/_util/wave/index", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/switch/style/index", "rc-util/es/hooks/useMergedState"], function (_exports, React, _LoadingOutlined, _classnames, _rcSwitch, _index, _index2, _DisabledContext, _useSize, _index3, _useMergedState3) {
   "use strict";
   "use client";
 
@@ -45,7 +45,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/LoadingOutlined", "class
       _useMergedState2 = _slicedToArray(_useMergedState, 2),
       checked = _useMergedState2[0],
       setChecked = _useMergedState2[1];
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       SWITCH = _React$useContext["switch"];
@@ -59,7 +59,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/LoadingOutlined", "class
       className: "".concat(prefixCls, "-loading-icon")
     }));
     // Style
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -71,7 +71,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/LoadingOutlined", "class
       setChecked(arguments.length <= 0 ? undefined : arguments[0]);
       onChange === null || onChange === void 0 ? void 0 : onChange.apply(void 0, arguments);
     };
-    return wrapCSSVar( /*#__PURE__*/React.createElement(_wave["default"], {
+    return wrapCSSVar( /*#__PURE__*/React.createElement(_index["default"], {
       component: "Switch"
     }, /*#__PURE__*/React.createElement(_rcSwitch["default"], Object.assign({}, restProps, {
       checked: checked,

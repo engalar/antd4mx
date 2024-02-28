@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/popover/PurePanel", "antd4mx/tour/panelRender", "antd4mx/tour/style", "antd4mx/_util/PurePanel"], function (_exports, _classnames, React, _configProvider, _PurePanel, _panelRender, _style, _PurePanel2) {
+define(["exports", "classnames", "react", "antd4mx/config-provider/index", "antd4mx/popover/PurePanel", "antd4mx/tour/panelRender", "antd4mx/tour/style/index", "antd4mx/_util/PurePanel"], function (_exports, _classnames, React, _index, _PurePanel, _panelRender, _index2, _PurePanel2) {
   "use strict";
   "use client";
 
@@ -30,10 +30,10 @@ define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/po
       style = props.style,
       type = props.type,
       restProps = __rest(props, ["prefixCls", "current", "total", "className", "style", "type"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('tour', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

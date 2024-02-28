@@ -1,4 +1,4 @@
-define(["exports", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _tinycolor, _style, _internal, _cssinjs) {
+define(["exports", "@ctrl/tinycolor", "antd4mx/style/index", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _tinycolor, _index, _internal, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -21,7 +21,7 @@ define(["exports", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/theme/internal",
       colorFillContentHover = token.colorFillContentHover,
       handleColorDisabled = token.handleColorDisabled,
       calc = token.calc;
-    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), (_Object$assign = {
+    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), (_Object$assign = {
       position: 'relative',
       height: controlSize,
       margin: "".concat((0, _cssinjs.unit)(marginPart), " ").concat((0, _cssinjs.unit)(marginFull)),

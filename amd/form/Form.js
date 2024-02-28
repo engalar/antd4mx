@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-field-form", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/config-provider/SizeContext", "antd4mx/form/context", "antd4mx/form/hooks/useForm", "antd4mx/form/hooks/useFormWarning", "antd4mx/form/style", "antd4mx/form/validateMessagesContext"], function (_exports, _react, _classnames, _rcFieldForm, _configProvider, _DisabledContext, _useCSSVarCls, _useSize, _SizeContext, _context, _useForm3, _useFormWarning, _style, _validateMessagesContext) {
+define(["exports", "react", "classnames", "rc-field-form", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/config-provider/hooks/useSize", "antd4mx/config-provider/SizeContext", "antd4mx/form/context", "antd4mx/form/hooks/useForm", "antd4mx/form/hooks/useFormWarning", "antd4mx/form/style/index", "antd4mx/form/validateMessagesContext"], function (_exports, _react, _classnames, _rcFieldForm, _index, _DisabledContext, _useCSSVarCls, _useSize, _SizeContext, _context, _useForm3, _useFormWarning, _index2, _validateMessagesContext) {
   "use strict";
   "use client";
 
@@ -45,7 +45,7 @@ define(["exports", "react", "classnames", "rc-field-form", "antd4mx/config-provi
   };
   var InternalForm = function InternalForm(props, ref) {
     var contextDisabled = React.useContext(_DisabledContext["default"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       contextForm = _React$useContext.form;
@@ -94,7 +94,7 @@ define(["exports", "react", "classnames", "rc-field-form", "antd4mx/config-provi
     var prefixCls = getPrefixCls('form', customizePrefixCls);
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

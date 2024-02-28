@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/input-number"], function (_exports, _classnames, _react, _inputNumber) {
+define(["exports", "classnames", "react", "antd4mx/input-number/index"], function (_exports, _classnames, _react, _index) {
   "use strict";
   "use client";
 
@@ -33,7 +33,7 @@ define(["exports", "classnames", "react", "antd4mx/input-number"], function (_ex
         setStepValue(value);
       }
     }, [value]);
-    return /*#__PURE__*/_react["default"].createElement(_inputNumber["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_index["default"], {
       className: (0, _classnames["default"])(colorSteppersPrefixCls, className),
       min: min,
       max: max,

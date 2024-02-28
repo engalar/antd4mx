@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style/motion"], function (_exports, _cssinjs, _motion) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/motion/index"], function (_exports, _cssinjs, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -39,7 +39,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style/motion"], function (_ex
       animationName: uploadAnimateInlineIn
     }), "".concat(inlineCls, "-leave"), {
       animationName: uploadAnimateInlineOut
-    })), _defineProperty({}, "".concat(componentCls, "-wrapper"), (0, _motion.initFadeMotion)(token)), uploadAnimateInlineIn, uploadAnimateInlineOut];
+    })), _defineProperty({}, "".concat(componentCls, "-wrapper"), (0, _index.initFadeMotion)(token)), uploadAnimateInlineIn, uploadAnimateInlineOut];
   };
   var _default = _exports["default"] = genMotionStyle;
 });

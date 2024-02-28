@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "antd4mx/dropdown/style/status", "antd4mx/style/roundedArrow", "@ant-design/cssinjs"], function (_exports, _style, _motion, _placementArrow, _internal, _status, _roundedArrow, _cssinjs) {
+define(["exports", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "antd4mx/dropdown/style/status", "antd4mx/style/roundedArrow", "@ant-design/cssinjs"], function (_exports, _index, _index2, _placementArrow, _internal, _status, _roundedArrow, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -26,7 +26,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
       fontSizeIcon = token.fontSizeIcon,
       controlPaddingHorizontal = token.controlPaddingHorizontal,
       colorBgElevated = token.colorBgElevated;
-    return [_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return [_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'absolute',
       top: -9999,
       left: {
@@ -57,13 +57,13 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
     })), "\n        &-hidden,\n        &-menu-hidden,\n        &-menu-submenu-hidden\n      ", {
       display: 'none'
     }), "&".concat(antCls, "-slide-down-enter").concat(antCls, "-slide-down-enter-active").concat(componentCls, "-placement-bottomLeft,\n          &").concat(antCls, "-slide-down-appear").concat(antCls, "-slide-down-appear-active").concat(componentCls, "-placement-bottomLeft,\n          &").concat(antCls, "-slide-down-enter").concat(antCls, "-slide-down-enter-active").concat(componentCls, "-placement-bottom,\n          &").concat(antCls, "-slide-down-appear").concat(antCls, "-slide-down-appear-active").concat(componentCls, "-placement-bottom,\n          &").concat(antCls, "-slide-down-enter").concat(antCls, "-slide-down-enter-active").concat(componentCls, "-placement-bottomRight,\n          &").concat(antCls, "-slide-down-appear").concat(antCls, "-slide-down-appear-active").concat(componentCls, "-placement-bottomRight"), {
-      animationName: _motion.slideUpIn
+      animationName: _index2.slideUpIn
     }), "&".concat(antCls, "-slide-up-enter").concat(antCls, "-slide-up-enter-active").concat(componentCls, "-placement-topLeft,\n          &").concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active").concat(componentCls, "-placement-topLeft,\n          &").concat(antCls, "-slide-up-enter").concat(antCls, "-slide-up-enter-active").concat(componentCls, "-placement-top,\n          &").concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active").concat(componentCls, "-placement-top,\n          &").concat(antCls, "-slide-up-enter").concat(antCls, "-slide-up-enter-active").concat(componentCls, "-placement-topRight,\n          &").concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active").concat(componentCls, "-placement-topRight"), {
-      animationName: _motion.slideDownIn
+      animationName: _index2.slideDownIn
     }), "&".concat(antCls, "-slide-down-leave").concat(antCls, "-slide-down-leave-active").concat(componentCls, "-placement-bottomLeft,\n          &").concat(antCls, "-slide-down-leave").concat(antCls, "-slide-down-leave-active").concat(componentCls, "-placement-bottom,\n          &").concat(antCls, "-slide-down-leave").concat(antCls, "-slide-down-leave-active").concat(componentCls, "-placement-bottomRight"), {
-      animationName: _motion.slideUpOut
+      animationName: _index2.slideUpOut
     }), "&".concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active").concat(componentCls, "-placement-topLeft,\n          &").concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active").concat(componentCls, "-placement-top,\n          &").concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active").concat(componentCls, "-placement-topRight"), {
-      animationName: _motion.slideDownOut
+      animationName: _index2.slideDownOut
     }))),
     // =============================================================
     // ==                        Arrow style                      ==
@@ -94,7 +94,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
       borderRadius: token.borderRadiusLG,
       outline: 'none',
       boxShadow: token.boxShadowSecondary
-    }, (0, _style.genFocusStyle)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    }, (0, _index.genFocusStyle)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       '&:empty': {
         padding: 0,
         boxShadow: 'none'
@@ -138,7 +138,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
       borderRadius: token.borderRadiusSM
     }, "&:hover, &-active", {
       backgroundColor: token.controlItemBgHover
-    }), (0, _style.genFocusStyle)(token)), _defineProperty({
+    }), (0, _index.genFocusStyle)(token)), _defineProperty({
       '&-selected': {
         color: token.colorPrimary,
         backgroundColor: token.controlItemBgActive,
@@ -190,7 +190,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
       color: token.colorPrimary
     })))),
     // Follow code may reuse in other components
-    [(0, _motion.initSlideMotion)(token, 'slide-up'), (0, _motion.initSlideMotion)(token, 'slide-down'), (0, _motion.initMoveMotion)(token, 'move-up'), (0, _motion.initMoveMotion)(token, 'move-down'), (0, _motion.initZoomMotion)(token, 'zoom-big')]];
+    [(0, _index2.initSlideMotion)(token, 'slide-up'), (0, _index2.initSlideMotion)(token, 'slide-down'), (0, _index2.initMoveMotion)(token, 'move-up'), (0, _index2.initMoveMotion)(token, 'move-down'), (0, _index2.initZoomMotion)(token, 'zoom-big')]];
   };
   // ============================== Export ==============================
   var prepareComponentToken = _exports.prepareComponentToken = function prepareComponentToken(token) {

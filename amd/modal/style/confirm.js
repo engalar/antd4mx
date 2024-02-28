@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/modal/style", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _style2, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/modal/style/index", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _index2, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -27,7 +27,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/modal/style", "antd4mx/style"
       }
     }, "".concat(token.antCls, "-modal-header"), {
       display: 'none'
-    }), "".concat(confirmComponentCls, "-body-wrapper"), Object.assign({}, (0, _style2.clearFix)())), "&".concat(componentCls, " ").concat(componentCls, "-body"), {
+    }), "".concat(confirmComponentCls, "-body-wrapper"), Object.assign({}, (0, _index2.clearFix)())), "&".concat(componentCls, " ").concat(componentCls, "-body"), {
       padding: confirmBodyPadding
     }), "".concat(confirmComponentCls, "-body"), _defineProperty(_defineProperty({
       display: 'flex',
@@ -73,9 +73,9 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/modal/style", "antd4mx/style"
   };
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genSubStyleComponent)(['Modal', 'confirm'], function (token) {
-    var modalToken = (0, _style.prepareToken)(token);
+    var modalToken = (0, _index.prepareToken)(token);
     return [genModalConfirmStyle(modalToken)];
-  }, _style.prepareComponentToken, {
+  }, _index.prepareComponentToken, {
     // confirm is weak than modal since no conflict here
     order: -1000
   });

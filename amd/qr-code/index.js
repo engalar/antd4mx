@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/ReloadOutlined", "classnames", "qrcode.react", "antd4mx/_util/warning", "antd4mx/button", "antd4mx/config-provider", "antd4mx/locale", "antd4mx/spin", "antd4mx/theme/internal", "antd4mx/qr-code/style/index"], function (_exports, _react, _ReloadOutlined, _classnames, _qrcode, _warning, _button, _configProvider, _locale, _spin, _internal, _index) {
+define(["exports", "react", "@ant-design/icons/es/icons/ReloadOutlined", "classnames", "qrcode.react", "antd4mx/_util/warning", "antd4mx/button/index", "antd4mx/config-provider/index", "antd4mx/locale/index", "antd4mx/spin/index", "antd4mx/theme/internal", "antd4mx/qr-code/style/index"], function (_exports, _react, _ReloadOutlined, _classnames, _qrcode, _warning, _index, _index2, _index3, _index4, _internal, _index5) {
   "use strict";
   "use client";
 
@@ -44,10 +44,10 @@ define(["exports", "react", "@ant-design/icons/es/icons/ReloadOutlined", "classn
       customizePrefixCls = props.prefixCls,
       _props$bgColor = props.bgColor,
       bgColor = _props$bgColor === void 0 ? 'transparent' : _props$bgColor;
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index2.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls;
     var prefixCls = getPrefixCls('qrcode', customizePrefixCls);
-    var _useStyle = (0, _index["default"])(prefixCls),
+    var _useStyle = (0, _index5["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -72,7 +72,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/ReloadOutlined", "classn
       },
       imageSettings: icon ? imageSettings : undefined
     };
-    var _useLocale = (0, _locale.useLocale)('QRCode'),
+    var _useLocale = (0, _index3.useLocale)('QRCode'),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       locale = _useLocale2[0];
     if (process.env.NODE_ENV !== 'production') {
@@ -93,9 +93,9 @@ define(["exports", "react", "@ant-design/icons/es/icons/ReloadOutlined", "classn
       })
     }, status !== 'active' && ( /*#__PURE__*/_react["default"].createElement("div", {
       className: "".concat(prefixCls, "-mask")
-    }, status === 'loading' && /*#__PURE__*/_react["default"].createElement(_spin["default"], null), status === 'expired' && ( /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("p", {
+    }, status === 'loading' && /*#__PURE__*/_react["default"].createElement(_index4["default"], null), status === 'expired' && ( /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement("p", {
       className: "".concat(prefixCls, "-expired")
-    }, locale === null || locale === void 0 ? void 0 : locale.expired), onRefresh && ( /*#__PURE__*/_react["default"].createElement(_button["default"], {
+    }, locale === null || locale === void 0 ? void 0 : locale.expired), onRefresh && ( /*#__PURE__*/_react["default"].createElement(_index["default"], {
       type: "link",
       icon: /*#__PURE__*/_react["default"].createElement(_ReloadOutlined["default"], null),
       onClick: onRefresh

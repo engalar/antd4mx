@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/date-picker/style", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _style2, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/date-picker/style/index", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _index2, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -15,7 +15,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/date-picker/style", "antd4mx/
       fullBg = token.fullBg,
       fullPanelBg = token.fullPanelBg,
       itemActiveBg = token.itemActiveBg;
-    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, calendarCls, Object.assign(Object.assign(Object.assign({}, (0, _style.genPanelStyle)(token)), (0, _style2.resetComponent)(token)), _defineProperty({
+    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, calendarCls, Object.assign(Object.assign(Object.assign({}, (0, _index.genPanelStyle)(token)), (0, _index2.resetComponent)(token)), _defineProperty({
       background: fullBg,
       '&-rtl': {
         direction: 'rtl'
@@ -139,11 +139,11 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/date-picker/style", "antd4mx/
       yearControlWidth: 80,
       monthControlWidth: 70,
       miniContentHeight: 256
-    }, (0, _style.initPanelComponentToken)(token));
+    }, (0, _index.initPanelComponentToken)(token));
   };
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('Calendar', function (token) {
     var calendarCls = "".concat(token.componentCls, "-calendar");
-    var calendarToken = (0, _internal.mergeToken)(token, (0, _style.initPickerPanelToken)(token), {
+    var calendarToken = (0, _internal.mergeToken)(token, (0, _index.initPickerPanelToken)(token), {
       calendarCls: calendarCls,
       pickerCellInnerCls: "".concat(token.componentCls, "-cell-inner"),
       dateValueHeight: token.controlHeightSM,

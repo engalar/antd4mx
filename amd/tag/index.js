@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "antd4mx/_util/colors", "antd4mx/_util/hooks/useClosable", "antd4mx/_util/warning", "antd4mx/_util/wave", "antd4mx/config-provider", "antd4mx/tag/CheckableTag", "antd4mx/tag/style", "antd4mx/tag/style/presetCmp", "antd4mx/tag/style/statusCmp"], function (_exports, React, _CloseOutlined, _classnames, _colors, _useClosable3, _warning, _wave, _configProvider, _CheckableTag, _style, _presetCmp, _statusCmp) {
+define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "antd4mx/_util/colors", "antd4mx/_util/hooks/useClosable", "antd4mx/_util/warning", "antd4mx/_util/wave/index", "antd4mx/config-provider/index", "antd4mx/tag/CheckableTag", "antd4mx/tag/style/index", "antd4mx/tag/style/presetCmp", "antd4mx/tag/style/statusCmp"], function (_exports, React, _CloseOutlined, _classnames, _colors, _useClosable3, _warning, _index, _index2, _CheckableTag, _index3, _presetCmp, _statusCmp) {
   "use strict";
   "use client";
 
@@ -38,7 +38,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classna
       _tagProps$bordered = tagProps.bordered,
       bordered = _tagProps$bordered === void 0 ? true : _tagProps$bordered,
       props = __rest(tagProps, ["prefixCls", "className", "rootClassName", "style", "children", "icon", "color", "onClose", "closeIcon", "closable", "bordered"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       tag = _React$useContext.tag;
@@ -63,7 +63,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classna
       backgroundColor: color && !isInternalColor ? color : undefined
     }, tag === null || tag === void 0 ? void 0 : tag.style), style);
     var prefixCls = getPrefixCls('tag', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -103,7 +103,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "classna
       key: "status",
       prefixCls: prefixCls
     }));
-    return wrapCSSVar(isNeedWave ? /*#__PURE__*/React.createElement(_wave["default"], {
+    return wrapCSSVar(isNeedWave ? /*#__PURE__*/React.createElement(_index["default"], {
       component: "Tag"
     }, tagNode) : tagNode);
   };

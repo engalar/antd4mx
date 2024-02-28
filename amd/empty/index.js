@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/locale", "antd4mx/empty/empty", "antd4mx/empty/simple", "antd4mx/empty/style"], function (_exports, _classnames, React, _configProvider, _locale, _empty, _simple, _style) {
+define(["exports", "classnames", "react", "antd4mx/config-provider/index", "antd4mx/locale/index", "antd4mx/empty/empty", "antd4mx/empty/simple", "antd4mx/empty/style/index"], function (_exports, _classnames, React, _index, _index2, _empty, _simple, _index3) {
   "use strict";
   "use client";
 
@@ -37,17 +37,17 @@ define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/lo
       imageStyle = _a.imageStyle,
       style = _a.style,
       restProps = __rest(_a, ["className", "rootClassName", "prefixCls", "image", "description", "children", "imageStyle", "style"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       empty = _React$useContext.empty;
     var prefixCls = getPrefixCls('empty', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index3["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
       cssVarCls = _useStyle2[2];
-    var _useLocale = (0, _locale.useLocale)('Empty'),
+    var _useLocale = (0, _index2.useLocale)('Empty'),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       locale = _useLocale2[0];
     var des = typeof description !== 'undefined' ? description : locale === null || locale === void 0 ? void 0 : locale.description;

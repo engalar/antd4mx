@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/colors", "@ant-design/cssinjs", "antd4mx/style"], function (_exports, _colors, _cssinjs, _style) {
+define(["exports", "@ant-design/colors", "@ant-design/cssinjs", "antd4mx/style/index"], function (_exports, _colors, _cssinjs, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -41,7 +41,7 @@ define(["exports", "@ant-design/colors", "@ant-design/cssinjs", "antd4mx/style"]
   var getLinkStyles = _exports.getLinkStyles = function getLinkStyles(token) {
     var componentCls = token.componentCls;
     return {
-      'a&, a': Object.assign(Object.assign({}, (0, _style.operationUnit)(token)), _defineProperty({
+      'a&, a': Object.assign(Object.assign({}, (0, _index.operationUnit)(token)), _defineProperty({
         textDecoration: token.linkDecoration,
         '&:active, &:hover': {
           textDecoration: token.linkHoverDecoration

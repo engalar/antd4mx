@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/typography/style/mixins"], function (_exports, _style, _internal, _mixins) {
+define(["exports", "antd4mx/style/index", "antd4mx/theme/internal", "antd4mx/typography/style/mixins"], function (_exports, _index, _internal, _mixins) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -40,7 +40,7 @@ define(["exports", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/typograph
       marginTop: titleMarginTop
     }), "\n      div,\n      ul,\n      li,\n      p,\n      h1,\n      h2,\n      h3,\n      h4,\n      h5", _defineProperty({}, "\n        + h1,\n        + h2,\n        + h3,\n        + h4,\n        + h5\n        ", {
       marginTop: titleMarginTop
-    }))), (0, _mixins.getResetStyles)(token)), (0, _mixins.getLinkStyles)(token)), _defineProperty({}, "\n        ".concat(componentCls, "-expand,\n        ").concat(componentCls, "-edit,\n        ").concat(componentCls, "-copy\n      "), Object.assign(Object.assign({}, (0, _style.operationUnit)(token)), {
+    }))), (0, _mixins.getResetStyles)(token)), (0, _mixins.getLinkStyles)(token)), _defineProperty({}, "\n        ".concat(componentCls, "-expand,\n        ").concat(componentCls, "-edit,\n        ").concat(componentCls, "-copy\n      "), Object.assign(Object.assign({}, (0, _index.operationUnit)(token)), {
       marginInlineStart: token.marginXXS
     }))), (0, _mixins.getEditableStyles)(token)), (0, _mixins.getCopyableStyles)(token)), (0, _mixins.getEllipsisStyles)()), {
       '&-rtl': {

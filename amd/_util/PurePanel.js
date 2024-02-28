@@ -1,4 +1,4 @@
-define(["exports", "react", "rc-util/es/hooks/useMergedState", "antd4mx/config-provider"], function (_exports, React, _useMergedState3, _configProvider) {
+define(["exports", "react", "rc-util/es/hooks/useMergedState", "antd4mx/config-provider/index"], function (_exports, React, _useMergedState3, _index) {
   "use strict";
   "use client";
 
@@ -15,7 +15,7 @@ define(["exports", "react", "rc-util/es/hooks/useMergedState", "antd4mx/config-p
   function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   function withPureRenderTheme(Component) {
     return function (props) {
-      return /*#__PURE__*/React.createElement(_configProvider["default"], {
+      return /*#__PURE__*/React.createElement(_index["default"], {
         theme: {
           token: {
             motion: false,
@@ -45,7 +45,7 @@ define(["exports", "react", "rc-util/es/hooks/useMergedState", "antd4mx/config-p
         _useMergedState2 = _slicedToArray(_useMergedState, 2),
         open = _useMergedState2[0],
         setOpen = _useMergedState2[1];
-      var _React$useContext = React.useContext(_configProvider.ConfigContext),
+      var _React$useContext = React.useContext(_index.ConfigContext),
         getPrefixCls = _React$useContext.getPrefixCls;
       var prefixCls = getPrefixCls(defaultPrefixCls || 'select', customizePrefixCls);
       React.useEffect(function () {

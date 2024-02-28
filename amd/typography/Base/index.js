@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icons/es/icons/CopyOutlined", "@ant-design/icons/es/icons/EditOutlined", "classnames", "copy-to-clipboard", "rc-resize-observer", "rc-util/es/Children/toArray", "rc-util/es/hooks/useLayoutEffect", "rc-util/es/hooks/useMergedState", "rc-util/es/omit", "rc-util/es/ref", "antd4mx/_util/styleChecker", "antd4mx/_util/transButton", "antd4mx/config-provider", "antd4mx/locale/useLocale", "antd4mx/tooltip", "antd4mx/typography/Editable", "antd4mx/typography/hooks/useMergedConfig", "antd4mx/typography/hooks/useUpdatedEffect", "antd4mx/typography/Typography", "antd4mx/typography/Base/Ellipsis", "antd4mx/typography/Base/EllipsisTooltip"], function (_exports, React, _CheckOutlined, _CopyOutlined, _EditOutlined, _classnames, _copyToClipboard, _rcResizeObserver, _toArray, _useLayoutEffect, _useMergedState3, _omit, _ref3, _styleChecker, _transButton, _configProvider, _useLocale3, _tooltip, _Editable, _useMergedConfig7, _useUpdatedEffect, _Typography, _Ellipsis, _EllipsisTooltip) {
+define(["exports", "react", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icons/es/icons/CopyOutlined", "@ant-design/icons/es/icons/EditOutlined", "classnames", "copy-to-clipboard", "rc-resize-observer", "rc-util/es/Children/toArray", "rc-util/es/hooks/useLayoutEffect", "rc-util/es/hooks/useMergedState", "rc-util/es/omit", "rc-util/es/ref", "antd4mx/_util/styleChecker", "antd4mx/_util/transButton", "antd4mx/config-provider/index", "antd4mx/locale/useLocale", "antd4mx/tooltip/index", "antd4mx/typography/Editable", "antd4mx/typography/hooks/useMergedConfig", "antd4mx/typography/hooks/useUpdatedEffect", "antd4mx/typography/Typography", "antd4mx/typography/Base/Ellipsis", "antd4mx/typography/Base/EllipsisTooltip"], function (_exports, React, _CheckOutlined, _CopyOutlined, _EditOutlined, _classnames, _copyToClipboard, _rcResizeObserver, _toArray, _useLayoutEffect, _useMergedState3, _omit, _ref3, _styleChecker, _transButton, _index, _useLocale3, _index2, _Editable, _useMergedConfig7, _useUpdatedEffect, _Typography, _Ellipsis, _EllipsisTooltip) {
   "use strict";
   "use client";
 
@@ -75,7 +75,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CheckOutlined", "@ant-de
       component = props.component,
       title = props.title,
       restProps = __rest(props, ["prefixCls", "className", "style", "type", "disabled", "children", "ellipsis", "editable", "copyable", "component", "title"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var _useLocale = (0, _useLocale3["default"])('Text'),
@@ -364,7 +364,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CheckOutlined", "@ant-de
         tooltip = editConfig.tooltip;
       var editTitle = (0, _toArray["default"])(tooltip)[0] || (textLocale === null || textLocale === void 0 ? void 0 : textLocale.edit);
       var ariaLabel = typeof editTitle === 'string' ? editTitle : '';
-      return triggerType.includes('icon') ? ( /*#__PURE__*/React.createElement(_tooltip["default"], {
+      return triggerType.includes('icon') ? ( /*#__PURE__*/React.createElement(_index2["default"], {
         key: "edit",
         title: tooltip === false ? '' : editTitle
       }, /*#__PURE__*/React.createElement(_transButton["default"], {
@@ -388,7 +388,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CheckOutlined", "@ant-de
       var copyTitle = copied ? getNode(tooltipNodes[1], textLocale === null || textLocale === void 0 ? void 0 : textLocale.copied) : getNode(tooltipNodes[0], textLocale === null || textLocale === void 0 ? void 0 : textLocale.copy);
       var systemStr = copied ? textLocale === null || textLocale === void 0 ? void 0 : textLocale.copied : textLocale === null || textLocale === void 0 ? void 0 : textLocale.copy;
       var ariaLabel = typeof copyTitle === 'string' ? copyTitle : systemStr;
-      return /*#__PURE__*/React.createElement(_tooltip["default"], {
+      return /*#__PURE__*/React.createElement(_index2["default"], {
         key: "copy",
         title: copyTitle
       }, /*#__PURE__*/React.createElement(_transButton["default"], {

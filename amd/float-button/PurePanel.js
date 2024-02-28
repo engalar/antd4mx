@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/float-button/BackTop", "antd4mx/float-button/FloatButton", "antd4mx/float-button/FloatButtonGroup"], function (_exports, _classnames, React, _configProvider, _BackTop, _FloatButton, _FloatButtonGroup) {
+define(["exports", "classnames", "react", "antd4mx/config-provider/index", "antd4mx/float-button/BackTop", "antd4mx/float-button/FloatButton", "antd4mx/float-button/FloatButtonGroup"], function (_exports, _classnames, React, _index, _BackTop, _FloatButton, _FloatButtonGroup) {
   "use strict";
   "use client";
 
@@ -29,7 +29,7 @@ define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/fl
       items = _a.items,
       props = __rest(_a, ["className", "items"]);
     var customizePrefixCls = props.prefixCls;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls(_FloatButton.floatButtonPrefixCls, customizePrefixCls);
     var pureCls = "".concat(prefixCls, "-pure");

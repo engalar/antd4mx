@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/grid/RowContext", "antd4mx/grid/style"], function (_exports, React, _classnames, _configProvider, _RowContext, _style) {
+define(["exports", "react", "classnames", "antd4mx/config-provider/index", "antd4mx/grid/RowContext", "antd4mx/grid/style/index"], function (_exports, React, _classnames, _index, _RowContext, _index2) {
   "use strict";
   "use client";
 
@@ -35,7 +35,7 @@ define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/gr
   }
   var sizes = ['xs', 'sm', 'md', 'lg', 'xl', 'xxl'];
   var Col = /*#__PURE__*/React.forwardRef(function (props, ref) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var _React$useContext2 = React.useContext(_RowContext["default"]),
@@ -53,7 +53,7 @@ define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/gr
       style = props.style,
       others = __rest(props, ["prefixCls", "span", "order", "offset", "push", "pull", "className", "children", "flex", "style"]);
     var prefixCls = getPrefixCls('col', customizePrefixCls);
-    var _useColStyle = (0, _style.useColStyle)(prefixCls),
+    var _useColStyle = (0, _index2.useColStyle)(prefixCls),
       _useColStyle2 = _slicedToArray(_useColStyle, 3),
       wrapCSSVar = _useColStyle2[0],
       hashId = _useColStyle2[1],

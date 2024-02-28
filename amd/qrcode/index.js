@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/qr-code"], function (_exports, _qrCode) {
+define(["exports", "antd4mx/qr-code/index"], function (_exports, _index) {
   "use strict";
   "use client";
 
@@ -8,5 +8,5 @@ define(["exports", "antd4mx/qr-code"], function (_exports, _qrCode) {
     value: true
   });
   _exports["default"] = void 0;
-  var _default = _exports["default"] = _qrCode["default"];
+  var _default = _exports["default"] = _index["default"];
 });

@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "@ant-design/icons/es/icons/EllipsisOutlined", "antd4mx/button", "antd4mx/config-provider", "antd4mx/space", "antd4mx/space/Compact", "antd4mx/dropdown/dropdown"], function (_exports, _classnames, React, _EllipsisOutlined, _button, _configProvider, _space, _Compact, _dropdown) {
+define(["exports", "classnames", "react", "@ant-design/icons/es/icons/EllipsisOutlined", "antd4mx/button/index", "antd4mx/config-provider/index", "antd4mx/space/index", "antd4mx/space/Compact", "antd4mx/dropdown/dropdown"], function (_exports, _classnames, React, _EllipsisOutlined, _index, _index2, _index3, _Compact, _dropdown) {
   "use strict";
   "use client";
 
@@ -21,7 +21,7 @@ define(["exports", "classnames", "react", "@ant-design/icons/es/icons/EllipsisOu
     return t;
   };
   var DropdownButton = function DropdownButton(props) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       getContextPopupContainer = _React$useContext.getPopupContainer,
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
@@ -93,7 +93,7 @@ define(["exports", "classnames", "react", "@ant-design/icons/es/icons/EllipsisOu
     } else {
       dropdownProps.placement = direction === 'rtl' ? 'bottomLeft' : 'bottomRight';
     }
-    var leftButton = /*#__PURE__*/React.createElement(_button["default"], {
+    var leftButton = /*#__PURE__*/React.createElement(_index["default"], {
       type: type,
       danger: danger,
       disabled: disabled,
@@ -103,7 +103,7 @@ define(["exports", "classnames", "react", "@ant-design/icons/es/icons/EllipsisOu
       href: href,
       title: title
     }, children);
-    var rightButton = /*#__PURE__*/React.createElement(_button["default"], {
+    var rightButton = /*#__PURE__*/React.createElement(_index["default"], {
       type: type,
       danger: danger,
       icon: icon
@@ -112,7 +112,7 @@ define(["exports", "classnames", "react", "@ant-design/icons/es/icons/EllipsisOu
       _buttonsRender2 = _slicedToArray(_buttonsRender, 2),
       leftButtonToRender = _buttonsRender2[0],
       rightButtonToRender = _buttonsRender2[1];
-    return /*#__PURE__*/React.createElement(_space["default"].Compact, Object.assign({
+    return /*#__PURE__*/React.createElement(_index3["default"].Compact, Object.assign({
       className: classes,
       size: compactSize,
       block: true

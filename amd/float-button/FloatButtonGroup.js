@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/FileTextOutlined", "classnames", "rc-motion", "rc-util/es/hooks/useMergedState", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/float-button/context", "antd4mx/float-button/FloatButton", "antd4mx/float-button/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _react, _CloseOutlined, _FileTextOutlined, _classnames, _rcMotion, _useMergedState3, _warning, _configProvider, _context, _FloatButton, _style, _useCSSVarCls) {
+define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-design/icons/es/icons/FileTextOutlined", "classnames", "rc-motion", "rc-util/es/hooks/useMergedState", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/float-button/context", "antd4mx/float-button/FloatButton", "antd4mx/float-button/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, _react, _CloseOutlined, _FileTextOutlined, _classnames, _rcMotion, _useMergedState3, _warning, _index, _context, _FloatButton, _index2, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -42,12 +42,12 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseOutlined", "@ant-de
       onOpenChange = props.onOpenChange,
       customOpen = props.open,
       floatButtonProps = __rest(props, ["prefixCls", "className", "style", "shape", "type", "icon", "closeIcon", "description", "trigger", "children", "onOpenChange", "open"]);
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       direction = _useContext.direction,
       getPrefixCls = _useContext.getPrefixCls;
     var prefixCls = getPrefixCls(_FloatButton.floatButtonPrefixCls, customizePrefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

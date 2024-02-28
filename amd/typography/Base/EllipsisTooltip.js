@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/tooltip"], function (_exports, React, _tooltip) {
+define(["exports", "react", "antd4mx/tooltip/index"], function (_exports, React, _index) {
   "use strict";
   "use client";
 
@@ -14,7 +14,7 @@ define(["exports", "react", "antd4mx/tooltip"], function (_exports, React, _tool
     if (!(tooltipProps === null || tooltipProps === void 0 ? void 0 : tooltipProps.title) || !enabledEllipsis) {
       return children;
     }
-    return /*#__PURE__*/React.createElement(_tooltip["default"], Object.assign({
+    return /*#__PURE__*/React.createElement(_index["default"], Object.assign({
       open: isEllipsis ? undefined : false
     }, tooltipProps), children);
   };

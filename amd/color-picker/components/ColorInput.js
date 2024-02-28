@@ -1,4 +1,4 @@
-define(["exports", "rc-util/es/hooks/useMergedState", "react", "antd4mx/select", "antd4mx/color-picker/interface", "antd4mx/color-picker/components/ColorAlphaInput", "antd4mx/color-picker/components/ColorHexInput", "antd4mx/color-picker/components/ColorHsbInput", "antd4mx/color-picker/components/ColorRgbInput"], function (_exports, _useMergedState3, _react, _select, _interface, _ColorAlphaInput, _ColorHexInput, _ColorHsbInput, _ColorRgbInput) {
+define(["exports", "rc-util/es/hooks/useMergedState", "react", "antd4mx/select/index", "antd4mx/color-picker/interface", "antd4mx/color-picker/components/ColorAlphaInput", "antd4mx/color-picker/components/ColorHexInput", "antd4mx/color-picker/components/ColorHsbInput", "antd4mx/color-picker/components/ColorRgbInput"], function (_exports, _useMergedState3, _react, _index, _interface, _ColorAlphaInput, _ColorHexInput, _ColorHsbInput, _ColorRgbInput) {
   "use strict";
   "use client";
 
@@ -54,7 +54,7 @@ define(["exports", "rc-util/es/hooks/useMergedState", "react", "antd4mx/select",
     }, [colorFormat, prefixCls, value, onChange]);
     return /*#__PURE__*/_react["default"].createElement("div", {
       className: "".concat(colorInputPrefixCls, "-container")
-    }, /*#__PURE__*/_react["default"].createElement(_select["default"], {
+    }, /*#__PURE__*/_react["default"].createElement(_index["default"], {
       value: colorFormat,
       variant: "borderless",
       getPopupContainer: function getPopupContainer(current) {

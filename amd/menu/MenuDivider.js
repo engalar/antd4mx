@@ -1,4 +1,4 @@
-define(["exports", "classnames", "rc-menu", "react", "antd4mx/config-provider"], function (_exports, _classnames, _rcMenu, React, _configProvider) {
+define(["exports", "classnames", "rc-menu", "react", "antd4mx/config-provider/index"], function (_exports, _classnames, _rcMenu, React, _index) {
   "use strict";
   "use client";
 
@@ -23,7 +23,7 @@ define(["exports", "classnames", "rc-menu", "react", "antd4mx/config-provider"],
       className = props.className,
       dashed = props.dashed,
       restProps = __rest(props, ["prefixCls", "className", "dashed"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('menu', customizePrefixCls);
     var classString = (0, _classnames["default"])(_defineProperty({}, "".concat(prefixCls, "-item-divider-dashed"), !!dashed), className);

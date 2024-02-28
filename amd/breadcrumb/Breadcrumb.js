@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-util/es/pickAttrs", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/breadcrumb/BreadcrumbItem", "antd4mx/breadcrumb/BreadcrumbSeparator", "antd4mx/breadcrumb/style", "antd4mx/breadcrumb/useItemRender", "antd4mx/breadcrumb/useItems"], function (_exports, React, _classnames, _toArray, _pickAttrs, _reactNode, _warning, _configProvider, _BreadcrumbItem, _BreadcrumbSeparator, _style, _useItemRender, _useItems) {
+define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-util/es/pickAttrs", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/breadcrumb/BreadcrumbItem", "antd4mx/breadcrumb/BreadcrumbSeparator", "antd4mx/breadcrumb/style/index", "antd4mx/breadcrumb/useItemRender", "antd4mx/breadcrumb/useItems"], function (_exports, React, _classnames, _toArray, _pickAttrs, _reactNode, _warning, _index, _BreadcrumbItem, _BreadcrumbSeparator, _index2, _useItemRender, _useItems) {
   "use strict";
   "use client";
 
@@ -48,13 +48,13 @@ define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "rc-uti
       _props$params = props.params,
       params = _props$params === void 0 ? {} : _props$params,
       restProps = __rest(props, ["prefixCls", "separator", "style", "className", "rootClassName", "routes", "items", "children", "itemRender", "params"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       breadcrumb = _React$useContext.breadcrumb;
     var crumbs;
     var prefixCls = getPrefixCls('breadcrumb', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

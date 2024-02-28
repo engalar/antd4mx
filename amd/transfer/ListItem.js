@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "classnames", "react", "antd4mx/_util/transButton", "antd4mx/checkbox", "antd4mx/locale", "antd4mx/locale/en_US"], function (_exports, _DeleteOutlined, _classnames, React, _transButton, _checkbox, _locale, _en_US) {
+define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "classnames", "react", "antd4mx/_util/transButton", "antd4mx/checkbox/index", "antd4mx/locale/index", "antd4mx/locale/en_US"], function (_exports, _DeleteOutlined, _classnames, React, _transButton, _index, _index2, _en_US) {
   "use strict";
   "use client";
 
@@ -31,7 +31,7 @@ define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "classnames", "r
     if (typeof renderedText === 'string' || typeof renderedText === 'number') {
       title = String(renderedText);
     }
-    var _useLocale = (0, _locale.useLocale)('Transfer', _en_US["default"].Transfer),
+    var _useLocale = (0, _index2.useLocale)('Transfer', _en_US["default"].Transfer),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       contextLocale = _useLocale2[0];
     var liProps = {
@@ -55,7 +55,7 @@ define(["exports", "@ant-design/icons/es/icons/DeleteOutlined", "classnames", "r
     liProps.onClick = disabled || item.disabled ? undefined : function (event) {
       return onClick(item, event);
     };
-    return /*#__PURE__*/React.createElement("li", Object.assign({}, liProps), /*#__PURE__*/React.createElement(_checkbox["default"], {
+    return /*#__PURE__*/React.createElement("li", Object.assign({}, liProps), /*#__PURE__*/React.createElement(_index["default"], {
       className: "".concat(prefixCls, "-checkbox"),
       checked: checked,
       disabled: disabled || item.disabled

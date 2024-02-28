@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/config-provider", "antd4mx/badge/SingleNumber"], function (_exports, _classnames, React, _reactNode, _configProvider, _SingleNumber) {
+define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/config-provider/index", "antd4mx/badge/SingleNumber"], function (_exports, _classnames, React, _reactNode, _index, _SingleNumber) {
   "use strict";
   "use client";
 
@@ -26,7 +26,7 @@ define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/co
       Component = _props$component === void 0 ? 'sup' : _props$component,
       children = props.children,
       restProps = __rest(props, ["prefixCls", "count", "className", "motionClassName", "style", "title", "show", "component", "children"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('scroll-number', customizePrefixCls);
     // ============================ Render ============================

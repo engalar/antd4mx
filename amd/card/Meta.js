@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/config-provider"], function (_exports, _classnames, React, _configProvider) {
+define(["exports", "classnames", "react", "antd4mx/config-provider/index"], function (_exports, _classnames, React, _index) {
   "use strict";
   "use client";
 
@@ -21,7 +21,7 @@ define(["exports", "classnames", "react", "antd4mx/config-provider"], function (
       title = props.title,
       description = props.description,
       others = __rest(props, ["prefixCls", "className", "avatar", "title", "description"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('card', customizePrefixCls);
     var classString = (0, _classnames["default"])("".concat(prefixCls, "-meta"), className);

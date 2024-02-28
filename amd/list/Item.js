@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/config-provider", "antd4mx/grid", "antd4mx/list/context"], function (_exports, _classnames, _react, _reactNode, _configProvider, _grid, _context) {
+define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/config-provider/index", "antd4mx/grid/index", "antd4mx/list/context"], function (_exports, _classnames, _react, _reactNode, _index, _index2, _context) {
   "use strict";
   "use client";
 
@@ -25,7 +25,7 @@ define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/co
       title = _a.title,
       description = _a.description,
       others = __rest(_a, ["prefixCls", "className", "avatar", "title", "description"]);
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls;
     var prefixCls = getPrefixCls('list', customizePrefixCls);
     var classString = (0, _classnames["default"])("".concat(prefixCls, "-item-meta"), className);
@@ -53,7 +53,7 @@ define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/co
     var _useContext2 = (0, _react.useContext)(_context.ListContext),
       grid = _useContext2.grid,
       itemLayout = _useContext2.itemLayout;
-    var _useContext3 = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext3 = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext3.getPrefixCls;
     var isItemContainsTextNodeAndNotSingular = function isItemContainsTextNodeAndNotSingular() {
       var result;
@@ -98,7 +98,7 @@ define(["exports", "classnames", "react", "antd4mx/_util/reactNode", "antd4mx/co
     }, extra)] : [children, actionsContent, (0, _reactNode.cloneElement)(extra, {
       key: 'extra'
     })]);
-    return grid ? ( /*#__PURE__*/_react["default"].createElement(_grid.Col, {
+    return grid ? ( /*#__PURE__*/_react["default"].createElement(_index2.Col, {
       ref: ref,
       flex: 1,
       style: colStyle

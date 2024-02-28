@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -105,11 +105,11 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
         '> *': {
           flex: 'none'
         },
-        '&-title': Object.assign(Object.assign({}, _style.textEllipsis), {
+        '&-title': Object.assign(Object.assign({}, _index.textEllipsis), {
           flex: 'auto',
           textAlign: 'end'
         }),
-        '&-dropdown': Object.assign(Object.assign({}, (0, _style.resetIcon)()), {
+        '&-dropdown': Object.assign(Object.assign({}, (0, _index.resetIcon)()), {
           fontSize: fontSizeIcon,
           transform: 'translateY(10%)',
           cursor: 'pointer',
@@ -149,7 +149,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
           '> *': {
             flex: 'none'
           },
-          '&-text': Object.assign(Object.assign({}, _style.textEllipsis), {
+          '&-text': Object.assign(Object.assign({}, _index.textEllipsis), {
             flex: 'auto'
           }),
           '&-remove': {
@@ -214,7 +214,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       marginXXS = token.marginXXS,
       fontSizeIcon = token.fontSizeIcon,
       colorBgContainerDisabled = token.colorBgContainerDisabled;
-    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
       position: 'relative',
       display: 'flex',
       alignItems: 'stretch'

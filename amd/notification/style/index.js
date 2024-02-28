@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/_util/hooks/useZIndex", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/notification/style/placement", "antd4mx/notification/style/stack"], function (_exports, _cssinjs, _useZIndex, _style, _internal, _placement, _stack) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/_util/hooks/useZIndex", "antd4mx/style/index", "antd4mx/theme/internal", "antd4mx/notification/style/placement", "antd4mx/notification/style/stack"], function (_exports, _cssinjs, _useZIndex, _index, _internal, _placement, _stack) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -119,7 +119,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/_util/hooks/useZIndex", "antd
       }
     });
     return [// ============================ Holder ============================
-    _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'fixed',
       zIndex: token.zIndexPopup,
       marginRight: {

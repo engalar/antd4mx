@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-util/es/omit", "antd4mx/config-provider", "antd4mx/layout/context", "antd4mx/layout/hooks/useHasSider", "antd4mx/layout/style"], function (_exports, _toConsumableArray2, React, _classnames, _omit, _configProvider, _context, _useHasSider, _style) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-util/es/omit", "antd4mx/config-provider/index", "antd4mx/layout/context", "antd4mx/layout/hooks/useHasSider", "antd4mx/layout/style/index"], function (_exports, _toConsumableArray2, React, _classnames, _omit, _index, _context, _useHasSider, _index2) {
   "use strict";
   "use client";
 
@@ -48,10 +48,10 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
       className = props.className,
       TagName = props.tagName,
       others = __rest(props, ["prefixCls", "suffixCls", "className", "tagName"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('layout', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapSSR = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -63,7 +63,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
     }, others)));
   });
   var BasicLayout = /*#__PURE__*/React.forwardRef(function (props, ref) {
-    var _React$useContext2 = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext2 = React.useContext(_index.ConfigContext),
       direction = _React$useContext2.direction;
     var _React$useState = React.useState([]),
       _React$useState2 = _slicedToArray(_React$useState, 2),
@@ -78,12 +78,12 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
       style = props.style,
       others = __rest(props, ["prefixCls", "className", "rootClassName", "children", "hasSider", "tagName", "style"]);
     var passedProps = (0, _omit["default"])(others, ['suffixCls']);
-    var _React$useContext3 = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext3 = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext3.getPrefixCls,
       layout = _React$useContext3.layout;
     var prefixCls = getPrefixCls('layout', customizePrefixCls);
     var mergedHasSider = (0, _useHasSider["default"])(siders, children, hasSider);
-    var _useStyle3 = (0, _style["default"])(prefixCls),
+    var _useStyle3 = (0, _index2["default"])(prefixCls),
       _useStyle4 = _slicedToArray(_useStyle3, 3),
       wrapCSSVar = _useStyle4[0],
       hashId = _useStyle4[1],

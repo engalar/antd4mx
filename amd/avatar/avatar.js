@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/ref", "antd4mx/_util/responsiveObserver", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/avatar/AvatarContext", "antd4mx/avatar/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _classnames, _rcResizeObserver, _ref, _responsiveObserver, _warning, _configProvider, _useSize, _useBreakpoint, _AvatarContext, _style, _useCSSVarCls) {
+define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/ref", "antd4mx/_util/responsiveObserver", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/avatar/AvatarContext", "antd4mx/avatar/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _classnames, _rcResizeObserver, _ref, _responsiveObserver, _warning, _index, _useSize, _useBreakpoint, _AvatarContext, _index2, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -40,7 +40,7 @@ define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/ref"
     var avatarNodeRef = React.useRef(null);
     var avatarChildrenRef = React.useRef(null);
     var avatarNodeMergeRef = (0, _ref.composeRef)(ref, avatarNodeRef);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       avatar = _React$useContext.avatar;
     var avatarCtx = React.useContext(_AvatarContext["default"]);
@@ -115,7 +115,7 @@ define(["exports", "react", "classnames", "rc-resize-observer", "rc-util/es/ref"
     }
     var prefixCls = getPrefixCls('avatar', customizePrefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

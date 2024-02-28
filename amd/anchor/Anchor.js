@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-util", "scroll-into-view-if-needed", "antd4mx/_util/getScroll", "antd4mx/_util/scrollTo", "antd4mx/_util/warning", "antd4mx/affix", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/anchor/AnchorLink", "antd4mx/anchor/context", "antd4mx/anchor/style"], function (_exports, _toConsumableArray2, React, _classnames, _rcUtil, _scrollIntoViewIfNeeded, _getScroll, _scrollTo, _warning, _affix, _configProvider, _useCSSVarCls, _AnchorLink, _context, _style) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "classnames", "rc-util", "scroll-into-view-if-needed", "antd4mx/_util/getScroll", "antd4mx/_util/scrollTo", "antd4mx/_util/warning", "antd4mx/affix/index", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/anchor/AnchorLink", "antd4mx/anchor/context", "antd4mx/anchor/style/index"], function (_exports, _toConsumableArray2, React, _classnames, _rcUtil, _scrollIntoViewIfNeeded, _getScroll, _scrollTo, _warning, _index, _index2, _useCSSVarCls, _AnchorLink, _context, _index3) {
   "use strict";
   "use client";
 
@@ -76,14 +76,14 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
     var wrapperRef = React.useRef(null);
     var spanLinkNode = React.useRef(null);
     var animating = React.useRef(false);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       direction = _React$useContext.direction,
       anchor = _React$useContext.anchor,
       getTargetContainer = _React$useContext.getTargetContainer,
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('anchor', customPrefixCls);
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index3["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -250,7 +250,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "cla
     }, [activeLink, onClick, handleScrollTo, anchorDirection]);
     return wrapCSSVar( /*#__PURE__*/React.createElement(_context["default"].Provider, {
       value: memoizedContextValue
-    }, affix ? ( /*#__PURE__*/React.createElement(_affix["default"], {
+    }, affix ? ( /*#__PURE__*/React.createElement(_index["default"], {
       offsetTop: offsetTop,
       target: getCurrentContainer
     }, anchorContent)) : anchorContent));

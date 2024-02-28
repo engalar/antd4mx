@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/compact-item", "antd4mx/theme/internal", "antd4mx/input/style/token", "antd4mx/input/style/variants"], function (_exports, _cssinjs, _style, _compactItem, _internal, _token, _variants) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/style/compact-item", "antd4mx/theme/internal", "antd4mx/input/style/token", "antd4mx/input/style/variants"], function (_exports, _cssinjs, _index, _compactItem, _internal, _token, _variants) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -204,7 +204,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/compac
       borderEndStartRadius: 0
     })), "&".concat(componentCls, "-group-compact"), Object.assign(Object.assign({
       display: 'block'
-    }, (0, _style.clearFix)()), (_Object$assign = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_Object$assign, "".concat(componentCls, "-group-addon, ").concat(componentCls, "-group-wrap, > ").concat(componentCls), {
+    }, (0, _index.clearFix)()), (_Object$assign = {}, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_Object$assign, "".concat(componentCls, "-group-addon, ").concat(componentCls, "-group-wrap, > ").concat(componentCls), {
       '&:not(:first-child):not(:last-child)': {
         borderInlineEndWidth: token.lineWidth,
         '&:hover': {
@@ -269,7 +269,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/compac
       calc = token.calc;
     var FIXED_CHROME_COLOR_HEIGHT = 16;
     var colorSmallPadding = calc(controlHeightSM).sub(calc(lineWidth).mul(2)).sub(FIXED_CHROME_COLOR_HEIGHT).div(2).equal();
-    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), genBasicInputStyle(token)), (0, _variants.genOutlinedStyle)(token)), (0, _variants.genFilledStyle)(token)), (0, _variants.genBorderlessStyle)(token)), {
+    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), genBasicInputStyle(token)), (0, _variants.genOutlinedStyle)(token)), (0, _variants.genFilledStyle)(token)), (0, _variants.genBorderlessStyle)(token)), {
       '&[type="color"]': _defineProperty(_defineProperty({
         height: token.controlHeight
       }, "&".concat(componentCls, "-lg"), {
@@ -379,7 +379,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/compac
     var componentCls = token.componentCls,
       borderRadiusLG = token.borderRadiusLG,
       borderRadiusSM = token.borderRadiusSM;
-    return _defineProperty({}, "".concat(componentCls, "-group"), Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), genInputGroupStyle(token)), {
+    return _defineProperty({}, "".concat(componentCls, "-group"), Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), genInputGroupStyle(token)), {
       '&-rtl': {
         direction: 'rtl'
       },

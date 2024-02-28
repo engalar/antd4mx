@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/gapSize", "antd4mx/config-provider", "antd4mx/flex/style", "antd4mx/flex/utils"], function (_exports, _react, _classnames, _omit, _gapSize, _configProvider, _style, _utils) {
+define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/gapSize", "antd4mx/config-provider/index", "antd4mx/flex/style/index", "antd4mx/flex/utils"], function (_exports, _react, _classnames, _omit, _gapSize, _index, _index2, _utils) {
   "use strict";
   "use client";
 
@@ -37,12 +37,12 @@ define(["exports", "react", "classnames", "rc-util/es/omit", "antd4mx/_util/gapS
       _props$component = props.component,
       Component = _props$component === void 0 ? 'div' : _props$component,
       othersProps = __rest(props, ["prefixCls", "rootClassName", "className", "style", "flex", "gap", "children", "vertical", "component"]);
-    var _React$useContext = _react["default"].useContext(_configProvider.ConfigContext),
+    var _React$useContext = _react["default"].useContext(_index.ConfigContext),
       ctxFlex = _React$useContext.flex,
       ctxDirection = _React$useContext.direction,
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('flex', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

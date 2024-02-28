@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _style, _internal, _cssinjs) {
+define(["exports", "antd4mx/style/index", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _index, _internal, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -24,14 +24,14 @@ define(["exports", "antd4mx/style", "antd4mx/theme/internal", "@ant-design/cssin
   }
   var segmentedTextEllipsisCss = Object.assign({
     overflow: 'hidden'
-  }, _style.textEllipsis);
+  }, _index.textEllipsis);
   // ============================== Styles ==============================
   var genSegmentedStyle = function genSegmentedStyle(token) {
     var componentCls = token.componentCls;
     var labelHeight = token.calc(token.controlHeight).sub(token.calc(token.trackPadding).mul(2)).equal();
     var labelHeightLG = token.calc(token.controlHeightLG).sub(token.calc(token.trackPadding).mul(2)).equal();
     var labelHeightSM = token.calc(token.controlHeightSM).sub(token.calc(token.trackPadding).mul(2)).equal();
-    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       display: 'inline-block',
       padding: token.trackPadding,
       color: token.itemColor,

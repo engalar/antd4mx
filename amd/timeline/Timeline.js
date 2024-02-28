@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/timeline/style", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/timeline/TimelineItem", "antd4mx/timeline/TimelineItemList", "antd4mx/timeline/useItems"], function (_exports, React, _classnames, _warning, _configProvider, _style, _useCSSVarCls, _TimelineItem, _TimelineItemList, _useItems) {
+define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/timeline/style/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/timeline/TimelineItem", "antd4mx/timeline/TimelineItemList", "antd4mx/timeline/useItems"], function (_exports, React, _classnames, _warning, _index, _index2, _useCSSVarCls, _TimelineItem, _TimelineItemList, _useItems) {
   "use strict";
   "use client";
 
@@ -24,7 +24,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/conf
   // CSSINJS
 
   var Timeline = function Timeline(props) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       timeline = _React$useContext.timeline;
@@ -42,7 +42,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/conf
     }
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

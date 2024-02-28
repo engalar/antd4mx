@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/tag/style", "antd4mx/theme/internal"], function (_exports, _style, _internal) {
+define(["exports", "antd4mx/tag/style/index", "antd4mx/theme/internal"], function (_exports, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -33,7 +33,7 @@ define(["exports", "antd4mx/tag/style", "antd4mx/theme/internal"], function (_ex
   };
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genSubStyleComponent)(['Tag', 'preset'], function (token) {
-    var tagToken = (0, _style.prepareToken)(token);
+    var tagToken = (0, _index.prepareToken)(token);
     return genPresetStyle(tagToken);
-  }, _style.prepareComponentToken);
+  }, _index.prepareComponentToken);
 });

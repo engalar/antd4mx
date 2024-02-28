@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/badge/style", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _style2, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/badge/style/index", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _index2, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -27,7 +27,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/badge/style", "antd4mx/style"
     });
     return _defineProperty(_defineProperty({}, "".concat(ribbonWrapperPrefixCls), {
       position: 'relative'
-    }), "".concat(ribbonPrefixCls), Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), _defineProperty(_defineProperty({
+    }), "".concat(ribbonPrefixCls), Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), _defineProperty(_defineProperty({
       position: 'absolute',
       top: marginXS,
       padding: "0 ".concat((0, _cssinjs.unit)(token.paddingXS)),
@@ -68,7 +68,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/badge/style", "antd4mx/style"
   };
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genStyleHooks)(['Badge', 'Ribbon'], function (token) {
-    var badgeToken = (0, _style.prepareToken)(token);
+    var badgeToken = (0, _index.prepareToken)(token);
     return genRibbonStyle(badgeToken);
-  }, _style.prepareComponentToken);
+  }, _index.prepareComponentToken);
 });

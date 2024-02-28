@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/cascader/style", "antd4mx/theme/internal", "antd4mx/cascader/style/columns"], function (_exports, _cssinjs, _style, _internal, _columns) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/cascader/style/index", "antd4mx/theme/internal", "antd4mx/cascader/style/columns"], function (_exports, _cssinjs, _index, _internal, _columns) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -29,5 +29,5 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/cascader/style", "antd4mx/the
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genComponentStyleHook)(['Cascader', 'Panel'], function (token) {
     return genPanelStyle(token);
-  }, _style.prepareComponentToken);
+  }, _index.prepareComponentToken);
 });

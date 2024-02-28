@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -13,7 +13,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     var componentCls = token.componentCls,
       iconCls = token.iconCls,
       calc = token.calc;
-    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       color: token.itemColor,
       fontSize: token.fontSize
     }, iconCls, {
@@ -36,7 +36,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
         color: token.linkHoverColor,
         backgroundColor: token.colorBgTextHover
       }
-    }, (0, _style.genFocusStyle)(token))), "li:last-child", {
+    }, (0, _index.genFocusStyle)(token))), "li:last-child", {
       color: token.lastItemColor
     }), "".concat(componentCls, "-separator"), {
       marginInline: token.separatorMargin,

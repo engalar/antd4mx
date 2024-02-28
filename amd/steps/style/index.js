@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/steps/style/custom-icon", "antd4mx/steps/style/inline", "antd4mx/steps/style/label-placement", "antd4mx/steps/style/nav", "antd4mx/steps/style/progress", "antd4mx/steps/style/progress-dot", "antd4mx/steps/style/rtl", "antd4mx/steps/style/small", "antd4mx/steps/style/vertical"], function (_exports, _cssinjs, _style, _internal, _customIcon, _inline, _labelPlacement, _nav, _progress, _progressDot, _rtl, _small, _vertical) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal", "antd4mx/steps/style/custom-icon", "antd4mx/steps/style/inline", "antd4mx/steps/style/label-placement", "antd4mx/steps/style/nav", "antd4mx/steps/style/progress", "antd4mx/steps/style/progress-dot", "antd4mx/steps/style/rtl", "antd4mx/steps/style/small", "antd4mx/steps/style/vertical"], function (_exports, _cssinjs, _index, _internal, _customIcon, _inline, _labelPlacement, _nav, _progress, _progressDot, _rtl, _small, _vertical) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -63,7 +63,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       })
     }), "".concat(stepsItemCls, "-container"), _defineProperty({
       outline: 'none'
-    }, "&:focus-visible", _defineProperty({}, stepItemIconCls, Object.assign({}, (0, _style.genFocusOutline)(token))))), "".concat(stepItemIconCls, ", ").concat(stepsItemCls, "-content"), {
+    }, "&:focus-visible", _defineProperty({}, stepItemIconCls, Object.assign({}, (0, _index.genFocusOutline)(token))))), "".concat(stepItemIconCls, ", ").concat(stepsItemCls, "-content"), {
       display: 'inline-block',
       verticalAlign: 'top'
     }), stepItemIconCls, _defineProperty({
@@ -166,7 +166,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
   };
   var genStepsStyle = function genStepsStyle(token) {
     var componentCls = token.componentCls; // .ant-steps
-    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), {
       display: 'flex',
       width: '100%',
       fontSize: 0,

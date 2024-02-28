@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "rc-util/es/pickAttrs", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/radio/context", "antd4mx/radio/radio", "antd4mx/radio/style", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _classnames, _useMergedState3, _pickAttrs, _configProvider, _useSize, _context, _radio, _style, _useCSSVarCls) {
+define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "rc-util/es/pickAttrs", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/radio/context", "antd4mx/radio/radio", "antd4mx/radio/style/index", "antd4mx/config-provider/hooks/useCSSVarCls"], function (_exports, React, _classnames, _useMergedState3, _pickAttrs, _index, _useSize, _context, _radio, _index2, _useCSSVarCls) {
   "use strict";
   "use client";
 
@@ -17,7 +17,7 @@ define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "rc
   function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
   function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   var RadioGroup = /*#__PURE__*/React.forwardRef(function (props, ref) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var _useMergedState = (0, _useMergedState3["default"])(props.defaultValue, {
@@ -56,7 +56,7 @@ define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "rc
     var groupPrefixCls = "".concat(prefixCls, "-group");
     // Style
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

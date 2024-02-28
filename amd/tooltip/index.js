@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-tooltip", "rc-util/es/hooks/useMergedState", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/placements", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/_util/zindexContext", "antd4mx/config-provider", "antd4mx/space/Compact", "antd4mx/theme/internal", "antd4mx/tooltip/PurePanel", "antd4mx/tooltip/style", "antd4mx/tooltip/util"], function (_exports, React, _classnames, _rcTooltip, _useMergedState3, _useZIndex3, _motion, _placements, _reactNode, _warning, _zindexContext, _configProvider, _Compact, _internal, _PurePanel, _style, _util) {
+define(["exports", "react", "classnames", "rc-tooltip", "rc-util/es/hooks/useMergedState", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/placements", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/_util/zindexContext", "antd4mx/config-provider/index", "antd4mx/space/Compact", "antd4mx/theme/internal", "antd4mx/tooltip/PurePanel", "antd4mx/tooltip/style/index", "antd4mx/tooltip/util"], function (_exports, React, _classnames, _rcTooltip, _useMergedState3, _useZIndex3, _motion, _placements, _reactNode, _warning, _zindexContext, _index, _Compact, _internal, _PurePanel, _index2, _util) {
   "use strict";
   "use client";
 
@@ -49,7 +49,7 @@ define(["exports", "react", "classnames", "rc-tooltip", "rc-util/es/hooks/useMer
     var _useToken = (0, _internal.useToken)(),
       _useToken2 = _slicedToArray(_useToken, 2),
       token = _useToken2[1];
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getContextPopupContainer = _React$useContext.getPopupContainer,
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
@@ -142,7 +142,7 @@ define(["exports", "react", "classnames", "rc-tooltip", "rc-util/es/hooks/useMer
     var childProps = child.props;
     var childCls = !childProps.className || typeof childProps.className === 'string' ? (0, _classnames["default"])(childProps.className, openClassName || "".concat(prefixCls, "-open")) : childProps.className;
     // Style
-    var _useStyle = (0, _style["default"])(prefixCls, !injectFromPopover),
+    var _useStyle = (0, _index2["default"])(prefixCls, !injectFromPopover),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

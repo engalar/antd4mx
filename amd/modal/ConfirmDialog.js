@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/InfoCircleFilled", "classnames", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/locale", "antd4mx/theme/useToken", "antd4mx/modal/components/ConfirmCancelBtn", "antd4mx/modal/components/ConfirmOkBtn", "antd4mx/modal/context", "antd4mx/modal/Modal", "antd4mx/modal/style/confirm"], function (_exports, _toConsumableArray2, React, _CheckCircleFilled, _CloseCircleFilled, _ExclamationCircleFilled, _InfoCircleFilled, _classnames, _useZIndex, _motion, _warning, _configProvider, _locale, _useToken3, _ConfirmCancelBtn, _ConfirmOkBtn, _context, _Modal, _confirm) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/InfoCircleFilled", "classnames", "antd4mx/_util/hooks/useZIndex", "antd4mx/_util/motion", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/locale/index", "antd4mx/theme/useToken", "antd4mx/modal/components/ConfirmCancelBtn", "antd4mx/modal/components/ConfirmOkBtn", "antd4mx/modal/context", "antd4mx/modal/Modal", "antd4mx/modal/style/confirm"], function (_exports, _toConsumableArray2, React, _CheckCircleFilled, _CloseCircleFilled, _ExclamationCircleFilled, _InfoCircleFilled, _classnames, _useZIndex, _motion, _warning, _index, _index2, _useToken3, _ConfirmCancelBtn, _ConfirmOkBtn, _context, _Modal, _confirm) {
   "use strict";
   "use client";
 
@@ -61,7 +61,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
     // 默认为 true，保持向下兼容
     var mergedOkCancel = okCancel !== null && okCancel !== void 0 ? okCancel : type === 'confirm';
     var autoFocusButton = props.autoFocusButton === null ? false : props.autoFocusButton || 'ok';
-    var _useLocale = (0, _locale.useLocale)('Modal'),
+    var _useLocale = (0, _index2.useLocale)('Modal'),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       locale = _useLocale2[0];
     var mergedLocale = staticLocale || locale;
@@ -193,7 +193,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
       iconPrefixCls = props.iconPrefixCls,
       direction = props.direction,
       theme = props.theme;
-    return /*#__PURE__*/React.createElement(_configProvider["default"], {
+    return /*#__PURE__*/React.createElement(_index["default"], {
       prefixCls: rootPrefixCls,
       iconPrefixCls: iconPrefixCls,
       direction: direction,

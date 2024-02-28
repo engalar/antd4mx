@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "@ant-design/icons/es/icons/CaretDownOutlined", "@ant-design/icons/es/icons/CaretUpOutlined", "classnames", "rc-util/es/KeyCode", "react", "antd4mx/tooltip", "antd4mx/table/util"], function (_exports, _toConsumableArray2, _CaretDownOutlined, _CaretUpOutlined, _classnames, _KeyCode, React, _tooltip, _util) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "@ant-design/icons/es/icons/CaretDownOutlined", "@ant-design/icons/es/icons/CaretUpOutlined", "classnames", "rc-util/es/KeyCode", "react", "antd4mx/tooltip/index", "antd4mx/table/util"], function (_exports, _toConsumableArray2, _CaretDownOutlined, _CaretUpOutlined, _classnames, _KeyCode, React, _index, _util) {
   "use strict";
   "use client";
 
@@ -135,7 +135,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "@ant-design/
             }, /*#__PURE__*/React.createElement("span", {
               className: "".concat(prefixCls, "-column-title")
             }, (0, _util.renderColumnTitle)(column.title, renderProps)), sorter);
-            return showSorterTooltip ? ( /*#__PURE__*/React.createElement(_tooltip["default"], Object.assign({}, tooltipProps), renderSortTitle)) : renderSortTitle;
+            return showSorterTooltip ? ( /*#__PURE__*/React.createElement(_index["default"], Object.assign({}, tooltipProps), renderSortTitle)) : renderSortTitle;
           },
           onHeaderCell: function onHeaderCell(col) {
             var cell = column.onHeaderCell && column.onHeaderCell(col) || {};

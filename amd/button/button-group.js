@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/theme/internal"], function (_exports, React, _classnames, _warning, _configProvider, _internal) {
+define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/theme/internal"], function (_exports, React, _classnames, _warning, _index, _internal) {
   "use strict";
   "use client";
 
@@ -26,7 +26,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/warning", "antd4mx/conf
   };
   var GroupSizeContext = _exports.GroupSizeContext = /*#__PURE__*/React.createContext(undefined);
   var ButtonGroup = function ButtonGroup(props) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var customizePrefixCls = props.prefixCls,

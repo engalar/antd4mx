@@ -1,4 +1,4 @@
-define(["exports", "classnames", "rc-util/es/ref", "rc-util/es/Dom/isVisible", "react", "antd4mx/config-provider", "antd4mx/_util/reactNode", "antd4mx/_util/wave/style", "antd4mx/_util/wave/useWave"], function (_exports, _classnames, _ref, _isVisible, _react, _configProvider, _reactNode, _style, _useWave) {
+define(["exports", "classnames", "rc-util/es/ref", "rc-util/es/Dom/isVisible", "react", "antd4mx/config-provider/index", "antd4mx/_util/reactNode", "antd4mx/_util/wave/style", "antd4mx/_util/wave/useWave"], function (_exports, _classnames, _ref, _isVisible, _react, _index, _reactNode, _style, _useWave) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -15,7 +15,7 @@ define(["exports", "classnames", "rc-util/es/ref", "rc-util/es/Dom/isVisible", "
     var children = props.children,
       disabled = props.disabled,
       component = props.component;
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls;
     var containerRef = (0, _react.useRef)(null);
     // ============================== Style ===============================

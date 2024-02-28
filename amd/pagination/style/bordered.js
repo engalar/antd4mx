@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/theme/util/genComponentStyleHook", "antd4mx/pagination/style", "@ant-design/cssinjs"], function (_exports, _genComponentStyleHook, _style, _cssinjs) {
+define(["exports", "antd4mx/theme/util/genComponentStyleHook", "antd4mx/pagination/style/index", "@ant-design/cssinjs"], function (_exports, _genComponentStyleHook, _index, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -67,7 +67,7 @@ define(["exports", "antd4mx/theme/util/genComponentStyleHook", "antd4mx/paginati
     })));
   };
   var _default = _exports["default"] = (0, _genComponentStyleHook.genSubStyleComponent)(['Pagination', 'bordered'], function (token) {
-    var paginationToken = (0, _style.prepareToken)(token);
+    var paginationToken = (0, _index.prepareToken)(token);
     return [genBorderedStyle(paginationToken)];
-  }, _style.prepareComponentToken);
+  }, _index.prepareComponentToken);
 });

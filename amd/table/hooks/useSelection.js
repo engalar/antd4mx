@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/DownOutlined", "classnames", "rc-table", "rc-tree/es/util", "rc-tree/es/utils/conductUtil", "rc-tree/es/utils/treeUtil", "rc-util/es/hooks/useMergedState", "antd4mx/_util/hooks/useMultipleSelect", "antd4mx/_util/warning", "antd4mx/checkbox", "antd4mx/dropdown", "antd4mx/radio"], function (_exports, _toConsumableArray2, _react, _DownOutlined, _classnames, _rcTable, _util, _conductUtil, _treeUtil, _useMergedState3, _useMultipleSelect3, _warning, _checkbox, _dropdown, _radio) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/DownOutlined", "classnames", "rc-table", "rc-tree/es/util", "rc-tree/es/utils/conductUtil", "rc-tree/es/utils/treeUtil", "rc-util/es/hooks/useMergedState", "antd4mx/_util/hooks/useMultipleSelect", "antd4mx/_util/warning", "antd4mx/checkbox/index", "antd4mx/dropdown/index", "antd4mx/radio/index"], function (_exports, _toConsumableArray2, _react, _DownOutlined, _classnames, _rcTable, _util, _conductUtil, _treeUtil, _useMergedState3, _useMultipleSelect3, _warning, _index, _index2, _index3) {
   "use strict";
   "use client";
 
@@ -352,7 +352,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
           };
           customizeSelections = /*#__PURE__*/React.createElement("div", {
             className: "".concat(prefixCls, "-selection-extra")
-          }, /*#__PURE__*/React.createElement(_dropdown["default"], {
+          }, /*#__PURE__*/React.createElement(_index2["default"], {
             menu: menu,
             getPopupContainer: getPopupContainer
           }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement(_DownOutlined["default"], null))));
@@ -376,7 +376,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
           var checked = _ref4.checked;
           return checked;
         });
-        columnTitleCheckbox = /*#__PURE__*/React.createElement(_checkbox["default"], {
+        columnTitleCheckbox = /*#__PURE__*/React.createElement(_index["default"], {
           checked: !allDisabled ? !!flattedData.length && checkedCurrentAll : allDisabledAndChecked,
           indeterminate: !allDisabled ? !checkedCurrentAll && checkedCurrentSome : !allDisabledAndChecked && allDisabledSomeChecked,
           onChange: onSelectAllChange,
@@ -395,7 +395,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
           var key = getRowKey(record, index);
           var checked = keySet.has(key);
           return {
-            node: ( /*#__PURE__*/React.createElement(_radio["default"], Object.assign({}, checkboxPropsMap.get(key), {
+            node: ( /*#__PURE__*/React.createElement(_index3["default"], Object.assign({}, checkboxPropsMap.get(key), {
               checked: checked,
               onClick: function onClick(e) {
                 return e.stopPropagation();
@@ -425,7 +425,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
           }
           // Record checked
           return {
-            node: ( /*#__PURE__*/React.createElement(_checkbox["default"], Object.assign({}, checkboxProps, {
+            node: ( /*#__PURE__*/React.createElement(_index["default"], Object.assign({}, checkboxProps, {
               indeterminate: mergedIndeterminate,
               checked: checked,
               skipGroup: true,

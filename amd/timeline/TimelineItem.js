@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/config-provider"], function (_exports, _classnames, React, _configProvider) {
+define(["exports", "classnames", "react", "antd4mx/config-provider/index"], function (_exports, _classnames, React, _index) {
   "use strict";
   "use client";
 
@@ -30,7 +30,7 @@ define(["exports", "classnames", "react", "antd4mx/config-provider"], function (
       label = _a.label,
       children = _a.children,
       restProps = __rest(_a, ["prefixCls", "className", "color", "dot", "pending", "position", "label", "children"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('timeline', customizePrefixCls);
     var itemClassName = (0, _classnames["default"])("".concat(prefixCls, "-item"), _defineProperty({}, "".concat(prefixCls, "-item-pending"), pending), className);

@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/ExclamationCircleFilled", "classnames", "react", "antd4mx/_util/ActionButton", "antd4mx/_util/getRenderPropValue", "antd4mx/button", "antd4mx/button/buttonHelpers", "antd4mx/config-provider", "antd4mx/locale", "antd4mx/locale/en_US", "antd4mx/popover/PurePanel", "antd4mx/popconfirm/style"], function (_exports, _ExclamationCircleFilled, _classnames, React, _ActionButton, _getRenderPropValue, _button, _buttonHelpers, _configProvider, _locale, _en_US, _PurePanel, _style) {
+define(["exports", "@ant-design/icons/es/icons/ExclamationCircleFilled", "classnames", "react", "antd4mx/_util/ActionButton", "antd4mx/_util/getRenderPropValue", "antd4mx/button/index", "antd4mx/button/buttonHelpers", "antd4mx/config-provider/index", "antd4mx/locale/index", "antd4mx/locale/en_US", "antd4mx/popover/PurePanel", "antd4mx/popconfirm/style/index"], function (_exports, _ExclamationCircleFilled, _classnames, React, _ActionButton, _getRenderPropValue, _index, _buttonHelpers, _index2, _index3, _en_US, _PurePanel, _index4) {
   "use strict";
   "use client";
 
@@ -38,9 +38,9 @@ define(["exports", "@ant-design/icons/es/icons/ExclamationCircleFilled", "classn
       onConfirm = props.onConfirm,
       onCancel = props.onCancel,
       onPopupClick = props.onPopupClick;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
-    var _useLocale = (0, _locale.useLocale)('Popconfirm', _en_US["default"].Popconfirm),
+    var _useLocale = (0, _index3.useLocale)('Popconfirm', _en_US["default"].Popconfirm),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       contextLocale = _useLocale2[0];
     var theTitle = (0, _getRenderPropValue.getRenderPropValue)(title);
@@ -60,7 +60,7 @@ define(["exports", "@ant-design/icons/es/icons/ExclamationCircleFilled", "classn
       className: "".concat(prefixCls, "-description")
     }, theDescription))), /*#__PURE__*/React.createElement("div", {
       className: "".concat(prefixCls, "-buttons")
-    }, showCancel && ( /*#__PURE__*/React.createElement(_button["default"], Object.assign({
+    }, showCancel && ( /*#__PURE__*/React.createElement(_index["default"], Object.assign({
       onClick: onCancel,
       size: "small"
     }, cancelButtonProps), cancelText || (contextLocale === null || contextLocale === void 0 ? void 0 : contextLocale.cancelText))), /*#__PURE__*/React.createElement(_ActionButton["default"], {
@@ -80,10 +80,10 @@ define(["exports", "@ant-design/icons/es/icons/ExclamationCircleFilled", "classn
       className = props.className,
       style = props.style,
       restProps = __rest(props, ["prefixCls", "placement", "className", "style"]);
-    var _React$useContext2 = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext2 = React.useContext(_index2.ConfigContext),
       getPrefixCls = _React$useContext2.getPrefixCls;
     var prefixCls = getPrefixCls('popconfirm', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index4["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 1),
       wrapCSSVar = _useStyle2[0];
     return wrapCSSVar( /*#__PURE__*/React.createElement(_PurePanel["default"], {

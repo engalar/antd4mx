@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/grid"], function (_exports, _grid) {
+define(["exports", "antd4mx/grid/index"], function (_exports, _index) {
   "use strict";
   "use client";
 
@@ -6,5 +6,5 @@ define(["exports", "antd4mx/grid"], function (_exports, _grid) {
     value: true
   });
   _exports["default"] = void 0;
-  var _default = _exports["default"] = _grid.Col;
+  var _default = _exports["default"] = _index.Col;
 });

@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/icons/es/icons/SearchOutlined", "react", "antd4mx/input"], function (_exports, _SearchOutlined, React, _input) {
+define(["exports", "@ant-design/icons/es/icons/SearchOutlined", "react", "antd4mx/input/index"], function (_exports, _SearchOutlined, React, _index) {
   "use strict";
   "use client";
 
@@ -17,7 +17,7 @@ define(["exports", "@ant-design/icons/es/icons/SearchOutlined", "react", "antd4m
     }
     return /*#__PURE__*/React.createElement("div", {
       className: "".concat(tablePrefixCls, "-filter-dropdown-search")
-    }, /*#__PURE__*/React.createElement(_input["default"], {
+    }, /*#__PURE__*/React.createElement(_index["default"], {
       prefix: /*#__PURE__*/React.createElement(_SearchOutlined["default"], null),
       placeholder: locale.filterSearchPlaceholder,
       onChange: onChange,

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/react-slick", "classnames", "antd4mx/config-provider", "antd4mx/carousel/style"], function (_exports, React, _reactSlick, _classnames, _configProvider, _style) {
+define(["exports", "react", "@ant-design/react-slick", "classnames", "antd4mx/config-provider/index", "antd4mx/carousel/style/index"], function (_exports, React, _reactSlick, _classnames, _index, _index2) {
   "use strict";
   "use client";
 
@@ -42,7 +42,7 @@ define(["exports", "react", "@ant-design/react-slick", "classnames", "antd4mx/co
       style = props.style,
       id = props.id,
       otherProps = __rest(props, ["dots", "arrows", "draggable", "waitForAnimate", "dotPosition", "vertical", "rootClassName", "className", "style", "id"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       carousel = _React$useContext.carousel;
@@ -79,7 +79,7 @@ define(["exports", "react", "@ant-design/react-slick", "classnames", "antd4mx/co
     var dotsClass = 'slick-dots';
     var enableDots = !!dots;
     var dsClass = (0, _classnames["default"])(dotsClass, "".concat(dotsClass, "-").concat(dotPosition), typeof dots === 'boolean' ? false : dots === null || dots === void 0 ? void 0 : dots.className);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

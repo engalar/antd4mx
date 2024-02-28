@@ -1,4 +1,4 @@
-define(["exports", "classnames", "rc-menu", "rc-util/es/Children/toArray", "rc-util/es/omit", "react", "antd4mx/layout/Sider", "antd4mx/tooltip", "antd4mx/_util/reactNode", "antd4mx/menu/MenuContext"], function (_exports, _classnames, _rcMenu, _toArray, _omit, React, _Sider, _tooltip, _reactNode, _MenuContext) {
+define(["exports", "classnames", "rc-menu", "rc-util/es/Children/toArray", "rc-util/es/omit", "react", "antd4mx/layout/Sider", "antd4mx/tooltip/index", "antd4mx/_util/reactNode", "antd4mx/menu/MenuContext"], function (_exports, _classnames, _rcMenu, _toArray, _omit, React, _Sider, _index, _reactNode, _MenuContext) {
   "use strict";
   "use client";
 
@@ -63,7 +63,7 @@ define(["exports", "classnames", "rc-menu", "rc-util/es/Children/toArray", "rc-u
       className: (0, _classnames["default"])((0, _reactNode.isValidElement)(icon) ? (_a = icon.props) === null || _a === void 0 ? void 0 : _a.className : '', "".concat(prefixCls, "-item-icon"))
     }), renderItemChildren(isInlineCollapsed));
     if (!disableMenuItemTitleTooltip) {
-      returnNode = /*#__PURE__*/React.createElement(_tooltip["default"], Object.assign({}, tooltipProps, {
+      returnNode = /*#__PURE__*/React.createElement(_index["default"], Object.assign({}, tooltipProps, {
         placement: direction === 'rtl' ? 'left' : 'right',
         overlayClassName: "".concat(prefixCls, "-inline-collapsed-tooltip")
       }), returnNode);

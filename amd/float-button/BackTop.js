@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/VerticalAlignTopOutlined", "classnames", "rc-motion", "antd4mx/_util/getScroll", "antd4mx/_util/scrollTo", "antd4mx/_util/throttleByAnimationFrame", "antd4mx/config-provider", "antd4mx/float-button/context", "antd4mx/float-button/FloatButton"], function (_exports, _react, _VerticalAlignTopOutlined, _classnames, _rcMotion, _getScroll, _scrollTo, _throttleByAnimationFrame, _configProvider, _context, _FloatButton) {
+define(["exports", "react", "@ant-design/icons/es/icons/VerticalAlignTopOutlined", "classnames", "rc-motion", "antd4mx/_util/getScroll", "antd4mx/_util/scrollTo", "antd4mx/_util/throttleByAnimationFrame", "antd4mx/config-provider/index", "antd4mx/float-button/context", "antd4mx/float-button/FloatButton"], function (_exports, _react, _VerticalAlignTopOutlined, _classnames, _rcMotion, _getScroll, _scrollTo, _throttleByAnimationFrame, _index, _context, _FloatButton) {
   "use strict";
   "use client";
 
@@ -72,7 +72,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/VerticalAlignTopOutlined
       });
       onClick === null || onClick === void 0 ? void 0 : onClick(e);
     };
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls;
     var prefixCls = getPrefixCls(_FloatButton.floatButtonPrefixCls, customizePrefixCls);
     var rootPrefixCls = getPrefixCls();

@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/internal", "@ant-design/cssinjs", "antd4mx/input/style/variants"], function (_exports, _style, _style2, _internal, _cssinjs, _variants) {
+define(["exports", "antd4mx/input/style/index", "antd4mx/style/index", "antd4mx/theme/internal", "@ant-design/cssinjs", "antd4mx/input/style/variants"], function (_exports, _index, _index2, _internal, _cssinjs, _variants) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -32,7 +32,7 @@ define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/intern
       boxShadowSecondary = token.boxShadowSecondary,
       itemPaddingVertical = token.itemPaddingVertical,
       calc = token.calc;
-    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), (0, _style.genBasicInputStyle)(token)), {
+    return _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), (0, _index.genBasicInputStyle)(token)), {
       position: 'relative',
       display: 'inline-block',
       height: 'auto',
@@ -42,7 +42,7 @@ define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/intern
       whiteSpace: 'pre-wrap',
       verticalAlign: 'bottom'
     }), (0, _variants.genOutlinedStyle)(token)), (0, _variants.genFilledStyle)(token)), (0, _variants.genBorderlessStyle)(token)), _defineProperty(_defineProperty({
-      '&-affix-wrapper': Object.assign(Object.assign({}, (0, _style.genBasicInputStyle)(token)), _defineProperty(_defineProperty(_defineProperty({
+      '&-affix-wrapper': Object.assign(Object.assign({}, (0, _index.genBasicInputStyle)(token)), _defineProperty(_defineProperty(_defineProperty({
         display: 'inline-flex',
         padding: 0,
         '&::before': {
@@ -119,7 +119,7 @@ define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/intern
       outline: 'none',
       resize: 'none',
       backgroundColor: 'transparent'
-    }, (0, _style.genPlaceholderStyle)(token.colorTextPlaceholder))), "".concat(componentCls, "-measure"), {
+    }, (0, _index.genPlaceholderStyle)(token.colorTextPlaceholder))), "".concat(componentCls, "-measure"), {
       position: 'absolute',
       top: 0,
       insetInlineEnd: 0,
@@ -132,7 +132,7 @@ define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/intern
         display: 'inline-block',
         minHeight: '1em'
       }
-    })), '&-dropdown', Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), _defineProperty({
+    })), '&-dropdown', Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), _defineProperty({
       position: 'absolute',
       top: -9999,
       insetInlineStart: -9999,
@@ -156,7 +156,7 @@ define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/intern
       overflow: 'auto',
       listStyle: 'none',
       outline: 'none',
-      '&-item': Object.assign(Object.assign({}, _style2.textEllipsis), {
+      '&-item': Object.assign(Object.assign({}, _index2.textEllipsis), {
         position: 'relative',
         display: 'block',
         minWidth: token.controlItemWidth,
@@ -191,7 +191,7 @@ define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/intern
     })))));
   };
   var prepareComponentToken = _exports.prepareComponentToken = function prepareComponentToken(token) {
-    return Object.assign(Object.assign({}, (0, _style.initComponentToken)(token)), {
+    return Object.assign(Object.assign({}, (0, _index.initComponentToken)(token)), {
       dropdownHeight: 250,
       controlItemWidth: 100,
       zIndexPopup: token.zIndexPopupBase + 50,
@@ -200,7 +200,7 @@ define(["exports", "antd4mx/input/style", "antd4mx/style", "antd4mx/theme/intern
   };
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('Mentions', function (token) {
-    var mentionsToken = (0, _internal.mergeToken)(token, (0, _style.initInputToken)(token));
+    var mentionsToken = (0, _internal.mergeToken)(token, (0, _index.initInputToken)(token));
     return [genMentionsStyle(mentionsToken)];
   }, prepareComponentToken);
 });

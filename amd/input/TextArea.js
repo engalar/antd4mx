@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/icons/es/icons/CloseCircleFilled", "classnames", "rc-textarea", "antd4mx/_util/statusUtils", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/input/Input", "antd4mx/input/style", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/hooks/useVariants", "antd4mx/_util/warning"], function (_exports, _react, _CloseCircleFilled, _classnames, _rcTextarea, _statusUtils, _configProvider, _DisabledContext, _useSize, _context, _Input, _style, _useCSSVarCls, _useVariants, _warning) {
+define(["exports", "react", "@ant-design/icons/es/icons/CloseCircleFilled", "classnames", "rc-textarea", "antd4mx/_util/statusUtils", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/config-provider/hooks/useSize", "antd4mx/form/context", "antd4mx/input/Input", "antd4mx/input/style/index", "antd4mx/config-provider/hooks/useCSSVarCls", "antd4mx/form/hooks/useVariants", "antd4mx/_util/warning"], function (_exports, _react, _CloseCircleFilled, _classnames, _rcTextarea, _statusUtils, _index, _DisabledContext, _useSize, _context, _Input, _index2, _useCSSVarCls, _useVariants, _warning) {
   "use strict";
   "use client";
 
@@ -44,7 +44,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseCircleFilled", "cla
         deprecated = _devUseWarning.deprecated;
       deprecated(!('bordered' in props), 'bordered', 'variant');
     }
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     // ===================== Size =====================
@@ -86,7 +86,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/CloseCircleFilled", "cla
     }
     // ===================== Style =====================
     var rootCls = (0, _useCSSVarCls["default"])(prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls, rootCls),
+    var _useStyle = (0, _index2["default"])(prefixCls, rootCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

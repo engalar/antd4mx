@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "antd4mx/style/roundedArrow"], function (_exports, _style, _motion, _placementArrow, _internal, _roundedArrow) {
+define(["exports", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/style/placementArrow", "antd4mx/theme/internal", "antd4mx/style/roundedArrow"], function (_exports, _index, _index2, _placementArrow, _internal, _roundedArrow) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -25,7 +25,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
       titleBorderBottom = token.titleBorderBottom,
       innerContentPadding = token.innerContentPadding,
       titlePadding = token.titlePadding;
-    return [_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return [_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'absolute',
       top: 0,
       // use `left` to fix https://github.com/ant-design/ant-design/issues/39195
@@ -128,7 +128,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion", "antd4mx/style/place
       popoverBg: colorBgElevated,
       popoverColor: colorText
     });
-    return [genBaseStyle(popoverToken), genColorStyle(popoverToken), (0, _motion.initZoomMotion)(popoverToken, 'zoom-big')];
+    return [genBaseStyle(popoverToken), genColorStyle(popoverToken), (0, _index2.initZoomMotion)(popoverToken, 'zoom-big')];
   }, prepareComponentToken, {
     resetStyle: false,
     deprecatedTokens: [['width', 'titleMinWidth'], ['minWidth', 'titleMinWidth']]

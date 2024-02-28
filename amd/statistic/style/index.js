@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _style, _internal) {
+define(["exports", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -18,7 +18,7 @@ define(["exports", "antd4mx/style", "antd4mx/theme/internal"], function (_export
       colorTextHeading = token.colorTextHeading,
       contentFontSize = token.contentFontSize,
       fontFamily = token.fontFamily;
-    return _defineProperty({}, "".concat(componentCls), Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({}, "".concat(componentCls, "-title"), {
+    return _defineProperty({}, "".concat(componentCls), Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({}, "".concat(componentCls, "-title"), {
       marginBottom: marginXXS,
       color: colorTextDescription,
       fontSize: titleFontSize

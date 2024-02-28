@@ -1,4 +1,4 @@
-define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/space/style"], function (_exports, _classnames, _toArray, React, _configProvider, _useSize, _style) {
+define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/space/style/index"], function (_exports, _classnames, _toArray, React, _index, _useSize, _index2) {
   "use strict";
   "use client";
 
@@ -57,7 +57,7 @@ define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4m
     }, children);
   };
   var Compact = function Compact(props) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       directionConfig = _React$useContext.direction;
     var size = props.size,
@@ -72,7 +72,7 @@ define(["exports", "classnames", "rc-util/es/Children/toArray", "react", "antd4m
       return size !== null && size !== void 0 ? size : ctx;
     });
     var prefixCls = getPrefixCls('space-compact', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 2),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1];

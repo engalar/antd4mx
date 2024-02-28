@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "classnames", "rc-util/es/omit", "react", "antd4mx/config-provider", "antd4mx/skeleton/Element", "antd4mx/skeleton/style"], function (_exports, _classnames, _omit, React, _configProvider, _Element, _style) {
+define(["exports", "classnames", "rc-util/es/omit", "react", "antd4mx/config-provider/index", "antd4mx/skeleton/Element", "antd4mx/skeleton/style/index"], function (_exports, _classnames, _omit, React, _index, _Element, _index2) {
   "use strict";
   "use client";
 
@@ -25,10 +25,10 @@ define(["exports", "classnames", "rc-util/es/omit", "react", "antd4mx/config-pro
       block = _props$block === void 0 ? false : _props$block,
       _props$size = props.size,
       size = _props$size === void 0 ? 'default' : _props$size;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('skeleton', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

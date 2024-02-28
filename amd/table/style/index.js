@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/table/style/bordered", "antd4mx/table/style/ellipsis", "antd4mx/table/style/empty", "antd4mx/table/style/expand", "antd4mx/table/style/filter", "antd4mx/table/style/fixed", "antd4mx/table/style/pagination", "antd4mx/table/style/radius", "antd4mx/table/style/rtl", "antd4mx/table/style/selection", "antd4mx/table/style/size", "antd4mx/table/style/sorter", "antd4mx/table/style/sticky", "antd4mx/table/style/summary", "antd4mx/table/style/virtual"], function (_exports, _cssinjs, _tinycolor, _style, _internal, _bordered, _ellipsis, _empty, _expand, _filter, _fixed, _pagination, _radius, _rtl, _selection, _size, _sorter, _sticky, _summary, _virtual) {
+define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style/index", "antd4mx/theme/internal", "antd4mx/table/style/bordered", "antd4mx/table/style/ellipsis", "antd4mx/table/style/empty", "antd4mx/table/style/expand", "antd4mx/table/style/filter", "antd4mx/table/style/fixed", "antd4mx/table/style/pagination", "antd4mx/table/style/radius", "antd4mx/table/style/rtl", "antd4mx/table/style/selection", "antd4mx/table/style/size", "antd4mx/table/style/sorter", "antd4mx/table/style/sticky", "antd4mx/table/style/summary", "antd4mx/table/style/virtual"], function (_exports, _cssinjs, _tinycolor, _index, _internal, _bordered, _ellipsis, _empty, _expand, _filter, _fixed, _pagination, _radius, _rtl, _selection, _size, _sorter, _sticky, _summary, _virtual) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -32,7 +32,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "a
     return _defineProperty({}, "".concat(componentCls, "-wrapper"), Object.assign(Object.assign({
       clear: 'both',
       maxWidth: '100%'
-    }, (0, _style.clearFix)()), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+    }, (0, _index.clearFix)()), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), {
       fontSize: tableFontSize,
       background: tableBg,
       borderRadius: "".concat((0, _cssinjs.unit)(tableRadius), " ").concat((0, _cssinjs.unit)(tableRadius), " 0 0"),

@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _style, _internal, _cssinjs) {
+define(["exports", "antd4mx/style/index", "antd4mx/theme/internal", "@ant-design/cssinjs"], function (_exports, _index, _internal, _cssinjs) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -18,7 +18,7 @@ define(["exports", "antd4mx/style", "antd4mx/theme/internal", "@ant-design/cssin
     return _defineProperty({}, "".concat(componentCls, "-single").concat(suffixCls), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       fontSize: token.fontSize,
       height: token.controlHeight
-    }, "".concat(componentCls, "-selector"), Object.assign(Object.assign({}, (0, _style.resetComponent)(token, true)), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    }, "".concat(componentCls, "-selector"), Object.assign(Object.assign({}, (0, _index.resetComponent)(token, true)), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
       display: 'flex',
       borderRadius: borderRadius
     }, "".concat(componentCls, "-selection-search"), {

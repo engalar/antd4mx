@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/tag/style"], function (_exports, React, _classnames, _configProvider, _style) {
+define(["exports", "react", "classnames", "antd4mx/config-provider/index", "antd4mx/tag/style/index"], function (_exports, React, _classnames, _index, _index2) {
   "use strict";
   "use client";
 
@@ -32,7 +32,7 @@ define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/ta
       onChange = props.onChange,
       onClick = props.onClick,
       restProps = __rest(props, ["prefixCls", "style", "className", "checked", "onChange", "onClick"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       tag = _React$useContext.tag;
     var handleClick = function handleClick(e) {
@@ -41,7 +41,7 @@ define(["exports", "react", "classnames", "antd4mx/config-provider", "antd4mx/ta
     };
     var prefixCls = getPrefixCls('tag', customizePrefixCls);
     // Style
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

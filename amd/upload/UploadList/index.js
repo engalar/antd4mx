@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/FileTwoTone", "@ant-design/icons/es/icons/LoadingOutlined", "@ant-design/icons/es/icons/PaperClipOutlined", "@ant-design/icons/es/icons/PictureTwoTone", "classnames", "rc-motion", "antd4mx/_util/hooks/useForceUpdate", "antd4mx/_util/motion", "antd4mx/_util/reactNode", "antd4mx/button", "antd4mx/config-provider", "antd4mx/upload/utils", "antd4mx/upload/UploadList/ListItem"], function (_exports, _toConsumableArray2, React, _FileTwoTone, _LoadingOutlined, _PaperClipOutlined, _PictureTwoTone, _classnames, _rcMotion, _useForceUpdate, _motion, _reactNode, _button, _configProvider, _utils, _ListItem) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@ant-design/icons/es/icons/FileTwoTone", "@ant-design/icons/es/icons/LoadingOutlined", "@ant-design/icons/es/icons/PaperClipOutlined", "@ant-design/icons/es/icons/PictureTwoTone", "classnames", "rc-motion", "antd4mx/_util/hooks/useForceUpdate", "antd4mx/_util/motion", "antd4mx/_util/reactNode", "antd4mx/button/index", "antd4mx/config-provider/index", "antd4mx/upload/utils", "antd4mx/upload/UploadList/ListItem"], function (_exports, _toConsumableArray2, React, _FileTwoTone, _LoadingOutlined, _PaperClipOutlined, _PictureTwoTone, _classnames, _rcMotion, _useForceUpdate, _motion, _reactNode, _index, _index2, _utils, _ListItem) {
   "use strict";
   "use client";
 
@@ -125,11 +125,11 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
         var btnIcon = (0, _reactNode.cloneElement)(customIcon, Object.assign(Object.assign({}, customIcon.props), {
           onClick: function onClick() {}
         }));
-        return /*#__PURE__*/React.createElement(_button["default"], Object.assign({}, btnProps, {
+        return /*#__PURE__*/React.createElement(_index["default"], Object.assign({}, btnProps, {
           icon: btnIcon
         }));
       }
-      return /*#__PURE__*/React.createElement(_button["default"], Object.assign({}, btnProps), /*#__PURE__*/React.createElement("span", null, customIcon));
+      return /*#__PURE__*/React.createElement(_index["default"], Object.assign({}, btnProps), /*#__PURE__*/React.createElement("span", null, customIcon));
     };
     // ============================== Ref ===============================
     // Test needs
@@ -139,7 +139,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "@an
         handleDownload: onInternalDownload
       };
     });
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index2.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     // ============================= Render =============================
     var prefixCls = getPrefixCls('upload', customizePrefixCls);

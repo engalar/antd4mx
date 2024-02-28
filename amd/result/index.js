@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/WarningFilled", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/result/noFound", "antd4mx/result/serverError", "antd4mx/result/style", "antd4mx/result/unauthorized"], function (_exports, React, _CheckCircleFilled, _CloseCircleFilled, _ExclamationCircleFilled, _WarningFilled, _classnames, _warning, _configProvider, _noFound, _serverError, _style, _unauthorized) {
+define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@ant-design/icons/es/icons/CloseCircleFilled", "@ant-design/icons/es/icons/ExclamationCircleFilled", "@ant-design/icons/es/icons/WarningFilled", "classnames", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/result/noFound", "antd4mx/result/serverError", "antd4mx/result/style/index", "antd4mx/result/unauthorized"], function (_exports, React, _CheckCircleFilled, _CloseCircleFilled, _ExclamationCircleFilled, _WarningFilled, _classnames, _warning, _index, _noFound, _serverError, _index2, _unauthorized) {
   "use strict";
   "use client";
 
@@ -74,13 +74,13 @@ define(["exports", "react", "@ant-design/icons/es/icons/CheckCircleFilled", "@an
       status = _ref3$status === void 0 ? 'info' : _ref3$status,
       icon = _ref3.icon,
       extra = _ref3.extra;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       result = _React$useContext.result;
     var prefixCls = getPrefixCls('result', customizePrefixCls);
     // Style
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

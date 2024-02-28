@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "antd4mx/style/motion", "antd4mx/theme/internal", "antd4mx/menu/style/horizontal", "antd4mx/menu/style/rtl", "antd4mx/menu/style/theme", "antd4mx/menu/style/vertical"], function (_exports, _cssinjs, _tinycolor, _style, _motion, _internal, _horizontal, _rtl, _theme, _vertical) {
+define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style/index", "antd4mx/style/motion/index", "antd4mx/theme/internal", "antd4mx/menu/style/horizontal", "antd4mx/menu/style/rtl", "antd4mx/menu/style/theme", "antd4mx/menu/style/vertical"], function (_exports, _cssinjs, _tinycolor, _index, _index2, _internal, _horizontal, _rtl, _theme, _vertical) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -34,7 +34,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "a
         opacity: 1,
         transition: ["opacity ".concat(motionDurationSlow, " ").concat(motionEaseInOut), "margin ".concat(motionDurationSlow), "color ".concat(motionDurationSlow)].join(',')
       }
-    }), "".concat(componentCls, "-item-icon"), Object.assign({}, (0, _style.resetIcon)())), "&".concat(componentCls, "-item-only-child"), _defineProperty({}, "> ".concat(iconCls, ", > ").concat(componentCls, "-item-icon"), {
+    }), "".concat(componentCls, "-item-icon"), Object.assign({}, (0, _index.resetIcon)())), "&".concat(componentCls, "-item-only-child"), _defineProperty({}, "> ".concat(iconCls, ", > ").concat(componentCls, "-item-icon"), {
       marginInlineEnd: 0
     }))), "".concat(componentCls, "-item-disabled, ").concat(componentCls, "-submenu-disabled"), _defineProperty({
       background: 'none !important',
@@ -106,12 +106,12 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "a
       groupTitleFontSize = token.groupTitleFontSize;
     return [// Misc
     _defineProperty({
-      '': _defineProperty({}, "".concat(componentCls), Object.assign(Object.assign({}, (0, _style.clearFix)()), _defineProperty({}, "&-hidden", {
+      '': _defineProperty({}, "".concat(componentCls), Object.assign(Object.assign({}, (0, _index.clearFix)()), _defineProperty({}, "&-hidden", {
         display: 'none'
       })))
     }, "".concat(componentCls, "-submenu-hidden"), {
       display: 'none'
-    }), _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), (0, _style.clearFix)()), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    }), _defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), (0, _index.clearFix)()), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       marginBottom: 0,
       paddingInlineStart: 0,
       // Override default ul/ol
@@ -423,7 +423,7 @@ define(["exports", "@ant-design/cssinjs", "@ctrl/tinycolor", "antd4mx/style", "a
       // RTL
       (0, _rtl["default"])(menuToken),
       // Motion
-      (0, _motion.genCollapseMotion)(menuToken), (0, _motion.initSlideMotion)(menuToken, 'slide-up'), (0, _motion.initSlideMotion)(menuToken, 'slide-down'), (0, _motion.initZoomMotion)(menuToken, 'zoom-big')];
+      (0, _index2.genCollapseMotion)(menuToken), (0, _index2.initSlideMotion)(menuToken, 'slide-up'), (0, _index2.initSlideMotion)(menuToken, 'slide-down'), (0, _index2.initZoomMotion)(menuToken, 'zoom-big')];
     }, prepareComponentToken, {
       deprecatedTokens: [['colorGroupTitle', 'groupTitleColor'], ['radiusItem', 'itemBorderRadius'], ['radiusSubMenuItem', 'subMenuItemBorderRadius'], ['colorItemText', 'itemColor'], ['colorItemTextHover', 'itemHoverColor'], ['colorItemTextHoverHorizontal', 'horizontalItemHoverColor'], ['colorItemTextSelected', 'itemSelectedColor'], ['colorItemTextSelectedHorizontal', 'horizontalItemSelectedColor'], ['colorItemTextDisabled', 'itemDisabledColor'], ['colorDangerItemText', 'dangerItemColor'], ['colorDangerItemTextHover', 'dangerItemHoverColor'], ['colorDangerItemTextSelected', 'dangerItemSelectedColor'], ['colorDangerItemBgActive', 'dangerItemActiveBg'], ['colorDangerItemBgSelected', 'dangerItemSelectedBg'], ['colorItemBg', 'itemBg'], ['colorItemBgHover', 'itemHoverBg'], ['colorSubItemBg', 'subMenuItemBg'], ['colorItemBgActive', 'itemActiveBg'], ['colorItemBgSelectedHorizontal', 'horizontalItemSelectedBg'], ['colorActiveBarWidth', 'activeBarWidth'], ['colorActiveBarHeight', 'activeBarHeight'], ['colorActiveBarBorderSize', 'activeBarBorderWidth'], ['colorItemBgSelected', 'itemSelectedBg']],
       // Dropdown will handle menu style self. We do not need to handle this.

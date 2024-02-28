@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-collapse", "rc-util/es/Children/toArray", "rc-util/es/omit", "antd4mx/_util/motion", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/collapse/CollapsePanel", "antd4mx/collapse/style"], function (_exports, React, _RightOutlined, _classnames, _rcCollapse, _toArray, _omit, _motion, _reactNode, _warning, _configProvider, _useSize, _CollapsePanel, _style) {
+define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classnames", "rc-collapse", "rc-util/es/Children/toArray", "rc-util/es/omit", "antd4mx/_util/motion", "antd4mx/_util/reactNode", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/collapse/CollapsePanel", "antd4mx/collapse/style/index"], function (_exports, React, _RightOutlined, _classnames, _rcCollapse, _toArray, _omit, _motion, _reactNode, _warning, _index, _useSize, _CollapsePanel, _index2) {
   "use strict";
   "use client";
 
@@ -17,7 +17,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classna
   function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
   function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
   var Collapse = /*#__PURE__*/React.forwardRef(function (props, ref) {
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       collapse = _React$useContext.collapse;
@@ -39,7 +39,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/RightOutlined", "classna
     });
     var prefixCls = getPrefixCls('collapse', customizePrefixCls);
     var rootPrefixCls = getPrefixCls();
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

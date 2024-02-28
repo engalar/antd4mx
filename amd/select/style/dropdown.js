@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/style/motion"], function (_exports, _style, _motion) {
+define(["exports", "antd4mx/style/index", "antd4mx/style/motion/index"], function (_exports, _index, _index2) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -34,7 +34,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion"], function (_exports,
     var slideUpAppearActive = "&".concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active");
     var slideUpLeaveActive = "&".concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active");
     var dropdownPlacementCls = "".concat(componentCls, "-dropdown-placement-");
-    return [_defineProperty({}, "".concat(componentCls, "-dropdown"), Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return [_defineProperty({}, "".concat(componentCls, "-dropdown"), Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'absolute',
       top: -9999,
       zIndex: token.zIndexPopup,
@@ -51,13 +51,13 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion"], function (_exports,
       outline: 'none',
       boxShadow: token.boxShadowSecondary
     }, "\n          ".concat(slideUpEnterActive).concat(dropdownPlacementCls, "bottomLeft,\n          ").concat(slideUpAppearActive).concat(dropdownPlacementCls, "bottomLeft\n        "), {
-      animationName: _motion.slideUpIn
+      animationName: _index2.slideUpIn
     }), "\n          ".concat(slideUpEnterActive).concat(dropdownPlacementCls, "topLeft,\n          ").concat(slideUpAppearActive).concat(dropdownPlacementCls, "topLeft,\n          ").concat(slideUpEnterActive).concat(dropdownPlacementCls, "topRight,\n          ").concat(slideUpAppearActive).concat(dropdownPlacementCls, "topRight\n        "), {
-      animationName: _motion.slideDownIn
+      animationName: _index2.slideDownIn
     }), "".concat(slideUpLeaveActive).concat(dropdownPlacementCls, "bottomLeft"), {
-      animationName: _motion.slideUpOut
+      animationName: _index2.slideUpOut
     }), "\n          ".concat(slideUpLeaveActive).concat(dropdownPlacementCls, "topLeft,\n          ").concat(slideUpLeaveActive).concat(dropdownPlacementCls, "topRight\n        "), {
-      animationName: _motion.slideDownOut
+      animationName: _index2.slideDownOut
     }), '&-hidden', {
       display: 'none'
     }), "".concat(selectItemCls), Object.assign(Object.assign({}, genItemStyle(token)), {
@@ -75,7 +75,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion"], function (_exports,
         display: 'flex',
         '&-content': Object.assign({
           flex: 'auto'
-        }, _style.textEllipsis),
+        }, _index.textEllipsis),
         '&-state': {
           flex: 'none',
           display: 'flex',
@@ -107,7 +107,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/motion"], function (_exports,
       direction: 'rtl'
     }))),
     // Follow code may reuse in other components
-    (0, _motion.initSlideMotion)(token, 'slide-up'), (0, _motion.initSlideMotion)(token, 'slide-down'), (0, _motion.initMoveMotion)(token, 'move-up'), (0, _motion.initMoveMotion)(token, 'move-down')];
+    (0, _index2.initSlideMotion)(token, 'slide-up'), (0, _index2.initSlideMotion)(token, 'slide-down'), (0, _index2.initMoveMotion)(token, 'move-up'), (0, _index2.initMoveMotion)(token, 'move-down')];
   };
   var _default = _exports["default"] = genSingleStyle;
 });

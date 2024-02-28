@@ -1,4 +1,4 @@
-define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "react-dom", "classnames", "rc-upload", "rc-util/es/hooks/useMergedState", "antd4mx/_util/warning", "antd4mx/config-provider", "antd4mx/config-provider/DisabledContext", "antd4mx/locale", "antd4mx/locale/en_US", "antd4mx/upload/style", "antd4mx/upload/UploadList", "antd4mx/upload/utils"], function (_exports, _toConsumableArray2, React, _reactDom, _classnames, _rcUpload, _useMergedState3, _warning, _configProvider, _DisabledContext, _locale, _en_US, _style, _UploadList, _utils) {
+define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "react-dom", "classnames", "rc-upload", "rc-util/es/hooks/useMergedState", "antd4mx/_util/warning", "antd4mx/config-provider/index", "antd4mx/config-provider/DisabledContext", "antd4mx/locale/index", "antd4mx/locale/en_US", "antd4mx/upload/style/index", "antd4mx/upload/UploadList/index", "antd4mx/upload/utils"], function (_exports, _toConsumableArray2, React, _reactDom, _classnames, _rcUpload, _useMergedState3, _warning, _index, _DisabledContext, _index2, _en_US, _index3, _index4, _utils) {
   "use strict";
   "use client";
 
@@ -332,7 +332,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rea
         upload: upload.current
       };
     });
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       ctxUpload = _React$useContext.upload;
@@ -364,12 +364,12 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rea
       delete rcUploadProps.id;
     }
     var wrapperCls = "".concat(prefixCls, "-wrapper");
-    var _useStyle = (0, _style["default"])(prefixCls, wrapperCls),
+    var _useStyle = (0, _index3["default"])(prefixCls, wrapperCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
       cssVarCls = _useStyle2[2];
-    var _useLocale = (0, _locale.useLocale)('Upload', _en_US["default"].Upload),
+    var _useLocale = (0, _index2.useLocale)('Upload', _en_US["default"].Upload),
       _useLocale2 = _slicedToArray(_useLocale, 1),
       contextLocale = _useLocale2[0];
     var _ref = typeof showUploadList === 'boolean' ? {} : showUploadList,
@@ -385,7 +385,7 @@ define(["exports", "@babel/runtime/helpers/esm/toConsumableArray", "react", "rea
       if (!showUploadList) {
         return button;
       }
-      return /*#__PURE__*/React.createElement(_UploadList["default"], {
+      return /*#__PURE__*/React.createElement(_index4["default"], {
         prefixCls: prefixCls,
         listType: listType,
         items: mergedFileList,

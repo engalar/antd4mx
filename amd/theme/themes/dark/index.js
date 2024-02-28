@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/colors", "antd4mx/theme/themes/seed", "antd4mx/theme/themes/shared/genColorMapToken", "antd4mx/theme/themes/dark/colors", "antd4mx/theme/themes/default"], function (_exports, _colors, _seed, _genColorMapToken, _colors2, _default2) {
+define(["exports", "@ant-design/colors", "antd4mx/theme/themes/seed", "antd4mx/theme/themes/shared/genColorMapToken", "antd4mx/theme/themes/dark/colors", "antd4mx/theme/themes/default/index"], function (_exports, _colors, _seed, _genColorMapToken, _colors2, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -19,7 +19,7 @@ define(["exports", "@ant-design/colors", "antd4mx/theme/themes/seed", "antd4mx/t
       prev = Object.assign(Object.assign({}, prev), cur);
       return prev;
     }, {});
-    var mergedMapToken = mapToken !== null && mapToken !== void 0 ? mapToken : (0, _default2["default"])(token);
+    var mergedMapToken = mapToken !== null && mapToken !== void 0 ? mapToken : (0, _index["default"])(token);
     return Object.assign(Object.assign(Object.assign({}, mergedMapToken), colorPalettes), (0, _genColorMapToken["default"])(token, {
       generateColorPalettes: _colors2.generateColorPalettes,
       generateNeutralColorPalettes: _colors2.generateNeutralColorPalettes

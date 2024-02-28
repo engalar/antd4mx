@@ -1,4 +1,4 @@
-define(["exports", "react", "rc-util/es/React/render", "antd4mx/app/context", "antd4mx/config-provider", "antd4mx/notification/PurePanel", "antd4mx/notification/useNotification"], function (_exports, _react, _render, _context, _configProvider, _PurePanel, _useNotification) {
+define(["exports", "react", "rc-util/es/React/render", "antd4mx/app/context", "antd4mx/config-provider/index", "antd4mx/notification/PurePanel", "antd4mx/notification/useNotification"], function (_exports, _react, _render, _context, _index, _PurePanel, _useNotification) {
   "use strict";
   "use client";
 
@@ -39,7 +39,7 @@ define(["exports", "react", "rc-util/es/React/render", "antd4mx/app/context", "a
   var GlobalHolder = /*#__PURE__*/_react["default"].forwardRef(function (props, ref) {
     var notificationConfig = props.notificationConfig,
       sync = props.sync;
-    var _useContext = (0, _react.useContext)(_configProvider.ConfigContext),
+    var _useContext = (0, _react.useContext)(_index.ConfigContext),
       getPrefixCls = _useContext.getPrefixCls;
     var prefixCls = defaultGlobalConfig.prefixCls || getPrefixCls('notification');
     var appConfig = (0, _react.useContext)(_context.AppConfigContext);
@@ -74,7 +74,7 @@ define(["exports", "react", "rc-util/es/React/render", "antd4mx/app/context", "a
       setNotificationConfig(getGlobalContext);
     };
     _react["default"].useEffect(sync, []);
-    var global = (0, _configProvider.globalConfig)();
+    var global = (0, _index.globalConfig)();
     var rootPrefixCls = global.getRootPrefixCls();
     var rootIconPrefixCls = global.getIconPrefixCls();
     var theme = global.getTheme();
@@ -83,7 +83,7 @@ define(["exports", "react", "rc-util/es/React/render", "antd4mx/app/context", "a
       sync: sync,
       notificationConfig: notificationConfig
     });
-    return /*#__PURE__*/_react["default"].createElement(_configProvider["default"], {
+    return /*#__PURE__*/_react["default"].createElement(_index["default"], {
       prefixCls: rootPrefixCls,
       iconPrefixCls: rootIconPrefixCls,
       theme: theme
@@ -152,9 +152,9 @@ define(["exports", "react", "rc-util/es/React/render", "antd4mx/app/context", "a
     });
   }
   function open(config) {
-    var global = (0, _configProvider.globalConfig)();
+    var global = (0, _index.globalConfig)();
     if (process.env.NODE_ENV !== 'production' && !global.holderRender) {
-      (0, _configProvider.warnContext)('notification');
+      (0, _index.warnContext)('notification');
     }
     taskQueue.push({
       type: 'open',

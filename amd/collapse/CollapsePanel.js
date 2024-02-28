@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-collapse", "antd4mx/_util/warning", "antd4mx/config-provider"], function (_exports, React, _classnames, _rcCollapse, _warning, _configProvider) {
+define(["exports", "react", "classnames", "rc-collapse", "antd4mx/_util/warning", "antd4mx/config-provider/index"], function (_exports, React, _classnames, _rcCollapse, _warning, _index) {
   "use strict";
   "use client";
 
@@ -15,7 +15,7 @@ define(["exports", "react", "classnames", "rc-collapse", "antd4mx/_util/warning"
       var warning = (0, _warning.devUseWarning)('Collapse.Panel');
       warning.deprecated(!('disabled' in props), 'disabled', 'collapsible="disabled"');
     }
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var customizePrefixCls = props.prefixCls,
       className = props.className,

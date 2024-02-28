@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "rc-steps", "react", "antd4mx/config-provider", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/progress", "antd4mx/tooltip", "antd4mx/steps/style", "antd4mx/steps/useLegacyItems"], function (_exports, _CheckOutlined, _CloseOutlined, _classnames, _rcSteps, React, _configProvider, _useSize, _useBreakpoint2, _progress, _tooltip, _style, _useLegacyItems) {
+define(["exports", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icons/es/icons/CloseOutlined", "classnames", "rc-steps", "react", "antd4mx/config-provider/index", "antd4mx/config-provider/hooks/useSize", "antd4mx/grid/hooks/useBreakpoint", "antd4mx/progress/index", "antd4mx/tooltip/index", "antd4mx/steps/style/index", "antd4mx/steps/useLegacyItems"], function (_exports, _CheckOutlined, _CloseOutlined, _classnames, _rcSteps, React, _index, _useSize, _useBreakpoint2, _index2, _index3, _index4, _useLegacyItems) {
   "use strict";
   "use client";
 
@@ -40,7 +40,7 @@ define(["exports", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icon
       restProps = __rest(props, ["percent", "size", "className", "rootClassName", "direction", "items", "responsive", "current", "children", "style"]);
     var _useBreakpoint = (0, _useBreakpoint2["default"])(responsive),
       xs = _useBreakpoint.xs;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       rtlDirection = _React$useContext.direction,
       steps = _React$useContext.steps;
@@ -49,7 +49,7 @@ define(["exports", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icon
     }, [xs, direction]);
     var size = (0, _useSize["default"])(customizeSize);
     var prefixCls = getPrefixCls('steps', props.prefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index4["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],
@@ -77,7 +77,7 @@ define(["exports", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icon
         // iconWithProgress
         return /*#__PURE__*/React.createElement("div", {
           className: "".concat(prefixCls, "-progress-icon")
-        }, /*#__PURE__*/React.createElement(_progress["default"], {
+        }, /*#__PURE__*/React.createElement(_index2["default"], {
           type: "circle",
           percent: mergedPercent,
           size: progressWidth,
@@ -90,7 +90,7 @@ define(["exports", "@ant-design/icons/es/icons/CheckOutlined", "@ant-design/icon
       return node;
     };
     var itemRender = function itemRender(item, stepItem) {
-      return item.description ? /*#__PURE__*/React.createElement(_tooltip["default"], {
+      return item.description ? /*#__PURE__*/React.createElement(_index3["default"], {
         title: item.description
       }, stepItem) : stepItem;
     };

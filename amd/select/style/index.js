@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style", "antd4mx/style/compact-item", "antd4mx/theme/internal", "antd4mx/select/style/dropdown", "antd4mx/select/style/multiple", "antd4mx/select/style/single", "antd4mx/select/style/token", "antd4mx/select/style/variants"], function (_exports, _style, _compactItem, _internal, _dropdown, _multiple, _single, _token, _variants) {
+define(["exports", "antd4mx/style/index", "antd4mx/style/compact-item", "antd4mx/theme/internal", "antd4mx/select/style/dropdown", "antd4mx/select/style/multiple", "antd4mx/select/style/single", "antd4mx/select/style/token", "antd4mx/select/style/variants"], function (_exports, _index, _compactItem, _internal, _dropdown, _multiple, _single, _token, _variants) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -56,7 +56,7 @@ define(["exports", "antd4mx/style", "antd4mx/style/compact-item", "antd4mx/theme
       componentCls = token.componentCls,
       inputPaddingHorizontalBase = token.inputPaddingHorizontalBase,
       iconCls = token.iconCls;
-    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({
       position: 'relative',
       display: 'inline-block',
       cursor: 'pointer'
@@ -65,13 +65,13 @@ define(["exports", "antd4mx/style", "antd4mx/style/compact-item", "antd4mx/theme
       fontWeight: 'normal',
       position: 'relative',
       userSelect: 'none'
-    }, _style.textEllipsis), _defineProperty({}, "> ".concat(antCls, "-typography"), {
+    }, _index.textEllipsis), _defineProperty({}, "> ".concat(antCls, "-typography"), {
       display: 'inline'
-    }))), "".concat(componentCls, "-selection-placeholder"), Object.assign(Object.assign({}, _style.textEllipsis), {
+    }))), "".concat(componentCls, "-selection-placeholder"), Object.assign(Object.assign({}, _index.textEllipsis), {
       flex: 1,
       color: token.colorTextPlaceholder,
       pointerEvents: 'none'
-    })), "".concat(componentCls, "-arrow"), Object.assign(Object.assign({}, (0, _style.resetIcon)()), _defineProperty(_defineProperty(_defineProperty({
+    })), "".concat(componentCls, "-arrow"), Object.assign(Object.assign({}, (0, _index.resetIcon)()), _defineProperty(_defineProperty(_defineProperty({
       position: 'absolute',
       top: '50%',
       insetInlineStart: 'auto',

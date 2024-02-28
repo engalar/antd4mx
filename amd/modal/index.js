@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/modal/confirm", "antd4mx/modal/destroyFns", "antd4mx/modal/Modal", "antd4mx/modal/PurePanel", "antd4mx/modal/useModal"], function (_exports, _confirm, _destroyFns, _Modal, _PurePanel, _useModal) {
+define(["exports", "antd4mx/modal/confirm", "antd4mx/modal/destroyFns", "antd4mx/modal/Modal", "antd4mx/modal/PurePanel", "antd4mx/modal/useModal/index"], function (_exports, _confirm, _destroyFns, _Modal, _PurePanel, _index) {
   "use strict";
   "use client";
 
@@ -10,7 +10,7 @@ define(["exports", "antd4mx/modal/confirm", "antd4mx/modal/destroyFns", "antd4mx
     return (0, _confirm["default"])((0, _confirm.withWarn)(props));
   }
   var Modal = _Modal["default"];
-  Modal.useModal = _useModal["default"];
+  Modal.useModal = _index["default"];
   Modal.info = function infoFn(props) {
     return (0, _confirm["default"])((0, _confirm.withInfo)(props));
   };

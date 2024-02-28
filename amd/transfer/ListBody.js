@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "antd4mx/pagination", "antd4mx/transfer/ListItem"], function (_exports, React, _classnames, _useMergedState3, _pagination, _ListItem) {
+define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "antd4mx/pagination/index", "antd4mx/transfer/ListItem"], function (_exports, React, _classnames, _useMergedState3, _index, _ListItem) {
   "use strict";
   "use client";
 
@@ -80,7 +80,7 @@ define(["exports", "react", "classnames", "rc-util/es/hooks/useMergedState", "an
         items: memoizedItems
       };
     });
-    var paginationNode = mergedPagination ? ( /*#__PURE__*/React.createElement(_pagination["default"], {
+    var paginationNode = mergedPagination ? ( /*#__PURE__*/React.createElement(_index["default"], {
       size: "small",
       disabled: globalDisabled,
       simple: mergedPagination.simple,

@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion/fade", "antd4mx/style/motion/motion", "antd4mx/theme/internal", "antd4mx/float-button/util"], function (_exports, _cssinjs, _style, _fade, _motion, _internal, _util) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/style/motion/fade", "antd4mx/style/motion/motion", "antd4mx/theme/internal", "antd4mx/float-button/util"], function (_exports, _cssinjs, _index, _fade, _motion, _internal, _util) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -58,7 +58,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
       floatButtonBodyPadding = token.floatButtonBodyPadding,
       calc = token.calc;
     var groupPrefixCls = "".concat(componentCls, "-group");
-    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, groupPrefixCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, groupPrefixCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
       zIndex: 99,
       display: 'block',
       border: 'none',
@@ -150,7 +150,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/style/motion
       dotOffsetInSquare = token.dotOffsetInSquare,
       dotOffsetInCircle = token.dotOffsetInCircle,
       calc = token.calc;
-    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty({
+    return _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty({}, componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty({
       border: 'none',
       position: 'fixed',
       cursor: 'pointer',

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@ant-design/icons/es/icons/EnterOutlined", "classnames", "rc-util/es/KeyCode", "react", "antd4mx/_util/reactNode", "antd4mx/input/TextArea", "antd4mx/typography/style"], function (_exports, _EnterOutlined, _classnames, _KeyCode, React, _reactNode, _TextArea, _style) {
+define(["exports", "@ant-design/icons/es/icons/EnterOutlined", "classnames", "rc-util/es/KeyCode", "react", "antd4mx/_util/reactNode", "antd4mx/input/TextArea", "antd4mx/typography/style/index"], function (_exports, _EnterOutlined, _classnames, _KeyCode, React, _reactNode, _TextArea, _index) {
   "use strict";
   "use client";
 
@@ -89,7 +89,7 @@ define(["exports", "@ant-design/icons/es/icons/EnterOutlined", "classnames", "rc
       confirmChange();
     };
     var textClassName = component ? "".concat(prefixCls, "-").concat(component) : '';
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

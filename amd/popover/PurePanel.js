@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "rc-tooltip", "antd4mx/_util/getRenderPropValue", "antd4mx/config-provider", "antd4mx/popover/style"], function (_exports, React, _classnames, _rcTooltip, _getRenderPropValue, _configProvider, _style) {
+define(["exports", "react", "classnames", "rc-tooltip", "antd4mx/_util/getRenderPropValue", "antd4mx/config-provider/index", "antd4mx/popover/style/index"], function (_exports, React, _classnames, _rcTooltip, _getRenderPropValue, _index, _index2) {
   "use strict";
   "use client";
 
@@ -54,10 +54,10 @@ define(["exports", "react", "classnames", "rc-tooltip", "antd4mx/_util/getRender
     var customizePrefixCls = props.prefixCls,
       className = props.className,
       restProps = __rest(props, ["prefixCls", "className"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls;
     var prefixCls = getPrefixCls('popover', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

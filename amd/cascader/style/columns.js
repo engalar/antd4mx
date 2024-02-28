@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/style"], function (_exports, _cssinjs, _style, _style2) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style/index", "antd4mx/style/index"], function (_exports, _cssinjs, _index, _index2) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -16,7 +16,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/sty
     var iconCls = "\n  &".concat(cascaderMenuItemCls, "-expand ").concat(cascaderMenuItemCls, "-expand-icon,\n  ").concat(cascaderMenuItemCls, "-loading-icon\n");
     return [
     // ==================== Checkbox ====================
-    (0, _style.getStyle)("".concat(prefixCls, "-checkbox"), token), _defineProperty({}, componentCls, {
+    (0, _index.getStyle)("".concat(prefixCls, "-checkbox"), token), _defineProperty({}, componentCls, {
       // ================== Checkbox ==================
       '&-checkbox': {
         top: 0,
@@ -50,7 +50,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/sty
         '&:not(:last-child)': {
           borderInlineEnd: "".concat((0, _cssinjs.unit)(token.lineWidth), " ").concat(token.lineType, " ").concat(token.colorSplit)
         },
-        '&-item': Object.assign(Object.assign({}, _style2.textEllipsis), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
+        '&-item': Object.assign(Object.assign({}, _index2.textEllipsis), _defineProperty(_defineProperty(_defineProperty(_defineProperty({
           display: 'flex',
           flexWrap: 'nowrap',
           alignItems: 'center',

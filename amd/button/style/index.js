@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal", "antd4mx/button/style/group", "antd4mx/button/style/token"], function (_exports, _cssinjs, _style, _internal, _group, _token) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal", "antd4mx/button/style/group", "antd4mx/button/style/token"], function (_exports, _cssinjs, _index, _internal, _group, _token) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -43,7 +43,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       marginInlineEnd: token.marginXS
     })), '> a', {
       color: 'currentColor'
-    }), '&:not(:disabled)', Object.assign({}, (0, _style.genFocusStyle)(token))), "&".concat(componentCls, "-two-chinese-chars::first-letter"), {
+    }), '&:not(:disabled)', Object.assign({}, (0, _index.genFocusStyle)(token))), "&".concat(componentCls, "-two-chinese-chars::first-letter"), {
       letterSpacing: '0.34em'
     }), "&".concat(componentCls, "-two-chinese-chars > *:not(").concat(iconCls, ")"), {
       marginInlineEnd: '-0.34em',

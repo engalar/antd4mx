@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/style/motion"], function (_exports, _motion) {
+define(["exports", "antd4mx/style/motion/index"], function (_exports, _index) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -37,7 +37,7 @@ define(["exports", "antd4mx/style/motion"], function (_exports, _motion) {
       }
     })),
     // Follow code may reuse in other components
-    [(0, _motion.initSlideMotion)(token, 'slide-up'), (0, _motion.initSlideMotion)(token, 'slide-down')]];
+    [(0, _index.initSlideMotion)(token, 'slide-up'), (0, _index.initSlideMotion)(token, 'slide-down')]];
   };
   var _default = _exports["default"] = genMotionStyle;
 });

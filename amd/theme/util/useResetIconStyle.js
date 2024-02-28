@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/useToken"], function (_exports, _cssinjs, _style, _useToken3) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/useToken"], function (_exports, _cssinjs, _index, _useToken3) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -30,7 +30,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/useTok
         return csp === null || csp === void 0 ? void 0 : csp.nonce;
       }
     }, function () {
-      return [_defineProperty({}, ".".concat(iconPrefixCls), Object.assign(Object.assign({}, (0, _style.resetIcon)()), _defineProperty({}, ".".concat(iconPrefixCls, " .").concat(iconPrefixCls, "-icon"), {
+      return [_defineProperty({}, ".".concat(iconPrefixCls), Object.assign(Object.assign({}, (0, _index.resetIcon)()), _defineProperty({}, ".".concat(iconPrefixCls, " .").concat(iconPrefixCls, "-icon"), {
         display: 'block'
       })))];
     });

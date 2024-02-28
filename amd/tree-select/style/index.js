@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/theme/internal", "antd4mx/tree/style"], function (_exports, _cssinjs, _style, _internal, _style2) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style/index", "antd4mx/theme/internal", "antd4mx/tree/style/index"], function (_exports, _cssinjs, _index, _internal, _index2) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -23,7 +23,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/the
       padding: "".concat((0, _cssinjs.unit)(token.paddingXS), " ").concat((0, _cssinjs.unit)(token.calc(token.paddingXS).div(2).equal()))
     },
     // ====================== Tree ======================
-    (0, _style2.genTreeStyle)(treePrefixCls, (0, _internal.mergeToken)(token, {
+    (0, _index2.genTreeStyle)(treePrefixCls, (0, _internal.mergeToken)(token, {
       colorBgContainer: colorBgElevated
     })), _defineProperty({}, treeCls, _defineProperty({
       borderRadius: 0
@@ -33,7 +33,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/the
       flex: 'auto'
     })))),
     // ==================== Checkbox ====================
-    (0, _style.getStyle)("".concat(treePrefixCls, "-checkbox"), token),
+    (0, _index.getStyle)("".concat(treePrefixCls, "-checkbox"), token),
     // ====================== RTL =======================
     {
       '&-rtl': _defineProperty({
@@ -43,7 +43,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/the
       }))
     }])];
   };
-  var prepareComponentToken = _exports.prepareComponentToken = _style2.initComponentToken;
+  var prepareComponentToken = _exports.prepareComponentToken = _index2.initComponentToken;
   // ============================== Export ==============================
   function useTreeSelectStyle(prefixCls, treePrefixCls, rootCls) {
     return (0, _internal.genStyleHooks)('TreeSelect', function (token) {
@@ -51,6 +51,6 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/checkbox/style", "antd4mx/the
         treePrefixCls: treePrefixCls
       });
       return [genBaseStyle(treeSelectToken)];
-    }, _style2.initComponentToken)(prefixCls, rootCls);
+    }, _index2.initComponentToken)(prefixCls, rootCls);
   }
 });

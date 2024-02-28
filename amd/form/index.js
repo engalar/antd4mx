@@ -1,4 +1,4 @@
-define(["exports", "antd4mx/_util/warning", "antd4mx/form/ErrorList", "antd4mx/form/Form", "antd4mx/form/FormItem", "antd4mx/form/FormList", "antd4mx/form/context", "antd4mx/form/hooks/useFormInstance"], function (_exports, _warning, _ErrorList, _Form, _FormItem, _FormList, _context, _useFormInstance) {
+define(["exports", "antd4mx/_util/warning", "antd4mx/form/ErrorList", "antd4mx/form/Form", "antd4mx/form/FormItem/index", "antd4mx/form/FormList", "antd4mx/form/context", "antd4mx/form/hooks/useFormInstance"], function (_exports, _warning, _ErrorList, _Form, _index, _FormList, _context, _useFormInstance) {
   "use strict";
   "use client";
 
@@ -7,7 +7,7 @@ define(["exports", "antd4mx/_util/warning", "antd4mx/form/ErrorList", "antd4mx/f
   });
   _exports["default"] = void 0;
   var Form = _Form["default"];
-  Form.Item = _FormItem["default"];
+  Form.Item = _index["default"];
   Form.List = _FormList["default"];
   Form.ErrorList = _ErrorList["default"];
   Form.useForm = _Form.useForm;

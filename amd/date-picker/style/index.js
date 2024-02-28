@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style", "antd4mx/style/compact-item", "antd4mx/style/motion", "antd4mx/style/roundedArrow", "antd4mx/theme/internal", "antd4mx/date-picker/style/multiple", "antd4mx/date-picker/style/panel", "antd4mx/date-picker/style/token", "antd4mx/date-picker/style/variants"], function (_exports, _cssinjs, _style, _style2, _compactItem, _motion, _roundedArrow, _internal, _multiple, _panel, _token, _variants) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/input/style/index", "antd4mx/style/index", "antd4mx/style/compact-item", "antd4mx/style/motion/index", "antd4mx/style/roundedArrow", "antd4mx/theme/internal", "antd4mx/date-picker/style/multiple", "antd4mx/date-picker/style/panel", "antd4mx/date-picker/style/token", "antd4mx/date-picker/style/variants"], function (_exports, _cssinjs, _index, _index2, _compactItem, _index3, _roundedArrow, _internal, _multiple, _panel, _token, _variants) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -83,7 +83,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
       fontHeight = token.fontHeight,
       fontHeightLG = token.fontHeightLG,
       lineHeightLG = token.lineHeightLG;
-    return [_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), genPickerPadding(token, controlHeight, fontHeight, paddingInline)), (_Object$assign3 = {
+    return [_defineProperty({}, componentCls, Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), genPickerPadding(token, controlHeight, fontHeight, paddingInline)), (_Object$assign3 = {
       position: 'relative',
       display: 'inline-flex',
       alignItems: 'center',
@@ -103,7 +103,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
         fontSize: token.fontSize,
         lineHeight: token.lineHeight,
         transition: "all ".concat(motionDurationMid)
-      }, (0, _style.genPlaceholderStyle)(colorTextPlaceholder)), {
+      }, (0, _index.genPlaceholderStyle)(colorTextPlaceholder)), {
         flex: 'auto',
         // Fix Firefox flex not correct:
         // https://github.com/ant-design/ant-design/pull/20023#issuecomment-564389553
@@ -199,7 +199,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
       insetInlineEnd: paddingInline
     }), "&".concat(componentCls, "-small"), _defineProperty({}, "".concat(componentCls, "-clear"), {
       insetInlineEnd: paddingInlineSM
-    }))), '&-dropdown', Object.assign(Object.assign(Object.assign({}, (0, _style2.resetComponent)(token)), (0, _panel.genPanelStyle)(token)), (_Object$assign2 = {
+    }))), '&-dropdown', Object.assign(Object.assign(Object.assign({}, (0, _index2.resetComponent)(token)), (0, _panel.genPanelStyle)(token)), (_Object$assign2 = {
       pointerEvents: 'none',
       position: 'absolute',
       // Fix incorrect position of picker popup
@@ -221,13 +221,13 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
       display: 'block',
       transform: 'translateY(100%) rotate(180deg)'
     })), "&".concat(antCls, "-slide-up-enter").concat(antCls, "-slide-up-enter-active").concat(componentCls, "-dropdown-placement-topLeft,\n          &").concat(antCls, "-slide-up-enter").concat(antCls, "-slide-up-enter-active").concat(componentCls, "-dropdown-placement-topRight,\n          &").concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active").concat(componentCls, "-dropdown-placement-topLeft,\n          &").concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active").concat(componentCls, "-dropdown-placement-topRight"), {
-      animationName: _motion.slideDownIn
+      animationName: _index3.slideDownIn
     }), "&".concat(antCls, "-slide-up-enter").concat(antCls, "-slide-up-enter-active").concat(componentCls, "-dropdown-placement-bottomLeft,\n          &").concat(antCls, "-slide-up-enter").concat(antCls, "-slide-up-enter-active").concat(componentCls, "-dropdown-placement-bottomRight,\n          &").concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active").concat(componentCls, "-dropdown-placement-bottomLeft,\n          &").concat(antCls, "-slide-up-appear").concat(antCls, "-slide-up-appear-active").concat(componentCls, "-dropdown-placement-bottomRight"), {
-      animationName: _motion.slideUpIn
+      animationName: _index3.slideUpIn
     }), "&".concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active").concat(componentCls, "-dropdown-placement-topLeft,\n          &").concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active").concat(componentCls, "-dropdown-placement-topRight"), {
-      animationName: _motion.slideDownOut
+      animationName: _index3.slideDownOut
     }), "&".concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active").concat(componentCls, "-dropdown-placement-bottomLeft,\n          &").concat(antCls, "-slide-up-leave").concat(antCls, "-slide-up-leave-active").concat(componentCls, "-dropdown-placement-bottomRight"), {
-      animationName: _motion.slideUpOut
+      animationName: _index3.slideUpOut
     }), "".concat(componentCls, "-panel > ").concat(componentCls, "-time-panel"), {
       paddingTop: paddingXXS
     }), "".concat(componentCls, "-range-wrapper"), {
@@ -270,7 +270,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
         margin: 0,
         padding: paddingXS,
         borderInlineEnd: "".concat((0, _cssinjs.unit)(lineWidth), " ").concat(lineType, " ").concat(colorSplit),
-        li: Object.assign(Object.assign({}, _style2.textEllipsis), {
+        li: Object.assign(Object.assign({}, _index2.textEllipsis), {
           borderRadius: borderRadiusSM,
           paddingInline: paddingXS,
           paddingBlock: token.calc(controlHeightSM).sub(fontHeight).div(2).equal(),
@@ -318,11 +318,11 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/input/style", "antd4mx/style"
       }
     }))))),
     // Follow code may reuse in other components
-    (0, _motion.initSlideMotion)(token, 'slide-up'), (0, _motion.initSlideMotion)(token, 'slide-down'), (0, _motion.initMoveMotion)(token, 'move-up'), (0, _motion.initMoveMotion)(token, 'move-down')];
+    (0, _index3.initSlideMotion)(token, 'slide-up'), (0, _index3.initSlideMotion)(token, 'slide-down'), (0, _index3.initMoveMotion)(token, 'move-up'), (0, _index3.initMoveMotion)(token, 'move-down')];
   };
   // ============================== Export ==============================
   var _default = _exports["default"] = (0, _internal.genStyleHooks)('DatePicker', function (token) {
-    var pickerToken = (0, _internal.mergeToken)((0, _style.initInputToken)(token), (0, _token.initPickerPanelToken)(token), {
+    var pickerToken = (0, _internal.mergeToken)((0, _index.initInputToken)(token), (0, _token.initPickerPanelToken)(token), {
       inputPaddingHorizontalBase: token.calc(token.paddingSM).sub(1).equal(),
       multipleSelectItemHeight: token.multipleItemHeight,
       selectHeight: token.controlHeight

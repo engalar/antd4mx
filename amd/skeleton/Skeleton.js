@@ -1,4 +1,4 @@
-define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/skeleton/Avatar", "antd4mx/skeleton/Button", "antd4mx/skeleton/Element", "antd4mx/skeleton/Image", "antd4mx/skeleton/Input", "antd4mx/skeleton/Node", "antd4mx/skeleton/Paragraph", "antd4mx/skeleton/Title", "antd4mx/skeleton/style"], function (_exports, _classnames, React, _configProvider, _Avatar, _Button, _Element, _Image, _Input, _Node, _Paragraph, _Title, _style) {
+define(["exports", "classnames", "react", "antd4mx/config-provider/index", "antd4mx/skeleton/Avatar", "antd4mx/skeleton/Button", "antd4mx/skeleton/Element", "antd4mx/skeleton/Image", "antd4mx/skeleton/Input", "antd4mx/skeleton/Node", "antd4mx/skeleton/Paragraph", "antd4mx/skeleton/Title", "antd4mx/skeleton/style/index"], function (_exports, _classnames, React, _index, _Avatar, _Button, _Element, _Image, _Input, _Node, _Paragraph, _Title, _index2) {
   "use strict";
   "use client";
 
@@ -77,12 +77,12 @@ define(["exports", "classnames", "react", "antd4mx/config-provider", "antd4mx/sk
       paragraph = _props$paragraph === void 0 ? true : _props$paragraph,
       active = props.active,
       round = props.round;
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction,
       skeleton = _React$useContext.skeleton;
     var prefixCls = getPrefixCls('skeleton', customizePrefixCls);
-    var _useStyle = (0, _style["default"])(prefixCls),
+    var _useStyle = (0, _index2["default"])(prefixCls),
       _useStyle2 = _slicedToArray(_useStyle, 3),
       wrapCSSVar = _useStyle2[0],
       hashId = _useStyle2[1],

@@ -1,4 +1,4 @@
-define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "antd4mx/config-provider", "antd4mx/grid/RowContext", "antd4mx/grid/style"], function (_exports, React, _classnames, _responsiveObserver, _configProvider, _RowContext, _style) {
+define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "antd4mx/config-provider/index", "antd4mx/grid/RowContext", "antd4mx/grid/style/index"], function (_exports, React, _classnames, _responsiveObserver, _index, _RowContext, _index2) {
   "use strict";
   "use client";
 
@@ -67,7 +67,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "a
       gutter = _props$gutter === void 0 ? 0 : _props$gutter,
       wrap = props.wrap,
       others = __rest(props, ["prefixCls", "justify", "align", "className", "style", "children", "gutter", "wrap"]);
-    var _React$useContext = React.useContext(_configProvider.ConfigContext),
+    var _React$useContext = React.useContext(_index.ConfigContext),
       getPrefixCls = _React$useContext.getPrefixCls,
       direction = _React$useContext.direction;
     var _React$useState3 = React.useState({
@@ -131,7 +131,7 @@ define(["exports", "react", "classnames", "antd4mx/_util/responsiveObserver", "a
       return results;
     };
     var prefixCls = getPrefixCls('row', customizePrefixCls);
-    var _useRowStyle = (0, _style.useRowStyle)(prefixCls),
+    var _useRowStyle = (0, _index2.useRowStyle)(prefixCls),
       _useRowStyle2 = _slicedToArray(_useRowStyle, 3),
       wrapCSSVar = _useRowStyle2[0],
       hashId = _useRowStyle2[1],

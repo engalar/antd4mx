@@ -1,4 +1,4 @@
-define(["exports", "react", "@ant-design/colors", "antd4mx/_util/warning", "antd4mx/progress/utils", "antd4mx/progress/style"], function (_exports, React, _colors, _warning, _utils, _style) {
+define(["exports", "react", "@ant-design/colors", "antd4mx/_util/warning", "antd4mx/progress/utils", "antd4mx/progress/style/index"], function (_exports, React, _colors, _warning, _utils, _index) {
   "use strict";
   "use client";
 
@@ -80,12 +80,12 @@ define(["exports", "react", "@ant-design/colors", "antd4mx/_util/warning", "antd
       var _background = "linear-gradient(".concat(direction, ", ").concat(sortedGradients, ")");
       return _defineProperty({
         background: _background
-      }, _style.LineStrokeColorVar, _background);
+      }, _index.LineStrokeColorVar, _background);
     }
     var background = "linear-gradient(".concat(direction, ", ").concat(from, ", ").concat(to, ")");
     return _defineProperty({
       background: background
-    }, _style.LineStrokeColorVar, background);
+    }, _index.LineStrokeColorVar, background);
   };
   var Line = function Line(props) {
     var prefixCls = props.prefixCls,
@@ -100,7 +100,7 @@ define(["exports", "react", "@ant-design/colors", "antd4mx/_util/warning", "antd
       _props$trailColor = props.trailColor,
       trailColor = _props$trailColor === void 0 ? null : _props$trailColor,
       success = props.success;
-    var backgroundProps = strokeColor && typeof strokeColor !== 'string' ? handleGradient(strokeColor, directionConfig) : _defineProperty(_defineProperty({}, _style.LineStrokeColorVar, strokeColor), "background", strokeColor);
+    var backgroundProps = strokeColor && typeof strokeColor !== 'string' ? handleGradient(strokeColor, directionConfig) : _defineProperty(_defineProperty({}, _index.LineStrokeColorVar, strokeColor), "background", strokeColor);
     var borderRadius = strokeLinecap === 'square' || strokeLinecap === 'butt' ? 0 : undefined;
     var mergedSize = size !== null && size !== void 0 ? size : [-1, strokeWidth || (size === 'small' ? 6 : 8)];
     var _getSize = (0, _utils.getSize)(mergedSize, 'line', {
@@ -121,7 +121,7 @@ define(["exports", "react", "@ant-design/colors", "antd4mx/_util/warning", "antd
       width: "".concat((0, _utils.validProgress)(percent), "%"),
       height: height,
       borderRadius: borderRadius
-    }, backgroundProps), _defineProperty({}, _style.Percent, (0, _utils.validProgress)(percent) / 100));
+    }, backgroundProps), _defineProperty({}, _index.Percent, (0, _utils.validProgress)(percent) / 100));
     var successPercent = (0, _utils.getSuccessPercent)(props);
     var successPercentStyle = {
       width: "".concat((0, _utils.validProgress)(successPercent), "%"),

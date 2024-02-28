@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "classnames", "rc-util/es/omit", "antd4mx/_util/reactNode", "antd4mx/_util/transKeys", "antd4mx/checkbox", "antd4mx/dropdown", "antd4mx/transfer/ListBody", "antd4mx/transfer/search"], function (_exports, _react, _DownOutlined, _classnames, _omit, _reactNode, _transKeys, _checkbox, _dropdown, _ListBody, _search) {
+define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "classnames", "rc-util/es/omit", "antd4mx/_util/reactNode", "antd4mx/_util/transKeys", "antd4mx/checkbox/index", "antd4mx/dropdown/index", "antd4mx/transfer/ListBody", "antd4mx/transfer/search"], function (_exports, _react, _DownOutlined, _classnames, _omit, _reactNode, _transKeys, _index, _index2, _ListBody, _search) {
   "use strict";
   "use client";
 
@@ -177,7 +177,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "classnam
         className: (0, _classnames["default"])(showSearch ? "".concat(prefixCls, "-body ").concat(prefixCls, "-body-with-search") : "".concat(prefixCls, "-body"))
       }, search, bodyNode);
     }, [showSearch, prefixCls, searchPlaceholder, filterValue, disabled, checkedKeys, filteredItems, filteredRenderItems, notFoundContentEle]);
-    var checkBox = /*#__PURE__*/_react["default"].createElement(_checkbox["default"], {
+    var checkBox = /*#__PURE__*/_react["default"].createElement(_index["default"], {
       disabled: dataSource.length === 0 || disabled,
       checked: checkStatus === 'all',
       indeterminate: checkStatus === 'part',
@@ -272,7 +272,7 @@ define(["exports", "react", "@ant-design/icons/es/icons/DownOutlined", "classnam
         }
       }];
     }
-    var dropdown = /*#__PURE__*/_react["default"].createElement(_dropdown["default"], {
+    var dropdown = /*#__PURE__*/_react["default"].createElement(_index2["default"], {
       className: "".concat(prefixCls, "-header-dropdown"),
       menu: {
         items: items

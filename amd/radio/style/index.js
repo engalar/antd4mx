@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/internal"], function (_exports, _cssinjs, _style, _internal) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/index", "antd4mx/theme/internal"], function (_exports, _cssinjs, _index, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {
@@ -15,7 +15,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     var componentCls = token.componentCls,
       antCls = token.antCls;
     var groupPrefixCls = "".concat(componentCls, "-group");
-    return _defineProperty({}, groupPrefixCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
+    return _defineProperty({}, groupPrefixCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), _defineProperty(_defineProperty(_defineProperty({
       display: 'inline-block',
       fontSize: 0
     }, "&".concat(groupPrefixCls, "-rtl"), {
@@ -51,7 +51,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     var dotPadding = 4;
     var radioDotDisabledSize = calc(radioSize).sub(calc(dotPadding).mul(2));
     var radioSizeCalc = calc(1).mul(radioSize).equal();
-    return _defineProperty({}, "".concat(componentCls, "-wrapper"), Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), (_Object$assign2 = {
+    return _defineProperty({}, "".concat(componentCls, "-wrapper"), Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), (_Object$assign2 = {
       display: 'inline-flex',
       alignItems: 'baseline',
       marginInlineStart: 0,
@@ -77,7 +77,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       borderRadius: '50%',
       visibility: 'hidden',
       content: '""'
-    }), componentCls, Object.assign(Object.assign({}, (0, _style.resetComponent)(token)), {
+    }), componentCls, Object.assign(Object.assign({}, (0, _index.resetComponent)(token)), {
       position: 'relative',
       display: 'inline-block',
       outline: 'none',
@@ -86,7 +86,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
       borderRadius: '50%'
     })), "".concat(componentCls, "-wrapper:hover &,\n        &:hover ").concat(radioInnerPrefixCls), {
       borderColor: colorPrimary
-    }), "".concat(componentCls, "-input:focus-visible + ").concat(radioInnerPrefixCls), Object.assign({}, (0, _style.genFocusOutline)(token))), "".concat(componentCls, ":hover::after, ").concat(componentCls, "-wrapper:hover &::after"), {
+    }), "".concat(componentCls, "-input:focus-visible + ").concat(radioInnerPrefixCls), Object.assign({}, (0, _index.genFocusOutline)(token))), "".concat(componentCls, ":hover::after, ").concat(componentCls, "-wrapper:hover &::after"), {
       visibility: 'visible'
     }), "".concat(componentCls, "-inner"), {
       '&::after': {
@@ -275,7 +275,7 @@ define(["exports", "@ant-design/cssinjs", "antd4mx/style", "antd4mx/theme/intern
     }), '&:hover', {
       position: 'relative',
       color: colorPrimary
-    }), '&:has(:focus-visible)', Object.assign({}, (0, _style.genFocusOutline)(token))), "".concat(componentCls, "-inner, input[type='checkbox'], input[type='radio']"), {
+    }), '&:has(:focus-visible)', Object.assign({}, (0, _index.genFocusOutline)(token))), "".concat(componentCls, "-inner, input[type='checkbox'], input[type='radio']"), {
       width: 0,
       height: 0,
       opacity: 0,

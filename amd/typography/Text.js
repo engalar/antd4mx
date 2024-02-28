@@ -1,4 +1,4 @@
-define(["exports", "react", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/typography/Base"], function (_exports, React, _omit, _warning, _Base) {
+define(["exports", "react", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx/typography/Base/index"], function (_exports, React, _omit, _warning, _index) {
   "use strict";
   "use client";
 
@@ -28,7 +28,7 @@ define(["exports", "react", "rc-util/es/omit", "antd4mx/_util/warning", "antd4mx
       var warning = (0, _warning.devUseWarning)('Typography.Text');
       process.env.NODE_ENV !== "production" ? warning(_typeof(ellipsis) !== 'object' || !ellipsis || !('expandable' in ellipsis) && !('rows' in ellipsis), 'usage', '`ellipsis` do not support `expandable` or `rows` props.') : void 0;
     }
-    return /*#__PURE__*/React.createElement(_Base["default"], Object.assign({
+    return /*#__PURE__*/React.createElement(_index["default"], Object.assign({
       ref: ref
     }, restProps, {
       ellipsis: mergedEllipsis,

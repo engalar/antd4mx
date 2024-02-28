@@ -1,4 +1,4 @@
-define(["exports", "rc-util/es/raf", "rc-util/es/ref", "react", "antd4mx/tooltip"], function (_exports, _raf, _ref, _react, _tooltip) {
+define(["exports", "rc-util/es/raf", "rc-util/es/ref", "react", "antd4mx/tooltip/index"], function (_exports, _raf, _ref, _react, _index) {
   "use strict";
   "use client";
 
@@ -30,7 +30,7 @@ define(["exports", "rc-util/es/raf", "rc-util/es/ref", "react", "antd4mx/tooltip
       }
       return cancelKeepAlign;
     }, [open, props.title]);
-    return /*#__PURE__*/React.createElement(_tooltip["default"], Object.assign({
+    return /*#__PURE__*/React.createElement(_index["default"], Object.assign({
       ref: (0, _ref.composeRef)(innerRef, ref)
     }, props));
   });
