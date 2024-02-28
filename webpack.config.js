@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   // mode: "production", // 或者 'development'，根据需要选择
-  // mode: "production", // 或者 'development'，根据需要选择
+  // mode: "development", // 或者 'development'，根据需要选择
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -25,9 +25,5 @@ module.exports = {
     ],
   },
   // 将antd库作为外部依赖，避免它被重复打包进输出文件
-  externals: {
-    // 这里根据实际情况配置antd库依赖的外部模块，例如react和react-dom
-    react: "amd react",
-    "react-dom": "amd react-dom",
-  },
+  externals: ['react', 'react-dom'],
 };
