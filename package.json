@@ -4,15 +4,16 @@
   "description": "",
   "main": "amd/index.js",
   "scripts": {
-    "build": "babel node_modules/antd/es --out-dir amd  --config-file ./.babelrc"
+    "build": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/cli": "^7.23.9",
-    "@babel/core": "^7.23.9",
-    "@babel/plugin-transform-modules-amd": "^7.23.3",
-    "@babel/preset-env": "^7.23.9",
-    "antd": "5.14.2"
+    "antd": "5.14.2",
+    "css-loader": "^6.10.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
   }
 }
