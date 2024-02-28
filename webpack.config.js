@@ -1,8 +1,9 @@
 const path = require("path");
 
 module.exports = {
-  mode: "production", // 或者 'development'，根据需要选择
-  entry: "./node_modules/antd/lib/index.js",
+  // mode: "production", // 或者 'development'，根据需要选择
+  // mode: "production", // 或者 'development'，根据需要选择
+  entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "antd.bundle.js",
