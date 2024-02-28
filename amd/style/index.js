@@ -1,4 +1,4 @@
-define(["exports", "@ant-design/cssinjs", "./operationUnit"], function (_exports, _cssinjs, _operationUnit) {
+define(["exports", "@ant-design/cssinjs", "antd4mx/style/operationUnit"], function (_exports, _cssinjs, _operationUnit) {
   "use strict";
   "use client";
 

@@ -1,5 +1,5 @@
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "antd4mx/_util/gapSize", "antd4mx/config-provider", "antd4mx/space/Compact", "antd4mx/space/context", "antd4mx/space/Item", "antd4mx/space/style", "./context"], function (_exports, React, _classnames, _toArray, _gapSize, _configProvider, _Compact, _context, _Item, _style, _context2) {
+define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "antd4mx/_util/gapSize", "antd4mx/config-provider", "antd4mx/space/Compact", "antd4mx/space/context", "antd4mx/space/Item", "antd4mx/space/style"], function (_exports, React, _classnames, _toArray, _gapSize, _configProvider, _Compact, _context, _Item, _style) {
   "use strict";
   "use client";
 
@@ -9,7 +9,7 @@ define(["exports", "react", "classnames", "rc-util/es/Children/toArray", "antd4m
   Object.defineProperty(_exports, "SpaceContext", {
     enumerable: true,
     get: function get() {
-      return _context2.SpaceContext;
+      return _context.SpaceContext;
     }
   });
   _exports["default"] = void 0;

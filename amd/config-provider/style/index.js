@@ -1,4 +1,4 @@
-define(["exports", "../../theme/internal"], function (_exports, _internal) {
+define(["exports", "antd4mx/theme/internal"], function (_exports, _internal) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {

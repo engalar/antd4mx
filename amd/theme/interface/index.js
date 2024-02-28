@@ -1,4 +1,4 @@
-define(["exports", "./presetColors"], function (_exports, _presetColors) {
+define(["exports", "antd4mx/theme/interface/presetColors"], function (_exports, _presetColors) {
   "use strict";
 
   Object.defineProperty(_exports, "__esModule", {

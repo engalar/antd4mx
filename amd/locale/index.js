@@ -1,4 +1,4 @@
-define(["exports", "react", "antd4mx/_util/warning", "antd4mx/modal/locale", "antd4mx/locale/context", "./useLocale"], function (_exports, React, _warning, _locale, _context, _useLocale) {
+define(["exports", "react", "antd4mx/_util/warning", "antd4mx/modal/locale", "antd4mx/locale/context", "antd4mx/locale/useLocale"], function (_exports, React, _warning, _locale, _context, _useLocale) {
   "use strict";
   "use client";
 
