@@ -6,9 +6,9 @@ module.exports = {
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "antd.bundle.js",
+    filename: "antd.umd.js",
     library: "antd",
-    libraryTarget: "amd",
+    libraryTarget: "umd",
   },
   module: {
     rules: [
