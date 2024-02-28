@@ -1,0 +1,20 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-modules-amd",
+      {
+        "noInterop": true
+      }
+    ],
+    [
+      "./babel-plugin-prefix",
+      {
+        "prefix": "antd4mx/",
+        "root": "node_modules/antd/es"
+      }
+    ]
+  ]
+}
